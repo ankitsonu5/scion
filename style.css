@@ -1330,4 +1330,450 @@ footer {
     .about-hero h1 {
         font-size: 2.5rem;
     }
+    /* -----------------------------------------------------------------------------
+   DESIGN SYSTEM
+----------------------------------------------------------------------------- */
+:root {
+    /* Colors */
+    --primary-color: #1F2937;
+    --secondary-color: #4B5563;
+    --accent-own: #F59E0B;
+    /* Amber for Own Brands */
+    --accent-private: #06B6D4;
+    /* Cyan for Private Brands */
+    --bg-light: #F9FAFB;
+    --bg-white: #FFFFFF;
+    --text-primary: #111827;
+    --text-secondary: #6B7280;
+    --text-light: #F3F4F6;
+
+    /* Gradients */
+    --gradient-gold: linear-gradient(135deg, #FCD34D 0%, #F59E0B 100%);
+    --gradient-teal: linear-gradient(135deg, #22D3EE 0%, #0891B2 100%);
+
+    /* Spacing */
+    --spacing-xs: 0.5rem;
+    --spacing-sm: 1rem;
+    --spacing-md: 2rem;
+    --spacing-lg: 4rem;
+    --spacing-xl: 8rem;
+
+    /* Shadows */
+    --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    --shadow-accent: 0 10px 15px -3px rgba(245, 158, 11, 0.3);
+}
+
+/* -----------------------------------------------------------------------------
+   RESET & BASE STYLES
+----------------------------------------------------------------------------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    color: var(--text-primary);
+    background-color: var(--bg-light);
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: all 0.3s ease;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 var(--spacing-sm);
+}
+
+.section-padding {
+    padding: var(--spacing-lg) 0;
+}
+
+.text-center {
+    text-align: center;
+}
+
+/* -----------------------------------------------------------------------------
+   TYPOGRAPHY
+----------------------------------------------------------------------------- */
+h1,
+h2,
+h3,
+h4 {
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: var(--spacing-sm);
+}
+
+.section-title {
+    font-size: 2.5rem;
+    color: var(--text-primary);
+    margin-bottom: var(--spacing-sm);
+}
+
+.highlight-text {
+    color: var(--accent-own);
+}
+
+.divider {
+    height: 4px;
+    width: 60px;
+    background: var(--gradient-gold);
+    margin: var(--spacing-md) auto;
+    border-radius: 2px;
+}
+
+/* -----------------------------------------------------------------------------
+   NAVIGATION
+----------------------------------------------------------------------------- */
+.navbar {
+    background-color: var(--bg-white);
+    box-shadow: var(--shadow-sm);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    padding: var(--spacing-sm) 0;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.logo .highlight {
+    color: var(--accent-own);
+}
+
+.nav-links {
+    display: flex;
+    gap: var(--spacing-md);
+}
+
+.nav-links a {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--text-secondary);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    color: var(--accent-own);
+}
+
+.mobile-menu-btn {
+    display: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+/* -----------------------------------------------------------------------------
+   HERO SECTION
+----------------------------------------------------------------------------- */
+.hero {
+    height: 60vh;
+    min-height: 400px;
+    background-image: url('https://images.unsplash.com/photo-1618331835717-801e976710b2?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80');
+    /* Abstract luxury background */
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(2px);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+    border: 4px solid var(--text-primary);
+    padding: var(--spacing-lg);
+    background: rgba(255, 255, 255, 0.6);
+}
+
+.hero-title {
+    font-size: 4rem;
+    margin-bottom: 0;
+    font-family: 'Playfair Display', serif;
+    letter-spacing: 2px;
+}
+
+.hero-subtitle {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    margin-top: var(--spacing-xs);
+    color: var(--text-secondary);
+}
+
+/* -----------------------------------------------------------------------------
+   INTRO SECTION
+----------------------------------------------------------------------------- */
+.intro-lead {
+    font-size: 1.25rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.own-label-text {
+    color: var(--accent-own);
+    font-weight: 700;
+}
+
+.private-label-text {
+    color: #0891B2;
+    font-weight: 700;
+}
+
+.intro-desc {
+    color: var(--text-secondary);
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* -----------------------------------------------------------------------------
+   DIVISIONS SECTION
+----------------------------------------------------------------------------- */
+.divisions-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--spacing-lg);
+}
+
+.division-card {
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: var(--shadow-md);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background: var(--bg-white);
+    display: flex;
+    flex-direction: column;
+}
+
+.division-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+}
+
+.division-card.own-brands {
+    border-top: 6px solid var(--accent-own);
+}
+
+.division-card.private-brands {
+    border-top: 6px solid #0891B2;
+}
+
+.card-content {
+    padding: var(--spacing-lg);
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.card-header {
+    margin-bottom: var(--spacing-md);
+}
+
+.card-tag {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 600;
+    opacity: 0.7;
+    display: block;
+    margin-bottom: var(--spacing-xs);
+}
+
+.division-card h3 {
+    font-size: 2rem;
+    margin-bottom: 0;
+}
+
+.division-card p {
+    color: var(--text-secondary);
+    margin-bottom: var(--spacing-md);
+    flex-grow: 1;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    border-radius: 6px;
+    font-weight: 600;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.btn-own {
+    background: var(--gradient-gold);
+    color: #fff;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.btn-own:hover {
+    box-shadow: 0 4px 12px rgba(245, 158, 11, 0.4);
+}
+
+.btn-private {
+    background: var(--gradient-teal);
+    color: #fff;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.btn-private:hover {
+    box-shadow: 0 4px 12px rgba(8, 145, 178, 0.4);
+}
+
+/* -----------------------------------------------------------------------------
+   BUSINESS MODEL ICONS
+----------------------------------------------------------------------------- */
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--spacing-md);
+    margin-top: var(--spacing-lg);
+}
+
+.feature-item {
+    background: var(--bg-white);
+    padding: var(--spacing-md);
+    border-radius: 8px;
+    box-shadow: var(--shadow-sm);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.feature-item:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-md);
+}
+
+.icon-box {
+    font-size: 2.5rem;
+    margin-bottom: var(--spacing-sm);
+    background: -webkit-linear-gradient(45deg, #0891B2, #22D3EE);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Alternate Icon Colors to match Design */
+.feature-item:nth-child(odd) .icon-box {
+    background: -webkit-linear-gradient(45deg, #22D3EE, #0891B2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.feature-item:nth-child(even) .icon-box {
+    background: -webkit-linear-gradient(45deg, #FCD34D, #F59E0B);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.feature-item h4 {
+    font-size: 1.1rem;
+    margin-bottom: var(--spacing-xs);
+}
+
+.feature-item p {
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+}
+
+/* -----------------------------------------------------------------------------
+   FOOTER
+----------------------------------------------------------------------------- */
+.footer {
+    background: var(--primary-color);
+    color: var(--text-light);
+    padding: var(--spacing-md) 0;
+    margin-top: var(--spacing-xl);
+}
+
+/* -----------------------------------------------------------------------------
+   RESPONSIVE DESIGN
+----------------------------------------------------------------------------- */
+@media (max-width: 1024px) {
+    .features-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .divisions-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .nav-links.active {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: var(--bg-white);
+        padding: var(--spacing-md);
+        box-shadow: var(--shadow-lg);
+        border-top: 1px solid var(--bg-light);
+    }
+
+    .mobile-menu-btn {
+        display: block;
+    }
+
+    .hero-title {
+        font-size: 2.5rem;
+    }
+
+    .hero-content {
+        padding: var(--spacing-md);
+    }
+}
+
+@media (max-width: 640px) {
+    .features-grid {
+        grid-template-columns: 1fr;
+    }
+}
 }
