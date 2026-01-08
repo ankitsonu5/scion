@@ -1,0 +1,1430 @@
+/* Luxury Theme Stylesheet */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap');
+
+:root {
+    /* Colors from Index */
+    --color-primary: #0f172a;
+    /* Deep Midnight Blue */
+    --color-secondary: #1e293b;
+    /* Slate */
+    --color-gold: #d4af37;
+    /* Gold */
+    --color-gold-light: #f3e5ab;
+    /* Champagne */
+
+    /* Luxury Mappings */
+    --color-black: var(--color-primary);
+    /* Map black to deep blue for cohesive look */
+    --color-charcoal: var(--color-secondary);
+    --color-white: #ffffff;
+    --color-off-white: #fcfbf9;
+
+    --color-text-dark: #334155;
+    --color-text-light: #94a3b8;
+
+    --font-heading: 'Playfair Display',
+        serif;
+    --font-body: 'Montserrat',
+        sans-serif;
+
+    --transition: all 0.4s ease;
+    --shadow-soft: 0 10px 30px rgba(15, 23, 42, 0.05);
+    /* Blue-tinted shadow */
+    --shadow-gold: 0 10px 30px rgba(212, 175, 55, 0.15);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-body);
+    background-color: var(--color-white);
+    color: var(--color-text-dark);
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: var(--transition);
+}
+
+ul {
+    list-style: none;
+}
+
+/* Typography */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--font-heading);
+    color: var(--color-black);
+    font-weight: 400;
+}
+
+.text-gold {
+    color: var(--color-gold);
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 3rem;
+    position: relative;
+    padding-bottom: 1rem;
+}
+
+.section-title h2 {
+    font-size: 3rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.section-subtitle {
+    display: block;
+    font-size: 0.9rem;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: var(--color-gold);
+    margin-bottom: 1rem;
+}
+
+/* Buttons */
+.btn-luxury {
+    display: inline-block;
+    padding: 1rem 2.5rem;
+    border: 1px solid var(--color-gold);
+    color: var(--color-black);
+    background: transparent;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 0.8rem;
+    cursor: pointer;
+    transition: var(--transition);
+    position: relative;
+    overflow: hidden;
+}
+
+.btn-luxury:hover {
+    background: var(--color-gold);
+    color: var(--color-white);
+}
+
+.btn-luxury.dark {
+    border-color: var(--color-white);
+    color: var(--color-white);
+}
+
+.btn-luxury.dark:hover {
+    background: var(--color-white);
+    color: var(--color-black);
+}
+
+/* Navbar */
+.navbar-luxury {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    padding: 1.5rem 0;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    box-shadow: var(--shadow-soft);
+    transition: var(--transition);
+}
+
+.nav-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    height: 50px;
+    object-fit: contain;
+}
+
+.nav-menu {
+    display: flex;
+    gap: 3rem;
+}
+
+.nav-link {
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 500;
+    position: relative;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0%;
+    height: 1px;
+    background: var(--color-gold);
+    transition: var(--transition);
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+.nav-icons {
+    display: flex;
+    gap: 1.5rem;
+    font-size: 1.2rem;
+}
+
+/* Hero Section */
+.hero-luxury {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.hero-content {
+    text-align: center;
+    color: var(--color-white);
+    z-index: 2;
+    max-width: 800px;
+    padding: 0 1rem;
+    animation: fadeInUp 1.2s ease forwards;
+}
+
+.hero-subtitle {
+    display: block;
+    font-size: 1rem;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+    color: var(--color-gold-light);
+}
+
+.hero-title {
+    font-size: 4.5rem;
+    line-height: 1.1;
+    margin-bottom: 2rem;
+    font-weight: 400;
+    color: var(--color-white);
+}
+
+.hero-title span {
+    font-style: italic;
+    font-weight: 600;
+}
+
+.hero-text {
+    font-size: 1.1rem;
+    margin-bottom: 2.5rem;
+    opacity: 0.9;
+    font-weight: 300;
+}
+
+/* Sections */
+section {
+    padding: 6rem 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+/* About Grid */
+.about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+.about-content p {
+    font-size: 1.1rem;
+    color: #666;
+    margin-bottom: 2rem;
+    font-weight: 300;
+}
+
+.about-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Categories */
+.category-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.cat-card {
+    position: relative;
+    height: 400px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.cat-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.8s ease;
+}
+
+.cat-card:hover .cat-img {
+    transform: scale(1.05);
+}
+
+.cat-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 2rem;
+    color: white;
+}
+
+.cat-title {
+    font-size: 1.5rem;
+    color: white;
+    margin-bottom: 0.5rem;
+}
+
+.cat-link {
+    color: var(--color-gold-light);
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+}
+
+/* Featured Products */
+.product-showcase {
+    background: var(--color-off-white);
+}
+
+.product-slider {
+    display: flex;
+    gap: 2rem;
+    overflow-x: auto;
+    padding-bottom: 2rem;
+    scrollbar-width: none;
+}
+
+.product-item {
+    min-width: 300px;
+    background: white;
+    padding: 2rem;
+    text-align: center;
+    transition: var(--transition);
+}
+
+.product-item:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-soft);
+}
+
+.product-img {
+    height: 300px;
+    object-fit: contain;
+    margin-bottom: 1.5rem;
+}
+
+.product-name {
+    font-family: var(--font-heading);
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    color: var(--color-charcoal);
+}
+
+.product-price {
+    color: var(--color-gold);
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+/* Testimonials */
+.testimonials-luxury {
+    background-color: var(--color-charcoal);
+    color: var(--color-white);
+    text-align: center;
+}
+
+.testimonial-text {
+    font-family: var(--font-heading);
+    font-size: 2rem;
+    font-style: italic;
+    line-height: 1.4;
+    margin-bottom: 2rem;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.testimonial-author {
+    font-family: var(--font-body);
+    font-size: 0.9rem;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--color-gold);
+}
+
+/* Footer */
+footer {
+    background: var(--color-primary);
+    color: white;
+    padding: 5rem 0 2rem;
+    text-align: center;
+}
+
+.footer-logo {
+    width: 150px;
+    margin-bottom: 3rem;
+    filter: brightness(0) invert(1);
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.footer-links a {
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.footer-links a:hover {
+    color: var(--color-gold);
+}
+
+.copyright {
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.4);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 2rem;
+    margin-top: 2rem;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .nav-menu {
+        display: none;
+    }
+
+    .hero-title {
+        font-size: 3rem;
+    }
+
+    .about-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Business Overview Luxury Specifics */
+
+/* Intro Section */
+.section-luxury-intro {
+    background-color: var(--color-charcoal);
+    color: var(--color-white);
+    text-align: center;
+    padding: 8rem 0;
+}
+
+.section-luxury-intro h2 {
+    color: var(--color-white);
+}
+
+.intro-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.intro-title {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+
+.intro-text {
+    font-size: 1.2rem;
+    font-weight: 300;
+    line-height: 1.8;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+/* Sides Section */
+.section-luxury-sides {
+    padding: 0;
+    /* Full width split potentially, but here using container */
+    background: var(--color-white);
+    position: relative;
+    z-index: 10;
+    margin-top: -3rem;
+    /* Overlap effect */
+}
+
+.sides-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0;
+    box-shadow: var(--shadow-soft);
+}
+
+.side-card {
+    padding: 6rem 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 600px;
+    transition: var(--transition);
+}
+
+.side-card.dark-card {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    position: relative;
+    overflow: hidden;
+}
+
+.side-card.dark-card h3 {
+    color: var(--color-white);
+}
+
+.side-card.dark-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, rgba(212, 175, 55, 0.05), transparent);
+    pointer-events: none;
+}
+
+/* Premium Strengths Page */
+.section-luxury-bg {
+    background-color: var(--color-off-white);
+    padding: 6rem 0;
+}
+
+.strengths-grid-premium {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.strength-card-premium {
+    background: var(--color-white);
+    padding: 3rem;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    transition: var(--transition);
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+}
+
+.strength-card-premium:hover {
+    transform: translateY(-10px);
+    box-shadow: var(--shadow-soft);
+    border-color: rgba(212, 175, 55, 0.3);
+}
+
+.strength-icon-gold {
+    font-size: 2.5rem;
+    color: var(--color-gold);
+    margin-bottom: 2rem;
+}
+
+.strength-card-premium h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    color: var(--color-primary);
+    /* Deep Blue */
+}
+
+.strength-card-premium p {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.7;
+    font-weight: 300;
+}
+
+/* Alternate Dark Cards for rhythm if desired, or keep clean */
+
+
+.side-card.light-card {
+    background-color: #f4f4f4;
+    color: var(--color-black);
+}
+
+.side-subtitle {
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--color-gold);
+    margin-bottom: 1rem;
+}
+
+/* Strengths Hero (Static Image like Careers) */
+.strengths-hero {
+    height: 70vh;
+    min-height: 500px;
+    background-color: var(--color-primary);
+    background-image: linear-gradient(rgba(15, 23, 42, 0.7), rgba(15, 23, 42, 0.5)), url('https://images.unsplash.com/photo-1615634260167-c8cdede054de?q=80&w=2000&auto=format&fit=crop');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 52px;
+    /* Offset for fixed navbar */
+    overflow: hidden;
+}
+
+.strengths-hero::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(212, 175, 55, 0.15) 0%, rgba(0, 0, 0, 0) 70%);
+    animation: rotateGlow 20s linear infinite;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.strengths-hero .page-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 4rem;
+    color: var(--color-white);
+    letter-spacing: 2px;
+    margin-bottom: 1rem;
+    z-index: 2;
+    position: relative;
+}
+
+
+
+/* Overview Hero */
+.overview-hero {
+    height: 70vh;
+    min-height: 500px;
+    background-color: var(--color-primary);
+    background-image: linear-gradient(rgba(15, 23, 42, 0.7), rgba(15, 23, 42, 0.5)), url('https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=2000&auto=format&fit=crop');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 52px;
+    /* Offset for fixed navbar */
+    overflow: hidden;
+}
+
+.overview-hero::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(212, 175, 55, 0.15) 0%, rgba(0, 0, 0, 0) 70%);
+    animation: rotateGlow 20s linear infinite;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.overview-hero .hero-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 4rem;
+    color: var(--color-white);
+    letter-spacing: 2px;
+    margin-bottom: 1rem;
+    z-index: 2;
+    position: relative;
+    line-height: 1.1;
+}
+
+
+
+.side-title {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+
+.side-desc {
+    font-size: 1rem;
+    margin-bottom: 3rem;
+    line-height: 1.8;
+    opacity: 0.8;
+}
+
+/* Business Model Section */
+.section-luxury-model {
+    background-color: var(--color-white);
+    padding: 8rem 0;
+}
+
+.model-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 3rem;
+    margin-top: 4rem;
+}
+
+.model-item {
+    text-align: center;
+    padding: 2rem;
+    transition: var(--transition);
+    border: 1px solid transparent;
+}
+
+.model-item:hover {
+    border-color: rgba(212, 175, 55, 0.2);
+    transform: translateY(-5px);
+}
+
+.model-icon {
+    font-size: 2.5rem;
+    color: var(--color-gold);
+    margin-bottom: 1.5rem;
+}
+
+.model-item h4 {
+    font-family: var(--font-body);
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.model-item p {
+    font-size: 0.95rem;
+    color: #666;
+    line-height: 1.6;
+}
+
+@media (max-width: 900px) {
+    .sides-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .side-card {
+        padding: 4rem 2rem;
+        min-height: auto;
+    }
+}
+
+
+/* Global Network Luxury Styles */
+
+/* Network Hero */
+.network-hero-luxury {
+    height: 70vh;
+    min-height: 500px;
+    background-color: var(--color-primary);
+    background-image: linear-gradient(rgba(15, 23, 42, 0.7), rgba(15, 23, 42, 0.5)), url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=2000&auto=format&fit=crop');
+    /* Earth/Network image */
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 52px;
+    overflow: hidden;
+}
+
+.network-hero-luxury::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(212, 175, 55, 0.15) 0%, rgba(0, 0, 0, 0) 70%);
+    animation: rotateGlow 20s linear infinite;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.network-hero-luxury .hero-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 4rem;
+    color: var(--color-white);
+    letter-spacing: 2px;
+    margin-bottom: 1rem;
+    z-index: 2;
+    position: relative;
+    line-height: 1.1;
+}
+
+/* Map Section */
+.section-luxury-map {
+    background-color: var(--color-primary);
+    /* Dark background for map */
+    padding: 6rem 0;
+    text-align: center;
+    color: var(--color-white);
+}
+
+.map-container {
+    margin-top: 3rem;
+    position: relative;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.map-placeholder {
+    width: 100%;
+    opacity: 0.8;
+    filter: drop-shadow(0 0 20px rgba(212, 175, 55, 0.2));
+}
+
+/* Stats Grid */
+.section-luxury-stats {
+    background-color: var(--color-bg);
+    padding: 6rem 0;
+}
+
+.stats-grid-luxury {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+.stat-card-luxury {
+    background: var(--color-white);
+    padding: 2.5rem;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    transition: var(--transition);
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+}
+
+.stat-card-luxury:hover {
+    transform: translateY(-10px);
+    box-shadow: var(--shadow-soft);
+    border-color: rgba(212, 175, 55, 0.3);
+}
+
+.stat-number {
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: var(--color-gold);
+    font-family: var(--font-serif);
+    line-height: 1;
+    margin-bottom: 1rem;
+}
+
+.stat-title {
+    font-size: 1.25rem;
+    color: var(--color-primary);
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-bottom: 2px solid var(--color-gold-light);
+    padding-bottom: 0.5rem;
+    display: inline-block;
+}
+
+.stat-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.stat-list li {
+    font-size: 0.95rem;
+    color: #555;
+    margin-bottom: 0.5rem;
+    padding-left: 1.2rem;
+    position: relative;
+}
+
+.stat-list li::before {
+    content: '•';
+    color: var(--color-gold);
+    position: absolute;
+    left: 0;
+    font-weight: bold;
+}
+
+/* Distribution Section */
+.section-luxury-dist {
+    background-color: var(--color-off-white);
+    padding: 6rem 0;
+}
+
+.dist-grid-luxury {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+}
+
+.dist-card-luxury {
+    display: flex;
+    background: var(--color-white);
+    overflow: hidden;
+    box-shadow: var(--shadow-soft);
+    transition: var(--transition);
+}
+
+.dist-card-luxury:hover {
+    transform: translateY(-5px);
+}
+
+.dist-img-wrapper {
+    flex: 1;
+    min-height: 250px;
+    position: relative;
+}
+
+.dist-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.dist-content {
+    flex: 1;
+    padding: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.dist-content h3 {
+    font-size: 1.5rem;
+    color: var(--color-primary);
+    margin-bottom: 1rem;
+    font-family: var(--font-serif);
+}
+
+.dist-content p {
+    font-size: 0.95rem;
+    color: #666;
+    line-height: 1.6;
+}
+
+@media (max-width: 900px) {
+    .dist-grid-luxury {
+        grid-template-columns: 1fr;
+    }
+
+    .dist-card-luxury {
+        flex-direction: column;
+    }
+
+    .dist-img-wrapper {
+        min-height: 200px;
+    }
+}
+
+/* Values & Ethos Luxury Styles */
+
+/* Values Grid */
+.values-grid-luxury {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2.5rem;
+    margin-top: 4rem;
+}
+
+.value-card-luxury {
+    background: var(--color-white);
+    padding: 3rem 2rem;
+    text-align: center;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    transition: var(--transition);
+    position: relative;
+    border-top: 3px solid transparent;
+}
+
+.value-card-luxury:hover {
+    transform: translateY(-10px);
+    box-shadow: var(--shadow-soft);
+    border-top-color: var(--color-gold);
+}
+
+.value-icon-luxury {
+    font-size: 2.5rem;
+    color: var(--color-gold);
+    margin-bottom: 1.5rem;
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
+    border-radius: 50%;
+    background: rgba(212, 175, 55, 0.1);
+    transition: var(--transition);
+}
+
+.value-card-luxury:hover .value-icon-luxury {
+    background: var(--color-gold);
+    color: var(--color-white);
+}
+
+.value-title-luxury {
+    font-family: var(--font-serif);
+    font-size: 1.5rem;
+    color: var(--color-primary);
+    margin-bottom: 1rem;
+}
+
+.value-desc-luxury {
+    font-size: 0.95rem;
+    color: #666;
+    line-height: 1.7;
+}
+
+/* Ethics Section */
+.section-luxury-ethics {
+    background-color: var(--color-off-white);
+    color: var(--color-text);
+    padding: 6rem 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.ethics-grid-luxury {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+.ethics-content h2 {
+    font-family: var(--font-serif);
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+    color: var(--color-primary);
+}
+
+.ethics-text p {
+    margin-bottom: 1.5rem;
+    opacity: 0.9;
+    line-height: 1.8;
+    font-size: 1.05rem;
+}
+
+.ethics-icons-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.ethics-icon-item {
+    text-align: center;
+}
+
+.icon-circle-luxury {
+    width: 60px;
+    height: 60px;
+    margin: 0 auto 1rem;
+    border: 1px solid rgba(15, 23, 42, 0.1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    color: var(--color-primary);
+    transition: var(--transition);
+}
+
+.ethics-icon-item:hover .icon-circle-luxury {
+    background: var(--color-primary);
+    border-color: var(--color-primary);
+    color: var(--color-gold);
+}
+
+.ethics-icon-item span {
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    opacity: 0.8;
+    color: var(--color-primary);
+}
+
+@media (max-width: 900px) {
+    .ethics-grid-luxury {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* About Luxury Styles */
+
+/* Mission Section */
+.mission-section {
+    background-color: var(--color-white);
+    padding: 6rem 0;
+    text-align: center;
+}
+
+.mission-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.mission-title {
+    font-family: var(--font-serif);
+    font-size: 2.5rem;
+    color: var(--color-gold);
+    margin-bottom: 2rem;
+}
+
+.mission-text {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: var(--color-text);
+}
+
+/* Brands Grid */
+.brands-section-luxury {
+    background-color: var(--color-off-white);
+    padding: 6rem 0;
+}
+
+.brands-grid-luxury {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 3rem;
+    align-items: center;
+    justify-items: center;
+    margin-top: 3rem;
+}
+
+.brand-item-luxury {
+    background: var(--color-white);
+    padding: 2rem;
+    width: 100%;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: var(--shadow-soft);
+    transition: var(--transition);
+    border: 1px solid transparent;
+}
+
+.brand-item-luxury:hover {
+    transform: translateY(-5px);
+    border-color: var(--color-gold);
+}
+
+.brand-item-luxury img {
+    max-width: 80%;
+    max-height: 80%;
+    filter: grayscale(100%);
+    opacity: 0.7;
+    transition: var(--transition);
+}
+
+.brand-item-luxury:hover img {
+    filter: grayscale(0%);
+    opacity: 1;
+}
+
+/* Brand Presence Luxury Styles */
+
+/* Brand Intro */
+.brand-intro-luxury {
+    padding: 6rem 0;
+    text-align: center;
+    background-color: var(--color-white);
+}
+
+.brand-intro-text {
+    font-size: 1.5rem;
+    color: var(--color-primary);
+    max-width: 900px;
+    margin: 0 auto;
+    line-height: 1.6;
+    font-family: var(--font-serif);
+}
+
+/* Tabs Container */
+.tabs-container-luxury {
+    background-color: var(--color-off-white);
+    padding: 6rem 0;
+    min-height: 600px;
+}
+
+.luxury-tabs {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-bottom: 4rem;
+    flex-wrap: wrap;
+}
+
+.tab-btn-luxury {
+    background: transparent;
+    border: 1px solid var(--color-primary);
+    color: var(--color-primary);
+    padding: 1rem 2rem;
+    font-family: var(--font-body);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: var(--transition);
+    position: relative;
+    overflow: hidden;
+}
+
+.tab-btn-luxury:hover,
+.tab-btn-luxury.active {
+    background: var(--color-primary);
+    color: var(--color-gold);
+    border-color: var(--color-primary);
+    box-shadow: var(--shadow-soft);
+}
+
+/* Tab Content Grids */
+.logo-grid-luxury {
+    display: none;
+    /* Hidden by default */
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    animation: fadeIn 0.6s ease-out;
+}
+
+.logo-grid-luxury.active {
+    display: grid;
+}
+
+.logo-card-luxury {
+    background: var(--color-white);
+    padding: 2rem;
+    aspect-ratio: 3/2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: var(--shadow-soft);
+    transition: var(--transition);
+    border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.logo-card-luxury:hover {
+    transform: translateY(-5px);
+    border-color: var(--color-gold);
+}
+
+
+.logo-placeholder-text {
+    font-size: 1.2rem;
+    color: #ccc;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+/* Overview of Brands Luxury Styles */
+
+.brands-overview-hero {
+    height: 60vh;
+    min-height: 450px;
+    background-color: var(--color-primary);
+    background-image: linear-gradient(rgba(15, 23, 42, 0.7), rgba(15, 23, 42, 0.5)), url('https://images.unsplash.com/photo-1596462502278-27bfdd403cc2?q=80&w=2000&auto=format&fit=crop');
+    /* Perfume bottles/smoke background */
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 52px;
+}
+
+.brands-overview-intro {
+    background-color: var(--color-white);
+    padding: 6rem 0;
+    text-align: center;
+}
+
+.brands-overview-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 3rem;
+    padding: 2rem 0 6rem;
+}
+
+.brand-overview-card {
+    background: var(--color-white);
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    /* Light border */
+    padding: 3rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 350px;
+    transition: var(--transition);
+    position: relative;
+    overflow: hidden;
+}
+
+.brand-overview-card:hover {
+    transform: translateY(-10px);
+    border-color: var(--color-gold);
+    box-shadow: var(--shadow-soft);
+}
+
+.brand-logo-wrapper {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+.brand-logo-img {
+    max-width: 80%;
+    max-height: 150px;
+    object-fit: contain;
+    transition: var(--transition);
+}
+
+.brand-overview-card:hover .brand-logo-img {
+    transform: scale(1.05);
+}
+
+.brand-link-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: rgba(212, 175, 55, 0.1);
+    color: var(--color-gold);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    transition: var(--transition);
+}
+
+.brand-overview-card:hover .brand-link-icon {
+    background: var(--color-gold);
+    color: var(--color-white);
+}
+
+/* Premium Business Hero (Matching Careers Page Style) */
+.business-premium-hero {
+    height: 60vh;
+    min-height: 500px;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2000&auto=format&fit=crop');
+    /* Corporate building glass abstract */
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 52px;
+}
+
+.business-premium-hero .hero-content-center {
+    max-width: 800px;
+    padding: 2rem;
+    color: white;
+    z-index: 2;
+}
+
+.business-premium-hero .page-title {
+    font-size: 4rem;
+    font-family: var(--font-serif);
+    font-weight: 700;
+    margin: 0;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.business-premium-hero .hero-divider {
+    height: 3px;
+    width: 80px;
+    background-color: var(--color-gold);
+    margin: 1.5rem auto;
+}
+
+.business-premium-hero .hero-subtitle-text {
+    font-size: 1.2rem;
+    font-weight: 300;
+    opacity: 0.9;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+/* Add Responsive styles for the hero title */
+@media (max-width: 768px) {
+    .business-premium-hero .page-title {
+        font-size: 2.5rem;
+    }
+}
