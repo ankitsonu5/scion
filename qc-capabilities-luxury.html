@@ -1,0 +1,450 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QC Capabilities | Scion International</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style-luxury.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+        /* Specific Styles for QC Page */
+        /* Specific Styles for QC Page */
+        #qc-hero {
+            background-image: linear-gradient(rgba(15, 23, 42, 0.7), rgba(15, 23, 42, 0.7)), url('assets/hero_qc_capabilities.png');
+
+        }
+
+        .qc-intro {
+            padding: 5rem 0;
+            text-align: center;
+            background-color: var(--color-white);
+        }
+
+        .qc-intro h2 {
+            font-size: 1.8rem;
+            color: var(--color-gold);
+            font-family: 'Playfair Display', serif;
+            max-width: 1000px;
+            margin: 0 auto;
+            line-height: 1.5;
+        }
+
+        /* 3 Pillars Grid */
+        .qc-pillars {
+            padding: 4rem 0;
+            background-color: var(--color-off-white);
+        }
+
+        .pillars-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .pillar-card {
+            background: white;
+            box-shadow: var(--shadow-soft);
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+
+        .pillar-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .pillar-img {
+            height: 250px;
+            width: 100%;
+            object-fit: cover;
+        }
+
+        .pillar-content {
+            padding: 2rem;
+        }
+
+        .pillar-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: var(--color-primary);
+        }
+
+        .pillar-text {
+            font-size: 0.95rem;
+            color: #666;
+            line-height: 1.7;
+            font-weight: 300;
+        }
+
+        /* Lab Section */
+        .lab-section {
+            padding: 5rem 0;
+            background-color: var(--color-primary);
+            color: white;
+            text-align: center;
+        }
+
+        .lab-images {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1rem;
+            margin-top: 3rem;
+        }
+
+        .lab-img-item {
+            height: 300px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .lab-img-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            opacity: 0.8;
+            transition: opacity 0.3s, transform 0.5s;
+        }
+
+        .lab-img-item:hover img {
+            opacity: 1;
+            transform: scale(1.1);
+        }
+
+        /* Equipment List */
+        .equipment-section {
+            padding: 5rem 0;
+            background-color: var(--color-white);
+        }
+
+        .equipment-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem 3rem;
+            max-width: 1000px;
+            margin: 3rem auto 0;
+        }
+
+        .equipment-item {
+            background: var(--color-off-white);
+            padding: 1rem 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            font-size: 0.9rem;
+            color: var(--color-text-dark);
+            border-left: 2px solid transparent;
+            transition: all 0.2s;
+        }
+
+        .equipment-item:hover {
+            border-left-color: var(--color-gold);
+            background: white;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+        }
+
+        .equipment-item i {
+            color: var(--color-gold);
+            font-size: 1.2rem;
+            min-width: 25px;
+            text-align: center;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .lab-images {
+                grid-template-columns: 1fr;
+            }
+
+            .equipment-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container top-bar-container">
+            <div class="top-bar-left">
+                <a href="mailto:info@scionintl.com"><i class="fas fa-envelope"></i> info@scionintl.com</a>
+                <a href="tel:+97165352066"><i class="fas fa-phone"></i> +971 65352066</a>
+            </div>
+            <div class="top-bar-right">
+                <a href="#" class="login-link"><i class="fas fa-sign-in-alt"></i> Login</a>
+                <div class="social-icons-top">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo"><img src="assets/scion-logo.png" alt="Scion International"></a>
+            <div class="nav-links">
+                <a href="index.html">HOME</a>
+
+                <div class="dropdown">
+                    <a href="about-luxury.html">WHO WE ARE <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-content">
+                        <a href="about.html">Our Story</a>
+                        <a href="global-network-luxury.html">Our Global Network</a>
+                        <a href="business-overview-luxury.html">Business Overview</a>
+                        <a href="brands-overview-premium.html">Overview of Brands</a>
+                        <a href="brand-presence-luxury.html">Brand Presence</a>
+                        <a href="private-label-premium.html">Private Label Projects & Clients</a>
+                        <a href="business-strengths-premium.html">Business Strengths</a>
+                        <a href="values-ethos-luxury.html">Our Values & Ethos</a>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <a href="#">WHY CHOOSE US <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-content">
+                        <a href="why-choose-us-overview-luxury.html">Overview</a>
+                        <a href="research-development-luxury.html">R & D Capabilities</a>
+                        <a href="qc-capabilities-luxury.html" class="active">QC Capabilities</a>
+                        <a href="manufacturing-capabilities-luxury.html">Manufacturing Capabilities</a>
+                        <a href="breadth-of-products-luxury.html">Breadth of Products</a>
+                        <a href="turn-key-projects-luxury.html">Turn Key Projects</a>
+                        <a href="sustainability-luxury.html">Sustainability</a>
+                        <a href="certifications-luxury.html">Certifications</a>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <a href="products-luxury.html">PRODUCTS <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-content">
+                        <a href="products-luxury.html">Fragrances</a>
+                        <a href="products-luxury.html">Personal Care & Beauty</a>
+                        <a href="products-luxury.html">Deodorants</a>
+                        <a href="products-luxury.html">Color Cosmetics</a>
+                        <a href="products-luxury.html">Gift Sets</a>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <a href="#">BRANDS <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-content mega-menu">
+                        <div class="mega-column">
+                            <h3>Fragrance</h3>
+                            <a href="products-luxury.html">Jean Paul Dupont</a>
+                            <a href="products-luxury.html">Creation Lamis</a>
+                            <a href="products-luxury.html">Dorall Collection</a>
+                        </div>
+                        <div class="mega-column">
+                            <h3>Deodorants</h3>
+                            <a href="products-luxury.html">Jean Paul Dupont</a>
+                            <a href="products-luxury.html">Creation Lamis</a>
+                            <a href="products-luxury.html">Dorall Collection</a>
+                            <a href="products-luxury.html">Addiction</a>
+                        </div>
+                        <div class="mega-column">
+                            <h3>Personal Care</h3>
+                            <a href="products-luxury.html">Bio Glow</a>
+                            <a href="products-luxury.html">Paris Collection</a>
+                        </div>
+                        <div class="mega-column">
+                            <h3>Color Cosmetics</h3>
+                            <a href="products-luxury.html">CP Trendies</a>
+                            <a href="products-luxury.html">Paris Collection</a>
+                        </div>
+                    </div>
+                </div>
+
+                <a href="careers.html">CAREERS</a>
+                <a href="contact-us.html">CONTACT US</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="qc-hero" class="universal-luxury-hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <span class="hero-subtitle" style="color: var(--color-gold-light);">Quality Assurance</span>
+            <h1 class="hero-title">QC <span>Capabilities</span></h1>
+            <p class="hero-text" style="color: rgba(255,255,255,0.9);">Controlling Quality from raw material stage right
+                through to on-shelf.</p>
+        </div>
+    </header>
+
+    <!-- Intro Text Section -->
+    <section class="qc-intro">
+        <div class="container" data-aos="fade-up">
+            <h2>The deep level of vertical integration that we have has given us the ability to control Quality from the
+                raw material stage, right through to on-shelf.</h2>
+        </div>
+    </section>
+
+    <!-- Pillars Section -->
+    <section class="qc-pillars">
+        <div class="container">
+            <div class="pillars-grid">
+                <!-- Card 1 -->
+                <div class="pillar-card" data-aos="fade-up" data-aos-delay="0">
+                    <img src="https://images.unsplash.com/photo-1581093450021-4a7360e9a6b5?q=80&w=800&auto=format&fit=crop"
+                        alt="Stringent Controls" class="pillar-img">
+                    <div class="pillar-content">
+                        <h3 class="pillar-title">Stringent Controls</h3>
+                        <p class="pillar-text">
+                            Building upon years of experience, Scion has also developed an integrated quality assurance
+                            approach that focuses on high standards. We adhere to military standards of quality control
+                            and check all batches of incoming components and outgoing finished goods.
+                        </p>
+                    </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="pillar-card" data-aos="fade-up" data-aos-delay="200">
+                    <img src="https://images.unsplash.com/photo-1532094349884-543bc11b234d?q=80&w=800&auto=format&fit=crop"
+                        alt="Dedicated Resources" class="pillar-img">
+                    <div class="pillar-content">
+                        <h3 class="pillar-title">Dedicated Resources</h3>
+                        <p class="pillar-text">
+                            We truly pride ourselves on the high level of quality we can provide our customers, so
+                            continued investment means we have a dedicated QC department in each of our manufacturing
+                            units, whose sole responsibility is to ensure our products match our high standards of
+                            quality.
+                        </p>
+                    </div>
+                </div>
+                <!-- Card 3 -->
+                <div class="pillar-card" data-aos="fade-up" data-aos-delay="400">
+                    <img src="https://images.unsplash.com/photo-1507413245164-6160d8298b31?q=80&w=800&auto=format&fit=crop"
+                        alt="Accreditations" class="pillar-img">
+                    <div class="pillar-content">
+                        <h3 class="pillar-title">Accreditations</h3>
+                        <p class="pillar-text">
+                            Our constant and dedicated focus on Quality Control throughout our organization processes
+                            has led to us being awarded numerous international accreditations; to name a few are ISO
+                            9001, ISO 22716, ISO 14001 and more. All our manufacturing plants are also accredited with
+                            standards.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lab Section -->
+    <section class="lab-section">
+        <div class="container">
+            <div class="section-title">
+                <span class="section-subtitle">Excellence In Analysis</span>
+                <h2 style="color: white;">Quality Control Laboratories</h2>
+            </div>
+
+            <p style="max-width: 800px; margin: 0 auto; line-height: 1.8; opacity: 0.8;">
+                Our Quality Control laboratories are equipped with a wide range of constantly updated equipment,
+                allowing us to ensure that both incoming and outgoing products adhere to our high level of Quality
+                Control standards.
+            </p>
+
+            <div class="lab-images" data-aos="fade-up">
+                <div class="lab-img-item"><img
+                        src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?q=80&w=800&auto=format&fit=crop"
+                        alt="Lab Research"></div>
+                <div class="lab-img-item"><img
+                        src="https://images.unsplash.com/photo-1582719508461-905c673771fd?q=80&w=800&auto=format&fit=crop"
+                        alt="Quality Testing"></div>
+                <div class="lab-img-item"><img
+                        src="https://images.unsplash.com/photo-1616486029423-aaa4789e8c9a?q=80&w=800&auto=format&fit=crop"
+                        alt="Cosmetic Science"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Equipment List Section -->
+    <section class="equipment-section">
+        <div class="container">
+            <div class="section-title" data-aos="fade-up">
+                <h2>Laboratory Capacities</h2>
+                <p style="margin-top: 1rem; color: #666;">A snapshot of just some of our capabilities:</p>
+            </div>
+
+            <div class="equipment-grid" data-aos="fade-up">
+                <div class="equipment-item"><i class="fas fa-check-circle"></i> The skin color testing instrument to
+                    check the Melanin content of the Skin</div>
+                <div class="equipment-item"><i class="fas fa-vial"></i> Microbiology Test</div>
+                <div class="equipment-item"><i class="fas fa-flask"></i> Dean and Stark â€“ Toluene distillation
+                    apparatus
+                </div>
+                <div class="equipment-item"><i class="fas fa-chart-bar"></i> Chromatograph</div>
+                <div class="equipment-item"><i class="fas fa-filter"></i> Fractional - distillation apparatus</div>
+                <div class="equipment-item"><i class="fas fa-wind"></i> Vacuum Cabin</div>
+                <div class="equipment-item"><i class="fas fa-tint"></i> Water Conductivity meter</div>
+                <div class="equipment-item"><i class="fas fa-weight-hanging"></i> Density Meter</div>
+                <div class="equipment-item"><i class="fas fa-crosshairs"></i> Moisture Analyzer</div>
+                <div class="equipment-item"><i class="fas fa-eye-dropper"></i> PH Meter</div>
+                <div class="equipment-item"><i class="fas fa-atom"></i> Kjeldahl distillation Assembly for Nitrogen
+                    determination of Protein</div>
+                <div class="equipment-item"><i class="fas fa-search-plus"></i> Refractometer</div>
+                <div class="equipment-item"><i class="fas fa-satellite-dish"></i> ICP-OES (Inductively Coupled Plasma
+                    â€“
+                    Optical Emission Spectrometer)</div>
+                <div class="equipment-item"><i class="fas fa-barcode"></i> Bar-code verifier</div>
+                <div class="equipment-item"><i class="fas fa-wave-square"></i> FTIR (Fourier Transform Infra Red
+                    Spectrophotometer)</div>
+                <div class="equipment-item"><i class="fas fa-water"></i> Karl-Fischer Titrator</div>
+                <div class="equipment-item"><i class="fas fa-sun"></i> UV-VIS Spectrophotometer</div>
+                <div class="equipment-item"><i class="fas fa-bolt"></i> Conductivity meter</div>
+                <div class="equipment-item"><i class="fas fa-shield-virus"></i> In-vitro testing of SPF factor in
+                    Cosmetic Products</div>
+                <div class="equipment-item"><i class="fas fa-flask"></i> Viscometer</div>
+                <div class="equipment-item"><i class="fas fa-user-md"></i> Skin and Hair Diagnosis Instrument for
+                    development of Personal care products</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <a href="#" class="logo"><img src="assets/scion-logo-footer.png" alt="Scion International"></a>
+                    <p style="color: rgba(255,255,255,0.6); max-width: 300px;">Creating evocative pleasures of Fragrance
+                        & Beauty worldwide since 1974.</p>
+                </div>
+                <div>
+                    <h4 style="color: var(--color-accent); margin-bottom: 1.5rem;">Links</h4>
+                    <ul style="list-style: none; display: flex; flex-direction: column; gap: 0.8rem;">
+                        <li><a href="index.html" style="color: rgba(255,255,255,0.6);">Home</a></li>
+                        <li><a href="about.html" style="color: rgba(255,255,255,0.6);">About</a></li>
+                        <li><a href="#" style="color: rgba(255,255,255,0.6);">Collections</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 style="color: var(--color-accent); margin-bottom: 1.5rem;">Contact</h4>
+                    <p style="color: rgba(255,255,255,0.6);">Dubai, UAE</p>
+                    <p style="color: rgba(255,255,255,0.6);"><a href="mailto:info@scionintl.com"
+                            style="color:inherit;">info@scionintl.com</a></p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                &copy; 2025 Scion International. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            once: true,
+            offset: 50,
+            duration: 800,
+            easing: 'ease-out-cubic'
+        });
+    </script>
+</body>
+
+</html>

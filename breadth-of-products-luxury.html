@@ -1,0 +1,454 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Breadth of Products | Scion International</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style-luxury.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+        /* Specific page styles can go here or be added to style-luxury.css */
+        .product-category-section {
+            padding: 5rem 0;
+            border-bottom: 1px solid rgba(212, 175, 55, 0.1);
+        }
+
+        .product-category-section:last-child {
+            border-bottom: none;
+        }
+
+        .category-grid {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 4rem;
+            flex-wrap: wrap;
+        }
+
+        .luxury-product-text {
+            flex: 1;
+            min-width: 300px;
+            /* Ensures text doesn't get crushed */
+        }
+
+        .luxury-product-img-wrap {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .luxury-product-text h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5rem;
+            color: var(--color-primary);
+            margin-bottom: 1.5rem;
+        }
+
+        .luxury-product-text ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .luxury-product-text li {
+            position: relative;
+            padding-left: 20px;
+            margin-bottom: 10px;
+            color: #666;
+            font-size: 1.1rem;
+        }
+
+        .luxury-product-text li::before {
+            content: "â€¢";
+            color: var(--color-gold);
+            position: absolute;
+            left: 0;
+            font-size: 1.2rem;
+        }
+
+        .luxury-product-img-wrap img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+            display: block;
+        }
+
+        .luxury-product-img-wrap img:hover {
+            transform: scale(1.02);
+        }
+
+        /* Flexbox Ordering for Desktop Reverse Layout */
+        .reverse-layout .category-grid .luxury-product-text {
+            order: 2;
+        }
+
+        .reverse-layout .category-grid .luxury-product-img-wrap {
+            order: 1;
+        }
+
+        @media (max-width: 768px) {
+            .category-grid {
+                flex-direction: column;
+                gap: 2rem;
+            }
+
+            .luxury-product-text,
+            .luxury-product-img-wrap {
+                min-width: 100%;
+                flex: none;
+                /* Reset flex grow */
+                width: 100%;
+            }
+
+            /* On mobile, reset order to native flow or enforce Image first */
+            .reverse-layout .category-grid .luxury-product-text {
+                order: 2;
+            }
+
+            .reverse-layout .category-grid .luxury-product-img-wrap {
+                order: 1;
+            }
+
+            /* Standard layout mobile order: Image first, then Text? */
+            /* Or Text then Image? Let's standardise: Image Top, Text Bottom for all if desired */
+
+            /* Let's force Image first on mobile for ALL blocks for consistency */
+            .category-grid .luxury-product-img-wrap {
+                order: -1;
+            }
+
+            .reverse-layout .category-grid .luxury-product-img-wrap {
+                order: -1;
+            }
+
+            .category-grid .luxury-product-text {
+                order: 1;
+            }
+
+            .reverse-layout .category-grid .luxury-product-text {
+                order: 1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+        <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container top-bar-container">
+            <div class="top-bar-left">
+                <a href="mailto:info@scionintl.com"><i class="fas fa-envelope"></i> info@scionintl.com</a>
+                <a href="tel:+97165352066"><i class="fas fa-phone"></i> +971 65352066</a>
+            </div>
+            <div class="top-bar-right">
+                <a href="#" class="login-link"><i class="fas fa-sign-in-alt"></i> Login</a>
+                <div class="social-icons-top">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo"><img src="assets/scion-logo.png" alt="Scion International"></a>
+            <div class="nav-links">
+                <a href="index.html">HOME</a>
+
+                <div class="dropdown">
+                    <a href="about-luxury.html">WHO WE ARE <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-content">
+                        <a href="about.html">Our Story</a>
+                        <a href="global-network-luxury.html">Our Global Network</a>
+                        <a href="business-overview-luxury.html">Business Overview</a>
+                        <a href="brands-overview-premium.html">Overview of Brands</a>
+                        <a href="brand-presence-luxury.html">Brand Presence</a>
+                        <a href="private-label-premium.html">Private Label Projects & Clients</a>
+                        <a href="business-strengths-premium.html">Business Strengths</a>
+                        <a href="values-ethos-luxury.html">Our Values & Ethos</a>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <a href="#">WHY CHOOSE US <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-content">
+                        <a href="why-choose-us-overview-luxury.html">Overview</a>
+                        <a href="research-development-luxury.html">R & D Capabilities</a>
+                        <a href="qc-capabilities-luxury.html">QC Capabilities</a>
+                        <a href="manufacturing-capabilities-luxury.html">Manufacturing Capabilities</a>
+                        <a href="breadth-of-products-luxury.html">Breadth of Products</a>
+                        <a href="turn-key-projects-luxury.html">Turn Key Projects</a>
+                        <a href="sustainability-luxury.html">Sustainability</a>
+                        <a href="certifications-luxury.html">Certifications</a>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <a href="products-luxury.html">PRODUCTS <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-content">
+                        <a href="products-luxury.html">Fragrances</a>
+                        <a href="products-luxury.html">Personal Care & Beauty</a>
+                        <a href="products-luxury.html">Deodorants</a>
+                        <a href="products-luxury.html">Color Cosmetics</a>
+                        <a href="products-luxury.html">Gift Sets</a>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <a href="#">BRANDS <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-content mega-menu">
+                        <div class="mega-column">
+                            <h3>Fragrance</h3>
+                            <a href="products-luxury.html">Jean Paul Dupont</a>
+                            <a href="products-luxury.html">Creation Lamis</a>
+                            <a href="products-luxury.html">Dorall Collection</a>
+                        </div>
+                        <div class="mega-column">
+                            <h3>Deodorants</h3>
+                            <a href="products-luxury.html">Jean Paul Dupont</a>
+                            <a href="products-luxury.html">Creation Lamis</a>
+                            <a href="products-luxury.html">Dorall Collection</a>
+                            <a href="products-luxury.html">Addiction</a>
+                        </div>
+                        <div class="mega-column">
+                            <h3>Personal Care</h3>
+                            <a href="products-luxury.html">Bio Glow</a>
+                            <a href="products-luxury.html">Paris Collection</a>
+                        </div>
+                        <div class="mega-column">
+                            <h3>Color Cosmetics</h3>
+                            <a href="products-luxury.html">CP Trendies</a>
+                            <a href="products-luxury.html">Paris Collection</a>
+                        </div>
+                    </div>
+                </div>
+
+                <a href="careers.html">CAREERS</a>
+                <a href="contact-us.html">CONTACT US</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Post-Hero Section -->
+    <header class="universal-luxury-hero"
+        style="background-image: linear-gradient(rgba(15, 23, 42, 0.6), rgba(15, 23, 42, 0.4)), url('assets/hero_breadth_of_products.png');">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <span class="hero-subtitle" style="color: var(--color-gold-light);">Our Collection</span>
+            <h1 class="hero-title">Breadth of <span>Products</span></h1>
+            <p class="hero-text" style="color: rgba(255,255,255,0.9);">Our aim is to deliver the evocative pleasures of
+                Fragrance & Beauty products to each and every persons life.</p>
+        </div>
+    </header>
+
+    <!-- Intro Text -->
+    <section class="brand-intro-luxury">
+        <div class="container">
+            <h2 class="brand-intro-text" data-aos="fade-up">We do this via 15 different brands, across the Fragrance,
+                Personal Care & Beauty, Deodorants and Colour Cosmetics categories.</h2>
+            <p
+                style="text-align: center; max-width: 900px; margin: 2rem auto 0; color: #666; font-size: 1.1rem; line-height: 1.8;">
+                Our vast expertise, largely in-house manufacturing setup and vast industry experience allow us to
+                produce and distribute a huge range of premium Luxury, Masstige, Mass Market, and Value products. We
+                produce about 1500 different stock keeping units (SKU's).
+            </p>
+        </div>
+    </section>
+
+    <!-- Products Container -->
+    <section class="container" style="padding-bottom: 5rem;">
+
+        <!-- Fragrances -->
+        <div class="product-category-section" data-aos="fade-up">
+            <div class="category-grid">
+                <div class="luxury-product-text">
+                    <h3>Fragrances</h3>
+                    <ul>
+                        <li>Eau de Parfum</li>
+                        <li>Eau de Toilette</li>
+                        <li>Eau de Cologne</li>
+                        <li>Body Mists</li>
+                        <li>Perfume Oils (Attars) between 3ml - 500ml</li>
+                    </ul>
+                </div>
+                <div class="luxury-product-img-wrap">
+                    <img src="assets/category_women_perfume_1765793289405.png" alt="Luxury Fragrances">
+                </div>
+            </div>
+        </div>
+
+        <!-- Personal Care & Beauty -->
+        <div class="product-category-section reverse-layout" data-aos="fade-up">
+            <div class="category-grid">
+                <div class="luxury-product-text">
+                    <h3>Personal Care & Beauty</h3>
+
+                    <h4
+                        style="color: var(--color-primary); margin-top: 1.5rem; margin-bottom: 0.5rem; font-family: 'Playfair Display', serif;">
+                        Hair Care</h4>
+                    <ul>
+                        <li>Hair foods, hair creams, hair masks, hair sprays, hair serums, hair wax and styling hair
+                            gels.</li>
+                    </ul>
+
+                    <h4
+                        style="color: var(--color-primary); margin-top: 1.5rem; margin-bottom: 0.5rem; font-family: 'Playfair Display', serif;">
+                        Skin Care</h4>
+                    <ul>
+                        <li>Face scrubs, face washes, mud masks, toners, face creams, blackhead removal strips, nose
+                            strips, whitening creams, fairness creams, face creams, face serums, face oils.</li>
+                    </ul>
+
+                    <h4
+                        style="color: var(--color-primary); margin-top: 1.5rem; margin-bottom: 0.5rem; font-family: 'Playfair Display', serif;">
+                        Men's Grooming</h4>
+                    <ul>
+                        <li>Face wash & scrubs, after shave balms, post shave balms, shaving foams, beard masks, beard
+                            oils.</li>
+                    </ul>
+
+                    <h4
+                        style="color: var(--color-primary); margin-top: 1.5rem; margin-bottom: 0.5rem; font-family: 'Playfair Display', serif;">
+                        Shower Care</h4>
+                    <ul>
+                        <li>Shampoos, conditioners, body wash, bath bombs, bath salts.</li>
+                    </ul>
+
+                    <h4
+                        style="color: var(--color-primary); margin-top: 1.5rem; margin-bottom: 0.5rem; font-family: 'Playfair Display', serif;">
+                        Body Care</h4>
+                    <ul>
+                        <li>Body lotions, body creams, body butters, body scrubs.</li>
+                    </ul>
+
+                    <h4
+                        style="color: var(--color-primary); margin-top: 1.5rem; margin-bottom: 0.5rem; font-family: 'Playfair Display', serif;">
+                        Sun Care</h4>
+                    <ul>
+                        <li>Sun screen, sun spray, sun oil (SPF 15 to SPF 90), sun block, sun tan oil, soothing
+                            products.</li>
+                    </ul>
+                </div>
+                <div class="luxury-product-img-wrap">
+                    <img src="assets/category_personal_care_1765793336151.png" alt="Personal Care & Beauty">
+                </div>
+            </div>
+        </div>
+
+        <!-- Deodorants -->
+        <div class="product-category-section" data-aos="fade-up">
+            <div class="category-grid">
+                <div class="luxury-product-text">
+                    <h3>Deodorants</h3>
+                    <ul>
+                        <li>Perfume body sprays</li>
+                        <li>Antiperspirant body sprays</li>
+                        <li>Deodorant body sprays</li>
+                        <li>Roll-on deodorants</li>
+                        <li>Stick deodorants</li>
+                    </ul>
+                </div>
+                <div class="luxury-product-img-wrap">
+                    <img src="assets/category_deodorants_premium_1765810761670.png" alt="Deodorants">
+                </div>
+            </div>
+        </div>
+
+        <!-- Color Cosmetics -->
+        <div class="product-category-section reverse-layout" data-aos="fade-up">
+            <div class="category-grid">
+                <div class="luxury-product-text">
+                    <h3>Color Cosmetics</h3>
+
+                    <h4
+                        style="color: var(--color-primary); margin-top: 1.5rem; margin-bottom: 0.5rem; font-family: 'Playfair Display', serif;">
+                        Face Makeup</h4>
+                    <ul>
+                        <li>Primer, Foundation, Concealer, Compact powder, Blusher, Highlighter</li>
+                    </ul>
+
+                    <h4
+                        style="color: var(--color-primary); margin-top: 1.5rem; margin-bottom: 0.5rem; font-family: 'Playfair Display', serif;">
+                        Eye Makeup</h4>
+                    <ul>
+                        <li>Eyeliner, Mascara, Kohl Kajal, Eyeshadow, Eyebrow Pencil</li>
+                    </ul>
+
+                    <h4
+                        style="color: var(--color-primary); margin-top: 1.5rem; margin-bottom: 0.5rem; font-family: 'Playfair Display', serif;">
+                        Lip Makeup</h4>
+                    <ul>
+                        <li>Lipstick, Lip gloss, Lip liner, Lip balm</li>
+                    </ul>
+
+                    <h4
+                        style="color: var(--color-primary); margin-top: 1.5rem; margin-bottom: 0.5rem; font-family: 'Playfair Display', serif;">
+                        Nail Makeup</h4>
+                    <ul>
+                        <li>Nail Polish, Nail Treatments, Nail Enamel, Nail Varnish</li>
+                    </ul>
+
+                    <h4
+                        style="color: var(--color-primary); margin-top: 1.5rem; margin-bottom: 0.5rem; font-family: 'Playfair Display', serif;">
+                        Makeup Kits</h4>
+                    <ul>
+                        <li>There are various kits-to-offer suitable to every ones Makeup needs.</li>
+                    </ul>
+                </div>
+                <div class="luxury-product-img-wrap">
+                    <img src="assets/category_color_cosmetics_luxury_1765810653802.png" alt="Color Cosmetics">
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+        <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <a href="#" class="logo"><img src="assets/scion-logo-footer.png" alt="Scion International"></a>
+                    <p style="color: rgba(255,255,255,0.6); max-width: 300px;">Creating evocative pleasures of Fragrance & Beauty worldwide since 1974.</p>
+                </div>
+                <div>
+                    <h4 style="color: var(--color-accent); margin-bottom: 1.5rem;">Links</h4>
+                    <ul style="list-style: none; display: flex; flex-direction: column; gap: 0.8rem;">
+                        <li><a href="index.html" style="color: rgba(255,255,255,0.6);">Home</a></li>
+                        <li><a href="about.html" style="color: rgba(255,255,255,0.6);">About</a></li>
+                        <li><a href="#" style="color: rgba(255,255,255,0.6);">Collections</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 style="color: var(--color-accent); margin-bottom: 1.5rem;">Contact</h4>
+                    <p style="color: rgba(255,255,255,0.6);">Dubai, UAE</p>
+                    <p style="color: rgba(255,255,255,0.6);"><a href="mailto:info@scionintl.com" style="color:inherit;">info@scionintl.com</a></p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                &copy; 2025 Scion International. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            once: true,
+            offset: 50,
+            duration: 800,
+            easing: 'ease-out-cubic'
+        });
+    </script>
+</body>
+
+</html>
+

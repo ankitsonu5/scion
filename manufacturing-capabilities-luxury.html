@@ -1,0 +1,633 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manufacturing Capabilities | Scion International</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style-luxury.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+        /* Specific Styles for Manufacturing Page */
+        .mfg-hero {
+            height: 60vh;
+            min-height: 400px;
+            background-color: var(--color-primary);
+            background-image: linear-gradient(rgba(15, 23, 42, 0.7), rgba(15, 23, 42, 0.7)), url('assets/banner2.jpg');
+            /* Factory/Industrial background */
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            margin-top: 52px;
+            position: relative;
+        }
+
+        .mfg-hero-box {
+            border: 3px solid var(--color-gold);
+            padding: 2.5rem 5rem;
+            background: rgba(0, 0, 0, 0.5);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+        }
+
+        .mfg-hero-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 3.5rem;
+            color: var(--color-white);
+            letter-spacing: 5px;
+            margin: 0;
+            text-transform: uppercase;
+            text-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+            font-weight: 700;
+            line-height: 1.2;
+        }
+
+        .mfg-intro {
+            padding: 5rem 0;
+            text-align: center;
+            background-color: var(--color-white);
+        }
+
+        .mfg-intro h2 {
+            font-size: 1.8rem;
+            color: var(--color-gold);
+            font-family: 'Playfair Display', serif;
+            max-width: 1000px;
+            margin: 0 auto;
+            line-height: 1.5;
+        }
+
+        /* Locations Sections */
+        .location-section {
+            padding: 5rem 0;
+        }
+
+        .location-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .location-details h3 {
+            font-size: 2rem;
+            color: var(--color-primary);
+            margin-bottom: 0.5rem;
+        }
+
+        .location-area {
+            font-weight: 600;
+            color: #666;
+            margin-bottom: 2rem;
+            display: block;
+        }
+
+        .location-desc {
+            font-size: 1rem;
+            line-height: 1.7;
+            margin-bottom: 2rem;
+            color: #444;
+        }
+
+        .capability-list {
+            list-style: none;
+            display: grid;
+            gap: 0.8rem;
+        }
+
+        .capability-list li {
+            position: relative;
+            padding-left: 1.5rem;
+            font-size: 0.95rem;
+        }
+
+        .capability-list li::before {
+            content: '\2022';
+            color: var(--color-gold);
+            position: absolute;
+            left: 0;
+            font-size: 1.2rem;
+            line-height: 1;
+        }
+
+        .location-map img {
+            width: 100%;
+            height: auto;
+            border: 1px solid #eee;
+            /* Placeholder styling */
+            filter: grayscale(100%) opacity(0.7);
+            /* Luxury grayscale map */
+            transition: all 0.3s;
+        }
+
+        .location-map:hover img {
+            filter: grayscale(0%) opacity(1);
+        }
+
+        /* Certifications Row */
+        .certs-row {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-top: 3rem;
+            flex-wrap: wrap;
+        }
+
+        .cert-badge {
+            width: 120px;
+            height: 120px;
+            border: 2px solid var(--color-gold-light);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Playfair Display', serif;
+            color: var(--color-primary);
+            font-weight: 700;
+            text-align: center;
+            padding: 1rem;
+            background: white;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s;
+        }
+
+        .cert-badge:hover {
+            transform: scale(1.1);
+            border-color: var(--color-gold);
+        }
+
+        /* Benefits Grid (Middle) */
+        .benefits-section {
+            background-color: var(--color-off-white);
+            padding: 4rem 0;
+        }
+
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 1.5rem;
+        }
+
+        .benefit-card {
+            background: white;
+            padding: 2rem 1rem;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+            border-top: 3px solid var(--color-gold);
+        }
+
+        .benefit-card h4 {
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            margin-bottom: 1rem;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .benefit-card p {
+            font-size: 0.8rem;
+            color: #666;
+        }
+
+        /* Highlights Section */
+        .highlights-section {
+            padding: 5rem 0;
+            background-color: white;
+            text-align: center;
+        }
+
+        .highlights-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .highlight-item {
+            padding: 2rem;
+            border: 1px solid #f0f0f0;
+            transition: all 0.3s;
+        }
+
+        .highlight-item:hover {
+            border-color: var(--color-gold);
+            transform: translateY(-5px);
+        }
+
+        .highlight-number {
+            font-family: 'Playfair Display', serif;
+            font-size: 3rem;
+            color: var(--color-primary);
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            display: flex;
+            justify-content: center;
+            align-items: baseline;
+        }
+
+        .highlight-label {
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: var(--color-gold);
+            font-weight: 600;
+        }
+
+        .highlight-img {
+            height: 80px;
+            margin-bottom: 1rem;
+            object-fit: contain;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* Responsive */
+        @media (max-width: 1024px) {
+            .benefits-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+
+            .highlights-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .location-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .location-map {
+                order: -1;
+            }
+
+            .benefits-grid {
+                grid-template-columns: repeat(1, 1fr);
+            }
+
+            .highlights-grid {
+                grid-template-columns: 1fr;
+                /* Stack on mobile */
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container top-bar-container">
+            <div class="top-bar-left">
+                <a href="mailto:info@scionintl.com"><i class="fas fa-envelope"></i> info@scionintl.com</a>
+                <a href="tel:+97165352066"><i class="fas fa-phone"></i> +971 65352066</a>
+            </div>
+            <div class="top-bar-right">
+                <a href="#" class="login-link"><i class="fas fa-sign-in-alt"></i> Login</a>
+                <div class="social-icons-top">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo"><img src="assets/scion-logo.png" alt="Scion International"></a>
+            <div class="nav-links">
+                <a href="index.html">HOME</a>
+
+                <div class="dropdown">
+                    <a href="about-luxury.html">WHO WE ARE <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-content">
+                        <a href="about.html">Our Story</a>
+                        <a href="global-network-luxury.html">Our Global Network</a>
+                        <a href="business-overview-luxury.html">Business Overview</a>
+                        <a href="brands-overview-premium.html">Overview of Brands</a>
+                        <a href="brand-presence-luxury.html">Brand Presence</a>
+                        <a href="private-label-premium.html">Private Label Projects & Clients</a>
+                        <a href="business-strengths-premium.html">Business Strengths</a>
+                        <a href="values-ethos-luxury.html">Our Values & Ethos</a>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <a href="#">WHY CHOOSE US <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-content">
+                        <a href="why-choose-us-overview-luxury.html">Overview</a>
+                        <a href="research-development-luxury.html">R & D Capabilities</a>
+                        <a href="qc-capabilities-luxury.html">QC Capabilities</a>
+                        <a href="manufacturing-capabilities-luxury.html">Manufacturing Capabilities</a>
+                        <a href="breadth-of-products-luxury.html">Breadth of Products</a>
+                        <a href="turn-key-projects-luxury.html">Turn Key Projects</a>
+                        <a href="sustainability-luxury.html">Sustainability</a>
+                        <a href="certifications-luxury.html">Certifications</a>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <a href="products-luxury.html">PRODUCTS <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-content">
+                        <a href="products-luxury.html">Fragrances</a>
+                        <a href="products-luxury.html">Personal Care & Beauty</a>
+                        <a href="products-luxury.html">Deodorants</a>
+                        <a href="products-luxury.html">Color Cosmetics</a>
+                        <a href="products-luxury.html">Gift Sets</a>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <a href="#">BRANDS <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-content mega-menu">
+                        <div class="mega-column">
+                            <h3>Fragrance</h3>
+                            <a href="products-luxury.html">Jean Paul Dupont</a>
+                            <a href="products-luxury.html">Creation Lamis</a>
+                            <a href="products-luxury.html">Dorall Collection</a>
+                        </div>
+                        <div class="mega-column">
+                            <h3>Deodorants</h3>
+                            <a href="products-luxury.html">Jean Paul Dupont</a>
+                            <a href="products-luxury.html">Creation Lamis</a>
+                            <a href="products-luxury.html">Dorall Collection</a>
+                            <a href="products-luxury.html">Addiction</a>
+                        </div>
+                        <div class="mega-column">
+                            <h3>Personal Care</h3>
+                            <a href="products-luxury.html">Bio Glow</a>
+                            <a href="products-luxury.html">Paris Collection</a>
+                        </div>
+                        <div class="mega-column">
+                            <h3>Color Cosmetics</h3>
+                            <a href="products-luxury.html">CP Trendies</a>
+                            <a href="products-luxury.html">Paris Collection</a>
+                        </div>
+                    </div>
+                </div>
+
+                <a href="careers.html">CAREERS</a>
+                <a href="contact-us.html">CONTACT US</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="universal-luxury-hero"
+        style="background-image: linear-gradient(rgba(15, 23, 42, 0.7), rgba(15, 23, 42, 0.7)), url('assets/hero_manufacturing.png');">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <span class="hero-subtitle" style="color: var(--color-gold-light);">Global Scale</span>
+            <h1 class="hero-title">Manufacturing <span>Capabilities</span></h1>
+            <p class="hero-text" style="color: rgba(255,255,255,0.9);">Highly vertically integrated factories across the
+                UK, USA, UAE and India.</p>
+        </div>
+    </header>
+
+    <!-- Intro Text Section -->
+    <section class="mfg-intro">
+        <div class="container" data-aos="fade-up">
+            <h2>With 40+ Years Of Running Highly Vertically Integrated Factories, Across The UK, USA, UAE And India, We
+                Have Very Strong Manufacturing Capabilities.</h2>
+        </div>
+    </section>
+
+    <!-- India Location -->
+    <section class="location-section" style="background-color: var(--color-bg);">
+        <div class="container">
+            <div class="location-grid">
+                <div class="location-details" data-aos="fade-right">
+                    <h3>Gujarat, India</h3>
+                    <span class="location-area">Total Area: 350,000 square feet</span>
+                    <p class="location-desc">Our plant is more than just a plant with its extensive vertical
+                        integration, it allows us to do almost all of our manufacturing in-house, which gives us great
+                        flexibility.</p>
+                    <ul class="capability-list">
+                        <li>Can Manufacturing</li>
+                        <li>Automated Filling</li>
+                        <li>Valve Line</li>
+                        <li>Actuator Line</li>
+                        <li>Colligation Line</li>
+                        <li>Cap Line</li>
+                        <li>Bottle Processing</li>
+                        <li>Packing & Boxing</li>
+                        <li>Warehousing</li>
+                    </ul>
+
+                    <div style="margin-top: 2rem;">
+                        <h4 style="margin-bottom: 1rem; color: var(--color-gold);">Factory Certifications</h4>
+                        <div class="certs-row" style="justify-content: flex-start;">
+                            <div class="cert-badge">ISO 9001</div>
+                            <div class="cert-badge">ISO 22716</div>
+                            <div class="cert-badge">GMP</div>
+                            <div class="cert-badge">ISO 14001</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="location-map" data-aos="fade-left">
+                    <img src="https://images.unsplash.com/photo-1524492412937-b28074a5d7da?q=80&w=2071&auto=format&fit=crop"
+                        alt="India Map - Gujarat Manufacturing Facility">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Grid -->
+    <section class="benefits-section">
+        <div class="container">
+            <div class="benefits-grid" data-aos="fade-up">
+                <div class="benefit-card">
+                    <h4>Reduce Production Lead Times</h4>
+                    <p>Vertical Integration enables us to reduce supply chain dependency and guarantees delivery.</p>
+                </div>
+                <div class="benefit-card">
+                    <h4>Manufacturing Turnaround</h4>
+                    <p>Efficiency, lean practices and optimized material flow ensures quick turnaround for all orders.
+                    </p>
+                </div>
+                <div class="benefit-card">
+                    <h4>Supply Network</h4>
+                    <p>Our expansive global supply network helps us source the right materials at the right cost.</p>
+                </div>
+                <div class="benefit-card">
+                    <h4>Flexibility</h4>
+                    <p>Being a full-coverage manufacturer means we have the flexibility to adjust lines as per market
+                        demands.</p>
+                </div>
+                <div class="benefit-card">
+                    <h4>Extra Capacity</h4>
+                    <p>With 2 fully operational plants we have extra production headroom globally.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- UAE Location -->
+    <section class="location-section">
+        <div class="container">
+            <div class="location-grid">
+                <div class="location-map" data-aos="fade-right">
+                    <img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?q=80&w=2070&auto=format&fit=crop"
+                        alt="UAE Map - Dubai Manufacturing Facility">
+                </div>
+                <div class="location-details" data-aos="fade-left">
+                    <h3>UAE, Middle East</h3>
+                    <span class="location-area">Total Area: 250,000 square feet</span>
+                    <p class="location-desc">An all under one roof, modern manufacturing facility allowing us to produce
+                        a vast range of product categories.</p>
+                    <ul class="capability-list">
+                        <li>Fragrance Filling</li>
+                        <li>Aerosol Filling</li>
+                        <li>Liquid Filling</li>
+                        <li>Bottle Manufacturing</li>
+                        <li>Cap Manufacturing</li>
+                        <li>Molding/Tooling</li>
+                        <li>Extensive Testing</li>
+                        <li>Warehousing</li>
+                    </ul>
+
+                    <div style="margin-top: 2rem;">
+                        <h4 style="margin-bottom: 1rem; color: var(--color-gold);">Factory Certifications</h4>
+                        <div class="certs-row" style="justify-content: flex-start;">
+                            <div class="cert-badge">ISO</div>
+                            <div class="cert-badge">GMP</div>
+                            <div class="cert-badge">Intertek</div>
+                            <div class="cert-badge">Halal</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Highlights Section -->
+    <section class="highlights-section">
+        <div class="container">
+            <div class="section-title" data-aos="fade-up">
+                <span class="section-subtitle">Capacity (Million Pieces / Annum)</span>
+                <h2>Manufacturing Highlights</h2>
+            </div>
+
+            <div class="highlights-grid" data-aos="fade-up">
+                <div class="highlight-item">
+                    <img src="assets/product_perfume_bottle_luxury_1765794580134.png" alt="Perfumes"
+                        class="highlight-img">
+                    <div class="highlight-number">85</div>
+                    <div class="highlight-label">Perfumes</div>
+                </div>
+                <div class="highlight-item">
+                    <img src="assets/category_deodorants_premium_1765810761670.png" alt="Aerosols"
+                        class="highlight-img">
+                    <div class="highlight-number">65</div>
+                    <div class="highlight-label">Aerosols</div>
+                </div>
+                <div class="highlight-item">
+                    <img src="assets/category_color_cosmetics_luxury_1765810653802.png" alt="Color Cosmetics"
+                        class="highlight-img">
+                    <div class="highlight-number">80</div>
+                    <div class="highlight-label">Color Cosmetics</div>
+                </div>
+                <div class="highlight-item">
+                    <img src="assets/category_personal_care_1765793336151.png" alt="Lotions" class="highlight-img">
+                    <div class="highlight-number">25</div>
+                    <div class="highlight-label">Lotions</div>
+                </div>
+                <div class="highlight-item">
+                    <!-- Placeholder Icon -->
+                    <div style="height:80px; width:80px; background:#f0f0f0; border-radius:50%; margin:0 auto 1rem;">
+                    </div>
+                    <div class="highlight-number">25</div>
+                    <div class="highlight-label">Jars</div>
+                </div>
+                <div class="highlight-item">
+                    <!-- Placeholder Icon -->
+                    <div style="height:80px; width:80px; background:#f0f0f0; border-radius:50%; margin:0 auto 1rem;">
+                    </div>
+                    <div class="highlight-number">10</div>
+                    <div class="highlight-label">Roll-Ons</div>
+                </div>
+                <div class="highlight-item">
+                    <!-- Placeholder Icon -->
+                    <div style="height:80px; width:80px; background:#f0f0f0; border-radius:50%; margin:0 auto 1rem;">
+                    </div>
+                    <div class="highlight-number">10</div>
+                    <div class="highlight-label">Tubes</div>
+                </div>
+                <div class="highlight-item">
+                    <!-- Placeholder Icon -->
+                    <div style="height:80px; width:80px; background:#f0f0f0; border-radius:50%; margin:0 auto 1rem;">
+                    </div>
+                    <div class="highlight-number">15</div>
+                    <div class="highlight-label">Boxed Perfumes</div>
+                </div>
+                <div class="highlight-item">
+                    <!-- Placeholder Icon -->
+                    <div style="height:80px; width:80px; background:#f0f0f0; border-radius:50%; margin:0 auto 1rem;">
+                    </div>
+                    <div class="highlight-number">23</div>
+                    <div class="highlight-label">Tubes</div>
+                </div>
+                <div class="highlight-item">
+                    <!-- Placeholder Icon -->
+                    <div style="height:80px; width:80px; background:#f0f0f0; border-radius:50%; margin:0 auto 1rem;">
+                    </div>
+                    <div class="highlight-number">45</div>
+                    <div class="highlight-label">Sachets</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <a href="#" class="logo"><img src="assets/scion-logo-footer.png" alt="Scion International"></a>
+                    <p style="color: rgba(255,255,255,0.6); max-width: 300px;">Creating evocative pleasures of Fragrance
+                        & Beauty worldwide since 1974.</p>
+                </div>
+                <div>
+                    <h4 style="color: var(--color-accent); margin-bottom: 1.5rem;">Links</h4>
+                    <ul style="list-style: none; display: flex; flex-direction: column; gap: 0.8rem;">
+                        <li><a href="index.html" style="color: rgba(255,255,255,0.6);">Home</a></li>
+                        <li><a href="about.html" style="color: rgba(255,255,255,0.6);">About</a></li>
+                        <li><a href="#" style="color: rgba(255,255,255,0.6);">Collections</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 style="color: var(--color-accent); margin-bottom: 1.5rem;">Contact</h4>
+                    <p style="color: rgba(255,255,255,0.6);">Dubai, UAE</p>
+                    <p style="color: rgba(255,255,255,0.6);"><a href="mailto:info@scionintl.com"
+                            style="color:inherit;">info@scionintl.com</a></p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                &copy; 2025 Scion International. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            once: true,
+            offset: 50,
+            duration: 800,
+            easing: 'ease-out-cubic'
+        });
+    </script>
+</body>
+
+</html>
