@@ -1489,7 +1489,7 @@ footer {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
     gap: 3rem;
-    margin-top: 4rem;
+    margin-top: 1rem;
     margin-bottom: 4rem;
 }
 
@@ -1572,6 +1572,33 @@ footer {
 }
 
 .product-card-luxury:hover .add-btn-luxury {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.buy-btn-luxury {
+    display: inline-block;
+    padding: 0.5rem 1.2rem;
+    border: 1px solid var(--color-gold);
+    background-color: var(--color-gold);
+    color: var(--color-white);
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+    transition: var(--transition);
+    opacity: 0;
+    transform: translateY(10px);
+    margin-left: 10px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.buy-btn-luxury:hover {
+    background-color: transparent;
+    color: var(--color-gold);
+}
+
+.product-card-luxury:hover .buy-btn-luxury {
     opacity: 1;
     transform: translateY(0);
 }
