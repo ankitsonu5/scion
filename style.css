@@ -634,7 +634,7 @@ footer {
 }
 
 .our-brands-section {
-    padding: 1rem 0;
+    padding: 14px 0;
     background-color: #f9f9f7;
 }
 
@@ -904,6 +904,13 @@ footer {
 
 .section-header-lines h2 {
     font-size: 2rem;
+    font-family: var(--font-serif);
+    color: var(--color-primary);
+    font-weight: 700;
+}
+
+.section-header-lines2 h2 {
+    font-size: 300px;
     font-family: var(--font-serif);
     color: var(--color-primary);
     font-weight: 700;
