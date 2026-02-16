@@ -502,7 +502,8 @@ footer {
     background-color: var(--color-charcoal);
     color: var(--color-white);
     text-align: center;
-    padding: 8rem 0;
+    padding: 4rem 0;
+    margin-bottom: 3rem;
 }
 
 .section-luxury-intro h2 {
@@ -741,7 +742,7 @@ footer {
 /* Business Model Section */
 .section-luxury-model {
     background-color: var(--color-white);
-    padding: 8rem 0;
+    padding: 5rem 0;
 }
 
 .model-grid {
@@ -869,7 +870,7 @@ footer {
 /* Stats Grid */
 .section-luxury-stats {
     background-color: var(--color-bg);
-    padding: 6rem 0;
+    padding: 4rem 0;
 }
 
 .stats-grid-luxury {
@@ -940,7 +941,8 @@ footer {
 /* Distribution Section */
 .section-luxury-dist {
     background-color: var(--color-off-white);
-    padding: 6rem 0;
+    padding: 0rem 0;
+    margin-bottom: 4rem;
 }
 
 .dist-grid-luxury {
