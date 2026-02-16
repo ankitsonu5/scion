@@ -67,7 +67,8 @@ img {
 
 /* Utilities */
 .section-padding {
-    padding: 120px 0;
+    padding: 60px 0;
+    padding-bottom: 30px;
 }
 
 .text-gold {
