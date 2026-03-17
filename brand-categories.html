@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brand Categories | Scion International</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style-premium.css">
+    <link rel="stylesheet" href="style-luxury.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+        /* Reusing styles from brands-overview-premium.html for consistency */
+        :root {
+            --color-bg: #fcfbf9;
+            --color-surface: #ffffff;
+            --color-primary: #0f172a;
+            --color-primary-dark: #0f172a;
+            --color-text: #334155;
+            --color-text-dim: #64748b;
+            --color-border: rgba(15, 23, 42, 0.1);
+            --color-accent: #d4af37;
+        }
+
+        body {
+            color: var(--color-text);
+            background-color: var(--color-bg);
+        }
+
+        .category-hero-bg {
+            background-image: linear-gradient(rgba(15, 23, 42, 0.6), rgba(15, 23, 42, 0.4)), url('assets/hero_luxury_perfume_1765793270094.png');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .brand-category-section {
+            padding: 80px 0;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+        }
+
+        .brand-category-title {
+            font-family: var(--font-heading);
+            font-size: 2.5rem;
+            color: var(--color-text);
+            margin-bottom: 50px;
+            text-align: center;
+            position: relative;
+        }
+
+        .brand-category-title::after {
+            content: '';
+            position: absolute;
+            bottom: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60px;
+            height: 2px;
+            background-color: var(--color-accent);
+        }
+
+        .brand-card-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 40px;
+        }
+
+        .luxury-brand-card {
+            background: var(--color-surface);
+            border: 1px solid rgba(0, 0, 0, 0.05);
+            display: flex;
+            flex-direction: column;
+            transition: var(--transition);
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+            text-decoration: none;
+            border-radius: 4px;
+            /* Slight rounding */
+        }
+
+        .luxury-brand-card:hover {
+            border-color: var(--color-primary);
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Image Container */
+        .brand-image-wrap {
+            width: 100%;
+            height: 250px;
+            overflow: hidden;
+            position: relative;
+            background-color: #f8f8f8;
+        }
+
+        .brand-product-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.6s ease;
+        }
+
+        .luxury-brand-card:hover .brand-product-img {
+            transform: scale(1.05);
+        }
+
+        /* Content Container */
+        .brand-content-wrap {
+            padding: 30px;
+            text-align: center;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .luxury-brand-logo {
+            max-width: 160px;
+            max-height: 70px;
+            object-fit: contain;
+            margin-bottom: 20px;
+            margin-top: -50px;
+            /* Overlap effect */
+            background: #fff;
+            padding: 10px;
+            border-radius: 4px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+            position: relative;
+            z-index: 2;
+        }
+
+        .luxury-brand-desc {
+            font-size: 0.95rem;
+            color: var(--color-text-dim);
+            margin-bottom: 25px;
+            line-height: 1.6;
+        }
+
+        .know-more-btn {
+            display: inline-block;
+            padding: 10px 30px;
+            background-color: transparent;
+            border: 1px solid var(--color-primary);
+            color: var(--color-primary);
+            text-decoration: none;
+            font-size: 0.85rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: all 0.3s ease;
+            margin-top: auto;
+        }
+
+        .luxury-brand-card:hover .know-more-btn {
+            background-color: var(--color-primary);
+            color: #ffffff;
+        }
+
+        /* Hero Text Override */
+        .hero-title,
+        .hero-subtitle,
+        .hero-text {
+            color: #ffffff;
+        }
+
+        /* Footer Overrides */
+        footer {
+            background: var(--color-primary);
+            color: #ffffff;
+            padding: 60px 0 30px;
+        }
+
+        .footer-grid h4 {
+            color: var(--color-accent);
+        }
+
+        .footer-grid a {
+            color: rgba(255, 255, 255, 0.7) !important;
+        }
+
+        .footer-grid a:hover {
+            color: #ffffff !important;
+        }
+
+        .footer-bottom {
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: rgba(255, 255, 255, 0.5);
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container top-bar-container">
+            <div class="top-bar-left">
+                <a href="mailto:info@scionintl.com"><i class="fas fa-envelope"></i> info@scionintl.com</a>
+                <a href="tel:+97165352066"><i class="fas fa-phone"></i> +971 65352066</a>
+            </div>
+            <div class="top-bar-right">
+                <a href="#" class="login-link"><i class="fas fa-sign-in-alt"></i> Login</a>
+                <div class="social-icons-top">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo"><img src="assets/scion-logo.png" alt="Scion International"></a>
+            <div class="nav-links">
+                <a href="index.html">HOME</a>
+
+                <div class="dropdown">
+                    <a href="about-luxury.html">WHO WE ARE <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-content">
+                        <a href="about.html">Our Story</a>
+                        <a href="global-network-luxury.html">Our Global Network</a>
+                        <a href="business-overview-luxury.html">Business Overview</a>
+                        <a href="brands-overview-premium.html">Overview of Brands</a>
+                        <a href="brand-presence-luxury.html">Brand Presence</a>
+                        <a href="private-label-premium.html">Private Label Projects & Clients</a>
+                        <a href="business-strengths-premium.html">Business Strengths</a>
+                        <a href="values-ethos-luxury.html">Our Values & Ethos</a>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <a href="#">WHY CHOOSE US <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-content">
+                        <a href="why-choose-us-overview-luxury.html">Overview</a>
+                        <a href="research-development-luxury.html">R & D Capabilities</a>
+                        <a href="qc-capabilities-luxury.html">QC Capabilities</a>
+                        <a href="manufacturing-capabilities-luxury.html">Manufacturing Capabilities</a>
+                        <a href="breadth-of-products-luxury.html">Breadth of Products</a>
+                        <a href="turn-key-projects-luxury.html">Turn Key Projects</a>
+                        <a href="sustainability-luxury.html">Sustainability</a>
+                        <a href="certifications-luxury.html">Certifications</a>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <a href="#">BRANDS <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-content mega-menu">
+                        <div class="mega-column">
+                            <h3>Perfumes and Deodorants</h3>
+                            <a href="products-luxury.html">Maison de l’Avenir</a>
+                            <a href="products-luxury.html">Jean Paul Dupont </a>
+                            <a href="products-luxury.html">Creation Lamis</a>
+                        </div>
+
+                        <div class="mega-column">
+                            <h3>Personal Care and Color Cosmetics</h3>
+                            <a href="products-luxury.html">Paris Collection</a>
+                            <a href="products-luxury.html">CP Trendies</a>
+                        </div>
+                    </div>
+                </div>
+
+                <a href="careers.html">CAREERS</a>
+                <a href="contact-us.html">CONTACT US</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="universal-luxury-hero category-hero-bg">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <span class="hero-subtitle" style="color: var(--color-gold-light);">World Class Portfolio</span>
+            <h1 class="hero-title">Our <span>Brand Categories</span></h1>
+            <p class="hero-text">Explore our diverse range of Perfumes, Deodorants, and Personal Care products.</p>
+        </div>
+    </header>
+
+    <!-- Perfumes & Deodorants Section -->
+    <section class="brand-category-section">
+        <div class="container">
+            <h3 class="brand-category-title">Perfumes & Deodorants</h3>
+            <div class="brand-card-grid">
+
+                <!-- Maison de l’Avenir -->
+                <div class="luxury-brand-card" data-aos="fade-up">
+                    <div class="brand-image-wrap">
+                        <img src="https://images.unsplash.com/photo-1541643600914-78b084683601?q=80&w=800&auto=format&fit=crop"
+                            class="brand-product-img" alt="Maison de l’Avenir Product">
+                    </div>
+                    <div class="brand-content-wrap">
+                        <img src="https://placehold.co/200x100/fcfbf9/0f172a?text=Maison+de+l%27Avenir"
+                            alt="Maison de l’Avenir" class="luxury-brand-logo">
+                        <p class="luxury-brand-desc">A premium collection defining the future of luxury fragrances,
+                            crafted for the discerning individual.</p>
+                        <a href="products-luxury.html" class="know-more-btn">Know More</a>
+                    </div>
+                </div>
+
+                <!-- Jean Paul Dupont -->
+                <div class="luxury-brand-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="brand-image-wrap">
+                        <img src="assets/product_royal_amber.png" class="brand-product-img" alt="Royal Amber"
+                            onerror="this.src='https://images.unsplash.com/photo-1595475207225-428b62bda831?q=80&w=800&auto=format&fit=crop'">
+                    </div>
+                    <div class="brand-content-wrap">
+                        <img src="assets/logo1.png" alt="Jean Paul Dupont" class="luxury-brand-logo"
+                            onerror="this.src='https://placehold.co/200x100/fcfbf9/0f172a?text=Jean+Paul+Dupont'">
+                        <p class="luxury-brand-desc">Timeless essences that capture the spirit of elegance and
+                            sophistication.</p>
+                        <a href="products-luxury.html" class="know-more-btn">Know More</a>
+                    </div>
+                </div>
+
+                <!-- Creation Lamis -->
+                <div class="luxury-brand-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="brand-image-wrap">
+                        <img src="assets/product_eclat_dor.png" class="brand-product-img" alt="Eclat d'Or"
+                            onerror="this.src='https://images.unsplash.com/photo-1512496015851-a90fb38ba796?q=80&w=800&auto=format&fit=crop'">
+                    </div>
+                    <div class="brand-content-wrap">
+                        <img src="assets/logo2.png" alt="Creation Lamis" class="luxury-brand-logo"
+                            onerror="this.src='https://placehold.co/200x100/fcfbf9/0f172a?text=Creation+Lamis'">
+                        <p class="luxury-brand-desc">High-quality fragrances delivering exceptional value and diverse
+                            scents for everyone.</p>
+                        <a href="products-luxury.html" class="know-more-btn">Know More</a>
+                    </div>
+                </div>
+
+                <!-- Dorall Collection -->
+                <div class="luxury-brand-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="brand-image-wrap">
+                        <img src="assets/product_perfume_bottle_luxury_1765794580134.png" class="brand-product-img"
+                            alt="Dorall Product"
+                            onerror="this.src='https://images.unsplash.com/photo-1616949755610-8c9bbc08f138?q=80&w=800&auto=format&fit=crop'">
+                    </div>
+                    <div class="brand-content-wrap">
+                        <img src="assets/logo3.png" alt="Dorall Collection" class="luxury-brand-logo"
+                            onerror="this.src='https://placehold.co/200x100/fcfbf9/0f172a?text=Dorall+Collection'">
+                        <p class="luxury-brand-desc">A wide array of delightful scents blended to perfection for daily
+                            wear.</p>
+                        <a href="products-luxury.html" class="know-more-btn">Know More</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Personal Care & Colour Cosmetics Section -->
+    <section class="brand-category-section" style="background-color: #f8f8f8;">
+        <div class="container">
+            <h3 class="brand-category-title">Personal Care & Colour Cosmetics</h3>
+            <div class="brand-card-grid">
+
+                <!-- Paris Collection -->
+                <div class="luxury-brand-card" data-aos="fade-up">
+                    <div class="brand-image-wrap">
+                        <img src="assets/product_silk_touch.png" class="brand-product-img"
+                            alt="Paris Collection Product"
+                            onerror="this.src='https://images.unsplash.com/photo-1608248597279-f99d160bfbc8?q=80&w=800&auto=format&fit=crop'">
+                    </div>
+                    <div class="brand-content-wrap">
+                        <img src="assets/logo6.png" alt="Paris Collection" class="luxury-brand-logo"
+                            onerror="this.src='https://placehold.co/200x100/f8f8f8/0f172a?text=Paris+Collection'">
+                        <p class="luxury-brand-desc">Comprehensive personal care solutions inspired by Parisian beauty
+                            standards.</p>
+                        <a href="products-luxury.html" class="know-more-btn">Know More</a>
+                    </div>
+                </div>
+
+                <!-- CP Trendies -->
+                <div class="luxury-brand-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="brand-image-wrap">
+                        <img src="assets/category_color_cosmetics_luxury_1765810653802.png" class="brand-product-img"
+                            alt="CP Trendies Product"
+                            onerror="this.src='https://images.unsplash.com/photo-1596462502278-27bfdd403348?q=80&w=800&auto=format&fit=crop'">
+                    </div>
+                    <div class="brand-content-wrap">
+                        <img src="assets/logo5.png" alt="CP Trendies" class="luxury-brand-logo"
+                            onerror="this.src='https://placehold.co/200x100/f8f8f8/0f172a?text=CP+Trendies'">
+                        <p class="luxury-brand-desc">Vibrant and trendy color cosmetics to express your unique style and
+                            personality.</p>
+                        <a href="products-luxury.html" class="know-more-btn">Know More</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="section-padding text-center">
+        <div class="container" data-aos="fade-up">
+            <h2 style="font-size: 2.5rem; margin-bottom: 30px; text-align: center;">Interested in our Brands?</h2>
+            <p style="color: var(--color-text-dim); margin-bottom: 40px; max-width: 600px; margin-left: auto;
+                margin-right: auto;">
+                Contact us to learn more about distribution opportunities and partnership.
+            </p>
+            <a href="contact-us.html" class="btn-premium"
+                style="display: flex;justify-content: center;margin-left: auto;margin-right: auto; width: fit-content;">Contact
+                Us</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <a href="index.html" class="logo"><img src="assets/scion-logo-footer.png"
+                            alt="Scion International"></a>
+                    <p style="color: rgba(255,255,255,0.6); max-width: 300px;">Creating evocative pleasures of Fragrance
+                        & Beauty worldwide since 1974.</p>
+                </div>
+                <div>
+                    <h4 style="color: var(--color-accent); margin-bottom: 1.5rem;">Links</h4>
+                    <ul style="list-style: none; display: flex; flex-direction: column; gap: 0.8rem;">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="products-luxury.html">Collections</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 style="color: var(--color-accent); margin-bottom: 1.5rem;">Contact</h4>
+                    <p style="color: rgba(255,255,255,0.6);">Dubai, UAE</p>
+                    <p style="color: rgba(255,255,255,0.6);"><a href="mailto:info@scionintl.com"
+                            style="color:inherit;">info@scionintl.com</a></p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                &copy; 2025 Scion International. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            once: true,
+            offset: 50,
+            duration: 800,
+            easing: 'ease-out-cubic'
+        });
+
+        // Navbar Scroll Effect
+        window.addEventListener('scroll', function () {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+    </script>
+</body>
+
+</html>

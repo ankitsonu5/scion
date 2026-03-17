@@ -502,7 +502,8 @@ footer {
     background-color: var(--color-charcoal);
     color: var(--color-white);
     text-align: center;
-    padding: 8rem 0;
+    padding: 4rem 0;
+    margin-bottom: 3rem;
 }
 
 .section-luxury-intro h2 {
@@ -741,7 +742,7 @@ footer {
 /* Business Model Section */
 .section-luxury-model {
     background-color: var(--color-white);
-    padding: 8rem 0;
+    padding: 5rem 0;
 }
 
 .model-grid {
@@ -869,7 +870,7 @@ footer {
 /* Stats Grid */
 .section-luxury-stats {
     background-color: var(--color-bg);
-    padding: 6rem 0;
+    padding: 4rem 0;
 }
 
 .stats-grid-luxury {
@@ -940,7 +941,8 @@ footer {
 /* Distribution Section */
 .section-luxury-dist {
     background-color: var(--color-off-white);
-    padding: 6rem 0;
+    padding: 0rem 0;
+    margin-bottom: 4rem;
 }
 
 .dist-grid-luxury {
@@ -1489,7 +1491,7 @@ footer {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
     gap: 3rem;
-    margin-top: 4rem;
+    margin-top: 1rem;
     margin-bottom: 4rem;
 }
 
@@ -1572,6 +1574,33 @@ footer {
 }
 
 .product-card-luxury:hover .add-btn-luxury {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.buy-btn-luxury {
+    display: inline-block;
+    padding: 0.5rem 1.2rem;
+    border: 1px solid var(--color-gold);
+    background-color: var(--color-gold);
+    color: var(--color-white);
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+    transition: var(--transition);
+    opacity: 0;
+    transform: translateY(10px);
+    margin-left: 10px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.buy-btn-luxury:hover {
+    background-color: transparent;
+    color: var(--color-gold);
+}
+
+.product-card-luxury:hover .buy-btn-luxury {
     opacity: 1;
     transform: translateY(0);
 }
@@ -1928,4 +1957,44 @@ footer {
     .banner-content h2 {
         font-size: 2.5rem;
     }
+}
+
+/* Product Extras (Cart & Flags) */
+.product-extras {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+    padding-top: 1rem;
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.cart-icon {
+    color: var(--color-primary);
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.cart-icon:hover {
+    color: var(--color-gold);
+    transform: scale(1.1);
+}
+
+.flag-icons {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.flag-icons img {
+    height: 18px;
+    width: auto;
+    border-radius: 2px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: var(--transition);
+}
+
+.flag-icons img:hover {
+    transform: scale(1.1);
 }
