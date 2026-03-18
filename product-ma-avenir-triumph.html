@@ -1,0 +1,193 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avenir Triumph | Maison de lâ€™Avenir</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar-luxury">
+        <div class="container navbar-container">
+            <a href="index.html" class="logo-luxury">SCION</a>
+            <ul class="nav-links-luxury">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="brands-overview-premium.html">Our Brands</a></li>
+                <li><a href="brand-categories.html">Collections</a></li>
+                <li><a href="careers.html">Careers</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Breadcrumb -->
+    <div class="breadcrumb-luxury">
+        <div class="container">
+            <a href="index.html">Home</a> <span class="separator">/</span>
+            <a href="products-luxury.html">Maison de lâ€™Avenir</a> <span class="separator">/</span>
+            <span class="current">Avenir Triumph</span>
+        </div>
+    </div>
+
+    <!-- Product Detail Section -->
+    <section class="product-detail-section">
+        <div class="container">
+            <div class="pdp-grid">
+                <!-- Product Gallery -->
+                <div class="pdp-gallery" data-aos="fade-right">
+                    <div class="pdp-main-image">
+                        <img src="assets/prod-ma-avenir-triumph-1.jpg" id="mainImage" alt="Avenir Triumph">
+                    </div>
+                    <div class="pdp-thumbnails">
+                        <div class="pdp-thumb active" onclick="changeImage(this)">
+                            <img src="assets/prod-ma-avenir-triumph-1.jpg" alt="View 1">
+                        </div>
+                        <div class="pdp-thumb" onclick="changeImage(this)">
+                            <img src="assets/prod-ma-avenir-triumph-2.jpg" alt="View 2">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product Info -->
+                <div class="pdp-info" data-aos="fade-left">
+                    <span class="pdp-category">Citrus Spicy</span>
+                    <h1 class="pdp-title">Maison de l'Avenir Avenir Triumph</h1>
+                    <div class="pdp-price">$110.00</div>
+
+                    <div class="pdp-description">
+                        <p>Experience Avenir Triumph, a bold luxury perfume crafted as a powerful eau de parfume. This long lasting perfume is an olfactory testament to the triumphant spirit.</p>
+                    </div>
+
+                    <div class="pdp-actions">
+                        <button class="btn-luxury pdp-btn">Add to Enquiry</button>
+                        <button class="btn-luxury pdp-btn-outline"><i class="far fa-heart"></i></button>
+                    </div>
+
+                    <div class="pdp-meta">
+                        <div class="meta-item">
+                            <span class="meta-label">Collection:</span>
+                            <span class="meta-value">Maison de l'Avenir</span>
+                        </div>
+                        <div class="meta-item">
+                            <span class="meta-label">Availability:</span>
+                            <span class="meta-value in-stock">In Stock</span>
+                        </div>
+                    </div>
+
+                    <div class="pdp-share">
+                        <span>Share:</span>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Details Tabs -->
+    <section class="pdp-details-tabs">
+        <div class="container">
+            <div class="tabs-header">
+                <button class="tab-btn active" onclick="openTab(event, 'notes')">Fragrance Notes</button>
+                <button class="tab-btn" onclick="openTab(event, 'info')">Information</button>
+                <button class="tab-btn" onclick="openTab(event, 'shipping')">Shipping & Returns</button>
+            </div>
+
+            <div class="tab-content" id="notes" style="display: block;">
+                <div class="notes-grid">
+                    <div class="note-item">
+                        <h4>Top Notes</h4>
+                        <p>Mandarin Orange, Grapefruit, Mint, Bergamot, Basil, Galbanum, Lemon, Petit Grain</p>
+                    </div>
+                    <div class="note-item">
+                        <h4>Heart Notes</h4>
+                        <p>Cinnamon, Cloves, Ginger, Pepper, Jasmine, Violet</p>
+                    </div>
+                    <div class="note-item">
+                        <h4>Base Notes</h4>
+                        <p>Amber, Spicy Notes, Leather, Patchouli, Woody Notes, Sandalwood</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-content" id="info" style="display: none;">
+                <p>Experience Avenir Triumph, a bold luxury perfume crafted as a powerful eau de parfume. This long lasting perfume is an olfactory testament to the triumphant spirit.</p>
+            </div>
+
+            <div class="tab-content" id="shipping" style="display: none;">
+                <p>We offer worldwide shipping for all our luxury fragrances. Delivery times vary by location, typically ranging from 3-7 business days.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Related Products Placeholder -->
+    <section class="related-products-luxury">
+        <div class="container">
+            <h2 class="section-title-luxury">You May Also Like</h2>
+            <!-- Related products grid would go here -->
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer-luxury">
+        <div class="container">
+            <div class="footer-grid-luxury">
+                <div>
+                    <h3>SCION</h3>
+                    <p>Redefining luxury fragrance since 1974. A legacy of excellence and artisanal craftsmanship.</p>
+                </div>
+                <div>
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="brands-overview-premium.html">Our Brands</a></li>
+                        <li><a href="brand-categories.html">Collections</a></li>
+                        <li><a href="careers.html">Careers</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Connect</h4>
+                    <div class="social-links-luxury">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom-luxury">
+                <p>&copy; 2024 Scion International. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({ duration: 1000, once: true });
+
+        function changeImage(thumb) {
+            const mainImg = document.getElementById('mainImage');
+            mainImg.src = thumb.querySelector('img').src;
+            
+            document.querySelectorAll('.pdp-thumb').forEach(t => t.classList.remove('active'));
+            thumb.classList.add('active');
+        }
+
+        function openTab(evt, tabName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tab-content");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tab-btn");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(tabName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+    </script>
+</body>
+</html>
