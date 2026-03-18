@@ -1509,17 +1509,23 @@ footer {
 .product-img-wrap-luxury {
     position: relative;
     width: 100%;
-    height: 350px;
+    height: 400px;
     overflow: hidden;
     margin-bottom: 1.5rem;
     background-color: #f9f9f9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px; /* Added subtle rounding */
 }
 
 .product-img-luxury {
-    width: 100%;
-    height: 100%;
+    max-width: 90%;
+    max-height: 90%;
+    width: auto;
+    height: auto;
     object-fit: contain;
-    padding: 2rem;
+    padding: 1rem;
     transition: transform 0.6s ease;
 }
 
@@ -1557,52 +1563,58 @@ footer {
 }
 
 .add-btn-luxury {
-    display: inline-block;
-    padding: 0.5rem 0;
-    border-bottom: 1px solid transparent;
-    color: var(--color-primary);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.8rem 1rem;
+    color: var(--color-primary) !important;
     text-transform: uppercase;
-    font-size: 0.8rem;
-    letter-spacing: 2px;
+    font-size: 0.85rem;
+    letter-spacing: 1.5px;
     transition: var(--transition);
-    opacity: 0;
-    transform: translateY(10px);
-}
-
-.filter-btn:hover {
-    border-bottom-color: var(--color-gold);
-}
-
-.product-card-luxury:hover .add-btn-luxury {
-    opacity: 1;
-    transform: translateY(0);
-}
-
-.buy-btn-luxury {
-    display: inline-block;
-    padding: 0.5rem 1.2rem;
-    border: 1px solid var(--color-gold);
-    background-color: var(--color-gold);
-    color: var(--color-white);
-    text-transform: uppercase;
-    font-size: 0.8rem;
-    letter-spacing: 1px;
-    transition: var(--transition);
-    opacity: 0;
-    transform: translateY(10px);
-    margin-left: 10px;
     text-decoration: none;
     font-weight: 600;
+    min-width: 120px;
+    opacity: 1 !important;
+    transform: none !important;
+}
+
+.add-btn-luxury:hover {
+    color: var(--color-gold) !important;
+}
+
+/* Removed hover reveal for luxury buttons */
+
+.buy-btn-luxury {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 1.5rem;
+    background-color: #dcb043 !important; /* Specific gold from mockup */
+    color: #ffffff !important;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    transition: var(--transition);
+    margin-left: 10px;
+    text-decoration: none;
+    font-weight: 700;
+    border: none;
+    min-width: 140px;
+    opacity: 1 !important;
+    transform: none !important;
 }
 
 .buy-btn-luxury:hover {
-    background-color: transparent;
-    color: var(--color-gold);
+    background-color: var(--color-primary) !important;
+    color: var(--color-white) !important;
 }
 
-.product-card-luxury:hover .buy-btn-luxury {
-    opacity: 1;
-    transform: translateY(0);
+.pdp-actions-luxury {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1.5rem;
 }
 
 /* =========================================
@@ -1714,8 +1726,8 @@ footer {
 }
 
 .pdp-title {
-    font-size: 3.5rem;
-    line-height: 1.1;
+    font-size: 2rem;
+    line-height: 1.2;
     margin-bottom: 1.5rem;
     color: var(--color-black);
 }
@@ -1998,3 +2010,107 @@ footer {
 .flag-icons img:hover {
     transform: scale(1.1);
 }
+
+/* New PDP Layout Styles - Amazon Integration */
+.pdp-about-box {
+    background-color: #0e5472; /* Matches the mockup blue */
+    padding: 2rem;
+    color: white;
+    margin-bottom: 2.5rem;
+    border-radius: 4px;
+}
+
+.pdp-about-box h3 {
+    color: white;
+    font-size: 1.4rem;
+    margin-bottom: 1.5rem;
+    font-family: var(--font-heading);
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+    padding-bottom: 0.5rem;
+}
+
+.pdp-about-list {
+    list-style: none;
+    padding: 0;
+}
+
+.pdp-about-list li {
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    line-height: 1.6;
+    position: relative;
+    padding-left: 1.5rem;
+    font-weight: 300;
+}
+
+.pdp-about-list li::before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    color: var(--color-gold);
+    font-size: 1.2rem;
+}
+
+.pdp-purchase-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+}
+
+.pdp-main-action {
+    display: flex;
+    gap: 1rem;
+}
+
+.pdp-amazon-wrap {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.btn-amazon {
+    background-color: #0e5472;
+    color: white !important;
+    padding: 1rem 2.5rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    transition: var(--transition);
+}
+
+.btn-amazon:hover {
+    background-color: var(--color-black);
+    transform: translateY(-2px);
+}
+
+.pdp-flags {
+    display: flex;
+    gap: 0.8rem;
+}
+
+.pdp-flag-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.4rem;
+}
+
+.pdp-flag-img {
+    width: 30px;
+    height: auto;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.pdp-flag-label {
+    font-size: 0.65rem;
+    text-transform: uppercase;
+    color: #888;
+    letter-spacing: 1px;
+}
