@@ -1562,25 +1562,33 @@ footer {
     margin-bottom: 1rem;
 }
 
+.product-price-luxury {
+    color: #dcb043;
+    font-size: 1.25rem;
+    font-weight: 500;
+    margin: 0.2rem 0 1.2rem;
+    display: block;
+    font-family: var(--font-body);
+}
+
 .add-btn-luxury {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0.8rem 1rem;
+    display: inline-block;
     color: var(--color-primary) !important;
+    background: transparent !important;
     text-transform: uppercase;
     font-size: 0.85rem;
-    letter-spacing: 1.5px;
+    letter-spacing: 2px;
     transition: var(--transition);
     text-decoration: none;
-    font-weight: 600;
-    min-width: 120px;
-    opacity: 1 !important;
-    transform: none !important;
+    font-weight: 500;
+    padding: 1rem 0;
+    margin-right: 1.5rem;
+    border: none !important;
 }
 
 .add-btn-luxury:hover {
     color: var(--color-gold) !important;
+    background: transparent !important;
 }
 
 /* Removed hover reveal for luxury buttons */
@@ -1589,20 +1597,17 @@ footer {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    padding: 1rem 1.5rem;
+    padding: 0.8rem 1.5rem;
     background-color: #dcb043 !important; /* Specific gold from mockup */
     color: #ffffff !important;
     text-transform: uppercase;
     font-size: 0.9rem;
     letter-spacing: 1px;
     transition: var(--transition);
-    margin-left: 10px;
     text-decoration: none;
     font-weight: 700;
     border: none;
     min-width: 140px;
-    opacity: 1 !important;
-    transform: none !important;
 }
 
 .buy-btn-luxury:hover {

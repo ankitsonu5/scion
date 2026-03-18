@@ -3311,32 +3311,6 @@ footer {
     font-family: var(--font-serif);
 }
 
-.product-price-luxury {
-    font-size: 1.1rem;
-    font-weight: 600;
-    color: #333;
-    margin-bottom: 1.5rem;
-    margin-top: auto;
-}
-
-.add-btn-luxury {
-    display: inline-block;
-    padding: 12px 25px;
-    background: var(--color-primary);
-    color: #fff;
-    text-transform: uppercase;
-    font-size: 0.8rem;
-    letter-spacing: 1px;
-    font-weight: 600;
-    transition: all 0.3s;
-    text-decoration: none;
-}
-
-.add-btn-luxury:hover {
-    background: var(--color-accent);
-    color: var(--color-primary);
-}
-
 @media (max-width: 768px) {
     .pdp-visual-banner {
         height: 40vh;
