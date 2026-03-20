@@ -2,9 +2,9 @@ const xlsx = require('xlsx');
 const fs = require('fs');
 const path = require('path');
 
-const excelPath = "C:\\Users\\idkth\\Documents\\scion\\assets\\2. Shared with agency folder\\Brands\\MA\\MA Amazon USA Listing.xlsx";
+const excelPath = "C:\\Users\\idkth\\Documents\\scion\\assets\\OneDrive_2026-03-19 (2)\\2. Shared with agency folder\\Brands\\MA\\MA Amazon USA Listing.xlsx";
 const workbook = xlsx.readFile(excelPath);
-const sheetName = workbook.SheetNames[0];
+const sheetName = workbook.SheetNames.includes('Sheet1 (2)') ? 'Sheet1 (2)' : workbook.SheetNames[0];
 const sheet = workbook.Sheets[sheetName];
 const rawDataRows = xlsx.utils.sheet_to_json(sheet, {header: 1});
 
@@ -15,6 +15,23 @@ const products = [
 ];
 
 const maData = {};
+const uaeLinks = {
+    "aurora-opulence": "https://www.amazon.ae/Maison-lAvenir-Aurora-Opulence-Fragrance/dp/B0DGLHZCNX",
+    "eternal-oud": "https://www.amazon.ae/Maison-lAvenir-Eternal-Oud-Fragrance/dp/B0DGLLSH43",
+    "ethereal-embrace": "https://www.amazon.ae/Maison-lAvenir-Ethereal-Embrace-Fragrance/dp/B0DGLM918B",
+    "jardin-de-jade": "https://www.amazon.ae/Maison-lAvenir-Jardin-Jade-Fragrance/dp/B0DG919KGY",
+    "noir-intense": "https://www.amazon.ae/Maison-lAvenir-Noir-Intense-Fragrance/dp/B0DZX2RL6P",
+    "avenir-triumph": "https://www.amazon.ae/dp/B0DGLLSZ3Z",
+    "electra-elixir": "https://www.amazon.ae/dp/B0DG91RTPJ",
+    "majestic-millenium": "https://www.amazon.ae/dp/B0DG91RP8F",
+    "midnight-solstice": "https://www.amazon.ae/dp/B0DGLLPVM4",
+    "nebula-nectar": "https://www.amazon.ae/dp/B0DG91YF2G",
+    "nova-noir": "https://www.amazon.ae/dp/B0DGLLPVM4",
+    "opulent-odyssey": "https://www.amazon.ae/dp/B0DG91LRYK",
+    "oud-intense": "https://www.amazon.ae/dp/B0DG91RP8F",
+    "oud-opulence": "https://www.amazon.ae/dp/B0DG91LRYK",
+    "vortex-echo": "https://www.amazon.ae/dp/B0DGLLS26V"
+};
 
 // Skip header row
 for (let i = 1; i < rawDataRows.length; i++) {
@@ -52,7 +69,8 @@ for (let i = 1; i < rawDataRows.length; i++) {
             title: longTitle,
             bullets: bullets,
             link: amazonLink,
-            category: category
+            category: category,
+            uaeLink: uaeLinks[matchedSlug] || ""
         };
     }
 }

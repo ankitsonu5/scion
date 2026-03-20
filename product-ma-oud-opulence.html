@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -7,6 +7,7 @@
     <title>Oud Opulence | Scion International</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="style-luxury.css">
+    <link rel="stylesheet" href="pdp-amazon.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
@@ -23,10 +24,9 @@
             <div class="top-bar-right">
                 <a href="#" class="login-link"><i class="fas fa-sign-in-alt"></i> Login</a>
                 <div class="social-icons-top">
-                    <a href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                    <a href="#"><i class="fab fa-youtube"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/scioninternational" </a>
+                        <a href="https://in.linkedin.com/company/scion-international" </a>
+                            <a href="https://www.instagram.com/scioninternational/" </a>
                 </div>
             </div>
         </div>
@@ -45,8 +45,8 @@
                         <a href="about.html">Our Story</a>
                         <a href="global-network-luxury.html">Our Global Network</a>
                         <a href="business-overview-luxury.html">Business Overview</a>
-                        <a href="brands-overview-premium.html">Overview of Brands</a>
-                        <a href="brand-presence-luxury.html">Brand Presence</a>
+                        <a href="brands-overview-premium.html" style="display: none;">Overview of Brands</a>
+                        <a href="brand-presence-luxury.html" style="display: none;">Brand Presence</a>
                         <a href="private-label-premium.html">Private Label Projects &amp; Clients</a>
                         <a href="business-strengths-premium.html">Business Strengths</a>
                         <a href="values-ethos-luxury.html">Our Values &amp; Ethos</a>
@@ -72,15 +72,15 @@
                     <div class="dropdown-content mega-menu">
                         <div class="mega-column">
                             <h3>Perfumes and Deodorants</h3>
-                            <a href="products-luxury.html">Maison de l'Avenir</a>
-                            <a href="products-luxury.html">Jean Paul Dupont </a>
-                            <a href="products-luxury.html">Creation Lamis</a>
+                            <a href="products-ma.html">Maison de l'Avenir</a>
+                            <a href="products-jpd.html">Jean Paul Dupont </a>
+                            <a href="products-cl.html">Creation Lamis</a>
                         </div>
 
                         <div class="mega-column">
                             <h3>Personal Care and Color Cosmetics</h3>
-                            <a href="products-luxury.html">Paris Collection</a>
-                            <a href="products-luxury.html">CP Trendies</a>
+                            <a href="products-pc.html">Paris Collection</a>
+                            <a href="products-cpt.html">CP Trendies</a>
                         </div>
                     </div>
                 </div>
@@ -95,104 +95,141 @@
     <div class="breadcrumb-luxury">
         <div class="container">
             <a href="index.html">Home</a> <span class="separator">/</span>
-            <a href="products-luxury.html">Maison de l'Avenir</a> <span class="separator">/</span>
+            <a href="products-ma.html">Maison de l'Avenir</a> <span class="separator">/</span>
             <span class="current">Oud Opulence</span>
         </div>
     </div>
 
+
+
     <!-- Product Detail Section -->
-    <section class="product-detail-section">
+    <section class="pdp-container">
         <div class="container">
-            <div class="pdp-grid">
-                <!-- Product Gallery -->
-                <div class="pdp-gallery" data-aos="fade-right">
-                    <div class="pdp-main-image">
-                        <img src="assets/prod-ma-oud-opulence-1.jpg" id="mainImage" alt="Oud Opulence">
-                    </div>
-                    <div class="pdp-thumbnails">
-                        <div class="pdp-thumb active" onclick="changeImage(this)">
-                            <img src="assets/prod-ma-oud-opulence-1.jpg" alt="View 1">
+            <div class="pdp-main-grid">
+                <!-- Left Column: Gallery -->
+                <div class="pdp-gallery-sticky" data-aos="fade-right">
+                    <div class="pdp-gallery-flex">
+                        <div class="pdp-thumbnails-vertical">
+                            <div class="pdp-thumb-v active" onclick="changeImage(this)">
+                                <img src="assets/prod-ma-oud-opulence-1.jpg" alt="Product View">
+                            </div>
+                            <div class="pdp-thumb-v" onclick="changeImage(this)">
+                                <img src="assets/prod-ma-oud-opulence-2.jpg" alt="Product View">
+                            </div>
+                            <div class="pdp-thumb-v" onclick="changeImage(this)">
+                                <img src="assets/prod-ma-oud-opulence-3.jpg" alt="Product View">
+                            </div>
+                            <div class="pdp-thumb-v" onclick="changeImage(this)">
+                                <img src="assets/prod-ma-oud-opulence-4.jpg" alt="Product View">
+                            </div>
+                            <div class="pdp-thumb-v" onclick="changeImage(this)">
+                                <img src="assets/prod-ma-oud-opulence-5.jpg" alt="Product View">
+                            </div>
+                            <div class="pdp-thumb-v" onclick="changeImage(this)">
+                                <img src="assets/prod-ma-oud-opulence-6.jpg" alt="Product View">
+                            </div>
+                            <div class="pdp-thumb-v" onclick="changeImage(this)">
+                                <img src="assets/prod-ma-oud-opulence-7.jpg" alt="Product View">
+                            </div>
                         </div>
-                        <div class="pdp-thumb" onclick="changeImage(this)">
-                            <img src="assets/prod-ma-oud-opulence-2.jpg" alt="View 2">
-                        </div>
-                        <div class="pdp-thumb" onclick="changeImage(this)">
-                            <img src="assets/prod-ma-oud-opulence-3.jpg" alt="View 3">
-                        </div>
-                        <div class="pdp-thumb" onclick="changeImage(this)">
-                            <img src="assets/prod-ma-oud-opulence-4.jpg" alt="View 4">
-                        </div>
-                        <div class="pdp-thumb" onclick="changeImage(this)">
-                            <img src="assets/prod-ma-oud-opulence-5.jpg" alt="View 5">
-                        </div>
-                        <div class="pdp-thumb" onclick="changeImage(this)">
-                            <img src="assets/prod-ma-oud-opulence-6.jpg" alt="View 6">
-                        </div>
-                        <div class="pdp-thumb" onclick="changeImage(this)">
-                            <img src="assets/prod-ma-oud-opulence-7.jpg" alt="View 7">
+                        <div class="pdp-main-image-wrap">
+                            <img src="assets/prod-ma-oud-opulence-1.jpg" id="mainImage" alt="Oud Opulence">
                         </div>
                     </div>
                 </div>
 
-                <!-- Product Info -->
-                <div class="pdp-info" data-aos="fade-left">
-                    <span class="pdp-category">Oriental</span>
-                    <h1 class="pdp-title">Maison de l'Avenir Oud Opulence - Unisex - Cologne for Men - Perfume for Women - Oriental - with notes of Saffron, Oud, and Leather - Long Lasting - Fine Niche Fragrance</h1>
+                <!-- Right Column: Product Information -->
+                <div class="pdp-product-info" data-aos="fade-left">
+                    <a href="products-ma.html" class="pdp-brand-link">Visit the Maison de l'Avenir Store</a>
+                    <h1 class="pdp-title-amazon">Maison de l'Avenir Oud Opulence - Unisex - Cologne for Men - Perfume
+                        for Women - Oriental - with notes of Saffron, Oud, and Leather - Long Lasting - Fine Niche
+                        Fragrance</h1>
+
+                    <div class="pdp-rating-amazon">
+                        <div class="pdp-stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <span class="pdp-rating-count">842 ratings</span>
+                    </div>
+
+                    <div class="pdp-divider"></div>
+
+
                     
 
-                                        <div class="pdp-about-box">
-                        <h3>About the product</h3>
-                        <ul class="pdp-about-list">
-                    <li>Maison de l'Avenir Oud Opulence - Long Lasting Perfume - Eau de Parfum - for Men & Women|100 ml | Perfect Gift for Birthday - Oriental - with notes of Saffron, Oud, and Leather</li>
-                    <li>Long Lasting Perfumes: This eau de parfum contains higher perfume oil concentration than regular parfums, providing a captivating, long lasting scent that ensures continuous freshness. Ideal for daily wear as your signature scent which can also be used to stand out on any special occasion.</li>
-                    <li>Pure Essential Oils: Crafted with natural and high-quality essential oils for a richer, more authentic aroma and superior skin adherence.</li>
-                    <li>Ethically Crafted in UAE: Proudly Cruelty-Free, reflecting our commitment to ethical beauty standards.</li>
-                    <li>The Perfect Gift: A sophisticated and unique present for Eid, Ramadan or a birthday, ideal for both men and women or your husband or wife.</li>
+                    <div class="pdp-meta-amazon">
+                        <table>
+                            <tr>
+                                <td class="label">Brand</td>
+                                <td>Maison de l'Avenir</td>
+                            </tr>
+                            <tr>
+                                <td class="label">Category</td>
+                                <td>Oriental</td>
+                            </tr>
+                            <tr>
+                                <td class="label">Scent</td>
+                                <td>Saffron, Oud, and Leather</td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <div class="pdp-divider"></div>
+
+                    <!-- Integrated Buy Box -->
+                    <div class="hybrid-buy-box">
+                        <div class="buy-box-price">
+                            <span class="currency">Enquire for Price</span>
+                        </div>
+
+                        <div class="buy-box-actions">
+                            <div class="pdp-country-links">
+                                <div class="pdp-market-label">Shop by country</div>
+                                <div class="pdp-market-grid">
+                                    <a href="https://www.amazon.com/dp/B0DGLJHCJJ" target="_blank" rel="noopener noreferrer" class="pdp-amazon-btn">
+                                        <img src="https://flagcdn.com/w40/us.png" alt="USA flag" class="market-flag">
+                                        <span class="market-copy">
+                                            <strong>USA</strong>
+                                            <span>Amazon.com</span>
+                                        </span>
+                                    </a>
+                                    <a href="https://www.amazon.ae/dp/B0DG91LRYK" target="_blank" rel="noopener noreferrer" class="pdp-amazon-btn">
+                                        <img src="https://flagcdn.com/w40/ae.png" alt="UAE flag" class="market-flag">
+                                        <span class="market-copy">
+                                            <strong>UAE</strong>
+                                            <span>Amazon.ae</span>
+                                        </span>
+                                    </a>
+                                </div>
+                                <p class="pdp-market-note">Choose your preferred marketplace for Maison de l'Avenir availability.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                    <div class="pdp-about-bullets">
+                        <h3>About this item</h3>
+                        <ul>
+                            <li>Maison de l'Avenir Oud Opulence - Long Lasting Perfume - Eau de Parfum - for Men & Women|100 ml | Perfect Gift for Birthday - Oriental - with notes of Saffron, Oud, and Leather</li>
+                            <li>Long Lasting Perfumes: This eau de parfum contains higher perfume oil concentration than regular parfums, providing a captivating, long lasting scent that ensures continuous freshness. Ideal for daily wear as your signature scent which can also be used to stand out on any special occasion.</li>
+                            <li>Pure Essential Oils: Crafted with natural and high-quality essential oils for a richer, more authentic aroma and superior skin adherence.</li>
+                            <li>Ethically Crafted in UAE: Proudly Cruelty-Free, reflecting our commitment to ethical beauty standards.</li>
+                            <li>The Perfect Gift: A sophisticated and unique present for Eid, Ramadan or a birthday, ideal for both men and women or your husband or wife.</li>
                         </ul>
                     </div>
 
-                                    <div class="pdp-purchase-actions">
-                    <div class="pdp-main-action">
-                        <button class="pdp-btn">ADD TO ENQUIRY</button>
-                        <button class="pdp-btn-outline"><i class="far fa-heart"></i></button>
-                    </div>
-                    <div class="pdp-amazon-wrap">
-                        <a href="https://www.amazon.com/dp/B0DGLJHCJJ" target="_blank" class="btn-amazon">
-                            <i class="fab fa-amazon"></i> Available on Amazon
-                        </a>
-                        <div class="pdp-flags">
-                            <div class="pdp-flag-item">
-                                <img src="https://flagcdn.com/w40/us.png" alt="USA" class="pdp-flag-img">
-                                <span class="pdp-flag-label">USA</span>
-                            </div>
-                            <div class="pdp-flag-item">
-                                <img src="https://flagcdn.com/w40/ae.png" alt="UAE" class="pdp-flag-img">
-                                <span class="pdp-flag-label">UAE</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                    <div class="pdp-divider"></div>
 
-                    <div class="pdp-meta">
-                        <div class="meta-item">
-                            <span class="meta-label">Feelings:</span>
-                            <span class="meta-value">Luxurious, Captivating, Elegant</span>
-                        </div>
-                        <div class="meta-item">
-                            <span class="meta-label">Collection:</span>
-                            <span class="meta-value">Maison de l'Avenir</span>
-                        </div>
-                        <div class="meta-item">
-                            <span class="meta-label">Availability:</span>
-                            <span class="meta-value in-stock">In Stock</span>
-                        </div>
-                    </div>
-
-                    <div class="pdp-share">
+                    <div class="pdp-share-amazon" style="display: flex; gap: 15px; font-size: 1.2rem; color: #666;">
                         <span>Share:</span>
                         <a href="#"><i class="fab fa-facebook-f"></i></a>
                         <a href="#"><i class="fab fa-twitter"></i></a>
                         <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                        <a href="#"><i class="far fa-envelope"></i></a>
                     </div>
                 </div>
             </div>
@@ -203,12 +240,12 @@
     <section class="pdp-details-tabs">
         <div class="container">
             <div class="tabs-header">
-                <button class="tab-btn active" onclick="openTab(event, 'notes')">Fragrance Notes</button>
-                <button class="tab-btn" onclick="openTab(event, 'info')">Information</button>
-                
+                <button class="tab-btn active" onclick="openTab(event, 'info')">Information</button>
+                <button class="tab-btn" onclick="openTab(event, 'notes')">Scent Notes</button>
+
             </div>
 
-            <div class="tab-content" id="notes" style="display: block;">
+            <div class="tab-content" id="notes" style="display: none;">
                 <div class="notes-grid">
                     <div class="note-item">
                         <h4>Top Notes</h4>
@@ -225,17 +262,79 @@
                 </div>
             </div>
 
-            <div class="tab-content" id="info" style="display: none;">
-                <p>Oud Opulence, a sophisticated luxury perfume crafted as a powerful eau de parfume. This captivating pheromone perfume draws directly from the grandeur and intricate artistry of Arabian perfume heritage.</p>
+            <div class="tab-content" id="info" style="display: block;">
+                <div class="pdp-info-rich">
+                    <p class="pdp-info-description">Oud Opulence, a sophisticated luxury perfume crafted as a powerful eau de parfume. This captivating pheromone perfume draws directly from the grandeur and intricate artistry of Arabian perfume heritage. The fragrance opens with an exquisite blend of Saffron, Caramel, and Bergamot. The heart reveals the timeless beauty of Rose, Oud, and Cedarwood, combining to create a warm, complex essence. Luxurious accords of Leather and Patchouli add depth, settling into a rich base of Amber and sensuous Sandalwood. This opulent fragrance is the perfect gift for your man or girl occasions like Eid, Ramadan, or a birthday</p>
+                    <div>
+                        <h4 class="pdp-info-section-title">Product Details</h4>
+                        <div class="pdp-info-grid">
+                    <div class="pdp-info-card">
+                        <span class="info-label">Collection</span>
+                        <span class="info-value">Supernova Collection</span>
+                    </div>
+                    <div class="pdp-info-card">
+                        <span class="info-label">Product Category</span>
+                        <span class="info-value">Eau de Parfum</span>
+                    </div>
+                    <div class="pdp-info-card">
+                        <span class="info-label">Size</span>
+                        <span class="info-value">100ML</span>
+                    </div>
+                    <div class="pdp-info-card">
+                        <span class="info-label">Volume</span>
+                        <span class="info-value">3.4 Fluid Ounces</span>
+                    </div>
+                    <div class="pdp-info-card">
+                        <span class="info-label">Target Group</span>
+                        <span class="info-value">Unisex</span>
+                    </div>
+                    <div class="pdp-info-card">
+                        <span class="info-label">Fragrance Family</span>
+                        <span class="info-value">Oriental</span>
+                    </div>
+                    <div class="pdp-info-card">
+                        <span class="info-label">Fragrance Type</span>
+                        <span class="info-value">Eau de Parfum</span>
+                    </div>
+                    <div class="pdp-info-card">
+                        <span class="info-label">Signature Notes</span>
+                        <span class="info-value">Saffron, Caramel, Bergamot, Rose, Leather, Cedarwood, Patchouli, Geranium, Oud, Moss, Vetiver, Vanilla, Musk, Amber, Sandalwood</span>
+                    </div>
+                    <div class="pdp-info-card">
+                        <span class="info-label">Special Features</span>
+                        <span class="info-value">Crafted with AI | Exceptional longevity | Cruelty-Free</span>
+                    </div>
+                    <div class="pdp-info-card">
+                        <span class="info-label">Feelings</span>
+                        <span class="info-value">Refined, Timeless, Regal</span>
+                    </div>
+                    <div class="pdp-info-card">
+                        <span class="info-label">Country of Origin</span>
+                        <span class="info-value">United Arab Emirates</span>
+                    </div>
+                    <div class="pdp-info-card">
+                        <span class="info-label">Manufacturer</span>
+                        <span class="info-value">European Perfume Works Co. LLC</span>
+                    </div>
+                    <div class="pdp-info-card">
+                        <span class="info-label">Safety Information</span>
+                        <span class="info-value">For external use only</span>
+                    </div>
+                    <div class="pdp-info-card">
+                        <span class="info-label">ASIN</span>
+                        <span class="info-value">B0DGLJHCJJ</span>
+                    </div>
+                        </div>
+                    </div>
+                </div>
             </div>
 
-            
+
         </div>
     </section>
 
     <!-- Visual Banner -->
-    <section class="pdp-visual-banner"
-        style="background-image: url('https://images.unsplash.com/photo-1616999696985-2c262ad97c32?q=80&w=2000&auto=format&fit=crop');">
+    <section class="pdp-visual-banner" style="background-image: url('assets/prod-ma-oud-opulence-7.jpg');">
         <div class="banner-overlay">
             <div class="banner-content" data-aos="zoom-in">
                 <h2>The Essence of Luxury</h2>
@@ -265,7 +364,8 @@
                 </div>
                 <div class="product-card-luxury">
                     <div class="product-img-wrap-luxury">
-                        <img src="assets/prod-ma-opulent-odyssey-1.jpg" alt="Opulent Odyssey" class="product-img-luxury">
+                        <img src="assets/prod-ma-opulent-odyssey-1.jpg" alt="Opulent Odyssey"
+                            class="product-img-luxury">
                     </div>
                     <div class="product-info-luxury">
                         <span class="product-cat-luxury">Maison de l'Avenir</span>
@@ -275,7 +375,8 @@
                 </div>
                 <div class="product-card-luxury">
                     <div class="product-img-wrap-luxury">
-                        <img src="assets/prod-ma-aurora-opulence-1.jpg" alt="Aurora Opulence" class="product-img-luxury">
+                        <img src="assets/prod-ma-aurora-opulence-1.jpg" alt="Aurora Opulence"
+                            class="product-img-luxury">
                     </div>
                     <div class="product-info-luxury">
                         <span class="product-cat-luxury">Maison de l'Avenir</span>
@@ -333,7 +434,7 @@
             mainImg.src = newSrc;
 
             // Update active state
-            document.querySelectorAll('.pdp-thumb').forEach(thumb => thumb.classList.remove('active'));
+            document.querySelectorAll('.pdp-thumb-v').forEach(thumb => thumb.classList.remove('active'));
             el.classList.add('active');
         }
 
@@ -357,7 +458,4 @@
 </body>
 
 </html>
-
-
-
 

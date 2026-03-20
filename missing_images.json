@@ -1,0 +1,842 @@
+[
+  {
+    "file": "c:\\Users\\idkth\\Documents\\scion\\careers.html",
+    "type": "img",
+    "src": "assets/testi1.png",
+    "exists": false,
+    "isPlaceholder": false,
+    "decodedSrc": "assets/testi1.png"
+  },
+  {
+    "file": "c:\\Users\\idkth\\Documents\\scion\\careers.html",
+    "type": "img",
+    "src": "assets/testi2.png",
+    "exists": false,
+    "isPlaceholder": false,
+    "decodedSrc": "assets/testi2.png"
+  },
+  {
+    "file": "c:\\Users\\idkth\\Documents\\scion\\careers.html",
+    "type": "img",
+    "src": "assets/testi3.png",
+    "exists": false,
+    "isPlaceholder": false,
+    "decodedSrc": "assets/testi3.png"
+  },
+  {
+    "file": "c:\\Users\\idkth\\Documents\\scion\\contact-us.html",
+    "type": "img",
+    "src": "https://www.gstatic.com/recaptcha/api2/logo_48.png",
+    "exists": false,
+    "isPlaceholder": false,
+    "decodedSrc": "https://www.gstatic.com/recaptcha/api2/logo_48.png"
+  },
+  {
+    "file": "c:\\Users\\idkth\\Documents\\scion\\global-network-luxury.html",
+    "type": "img",
+    "src": "assets/world_map_placeholder.png",
+    "exists": false,
+    "isPlaceholder": true,
+    "decodedSrc": "assets/world_map_placeholder.png"
+  },
+  {
+    "file": "c:\\Users\\idkth\\Documents\\scion\\product-cl-alhob-quloh.html",
+    "type": "img",
+    "src": "assets/prod-cl-alhob-quloh-1.png",
+    "exists": false,
+    "isPlaceholder": false,
+    "decodedSrc": "assets/prod-cl-alhob-quloh-1.png"
+  },
+  {
+    "file": "c:\\Users\\idkth\\Documents\\scion\\product-cl-alhob-quloh.html",
+    "type": "img",
+    "src": "assets/prod-cl-alhob-quloh-2.png",
+    "exists": false,
+    "isPlaceholder": false,
+    "decodedSrc": "assets/prod-cl-alhob-quloh-2.png"
+  },
+  {
+    "file": "c:\\Users\\idkth\\Documents\\scion\\product-cl-alhob-quloh.html",
+    "type": "img",
+    "src": "assets/prod-cl-alhob-quloh-3.png",
+    "exists": false,
+    "isPlaceholder": false,
+    "decodedSrc": "assets/prod-cl-alhob-quloh-3.png"
+  },
+  {
+    "file": "c:\\Users\\idkth\\Documents\\scion\\product-cl-alhob-quloh.html",
+    "type": "img",
+    "src": "assets/prod-cl-alhob-quloh-4.png",
+    "exists": false,
+    "isPlaceholder": false,
+    "decodedSrc": "assets/prod-cl-alhob-quloh-4.png"
+  },
+  {
+    "file": "c:\\Users\\idkth\\Documents\\scion\\product-cl-alhob-quloh.html",
+    "type": "img",
+    "src": "assets/prod-cl-alhob-quloh-5.png",
+    "exists": false,
+    "isPlaceholder": false,
+    "decodedSrc": "assets/prod-cl-alhob-quloh-5.png"
+  },
+  {
+    "file": "c:\\Users\\idkth\\Documents\\scion\\product-cl-alhob-quloh.html",
+    "type": "img",
+    "src": "assets/prod-cl-alhob-quloh-6.png",
+    "exists": false,
+    "isPlaceholder": false,
+    "decodedSrc": "assets/prod-cl-alhob-quloh-6.png"
+  },
+  {
+    "file": "c:\\Users\\idkth\\Documents\\scion\\product-cl-alhob-quloh.html",
+    "type": "img",
+    "src": "assets/prod-cl-alhob-quloh-7.png",
+    "exists": false,
+    "isPlaceholder": false,
+    "decodedSrc": "assets/prod-cl-alhob-quloh-7.png"
+  },
+  {
+    "file": "c:\\Users\\idkth\\Documents\\scion\\product-cl-alhob-quloh.html",
+    "type": "img",
+    "src": "assets/prod-cl-alhob-quloh-1.png",
+    "exists": false,
+    "isPlaceholder": false,
+    "decodedSrc": "assets/prod-cl-alhob-quloh-1.png"
+  },
+  {
+    "file": "c:\\Users\\idkth\\Documents\\scion\\product-cl-amber-imperial.html",
+    "type": "img",
+    "src": "assets/prod-cl-amber-imperial-1.png",
+    "exists": false,
+    "isPlaceholder": false,
+    "decodedSrc": "assets/prod-cl-amber-imperial-1.png"
+  },
+  {
+    "file": "c:\\Users\\idkth\\Documents\\scion\\product-cl-amber-imperial.html",
+    "type": "img",
+    "src": "assets/prod-cl-amber-imperial-2.png",
+    "exists": false,
+    "isPlaceholder": false,
+    "decodedSrc": "assets/prod-cl-amber-imperial-2.png"
+  },
+  {
+    "file": "c:\\Users\\idkth\\Documents\\scion\\product-cl-amber-imperial.html",
+    "type": "img",
+    "src": "assets/prod-cl-amber-imperial-3.png",
+    "exists": false,
+    "isPlaceholder": false,
+    "decodedSrc": "assets/prod-cl-amber-imperial-3.png"
+  },
+  {
+    "file": "c:\\Users\\idkth\\Documents\\scion\\product-cl-amber-imperial.html",
+    "type": "img",
+    "src": "assets/prod-cl-amber-imperial-4.png",
+    "exists": false,
+    "isPlaceholder": false,
+    "decodedSrc": "assets/prod-cl-amber-imperial-4.png"
+  },
+  {
+    "file": "c:\\Users\\idkth\\Documents\\scion\\product-cl-amber-imperial.html",
+    "type": "img",
+    "src": "assets/prod-cl-amber-imperial-5.png",
+    "exists": false,
+    "isPlaceholder": false,
+    "decodedSrc": "assets/prod-cl-amber-imperial-5.png"
+  },
+  {
+    "file": "c:\\Users\\idkth\\Documents\\scion\\product-cl-amber-imperial.html",
+    "type": "img",
+    "src": "assets/prod-cl-amber-imperial-6.png",
+    "exists": false,
+    "isPlaceholder": false,
+    "decodedSrc": "assets/prod-cl-amber-imperial-6.png"
+  },
+  {
+    "file": "c:\\Users\\idkth\\Documents\\scion\\product-cl-amber-imperial.html",
+    "type": "img",
+    "src": "assets/prod-cl-amber-imperial-1.png",
+    "exists": false,
+    "isPlaceholder": false,
+    "decodedSrc": "assets/prod-cl-amber-imperial-1.png"
+  },
+  {
+    "file": "c:\\Users\\idkth\\Documents\\scion\\product-cl-amber-imperial.html",
+    "type": "img",
+    "src": "assets/prod-cl-alhob-quloh-1.png",
+    "exists": false,
+    "isPlaceholder": false,
+    "decodedSrc": "assets/prod-cl-alhob-quloh-1.png"
+  },
+  {
+    "file": "c:\\Users\\idkth\\Documents\\scion\\product-cl-amber-imperial.html",
+    "type": "img",
+    "src": "assets/prod-cl-vortex-1.png",
+    "exists": false,
+    "isPlaceholder": false,
+    "decodedSrc": "assets/prod-cl-vortex-1.png"
+  },
+  {
+    "file": "c:\\Users\\idkth\\Documents\\scion\\product-cl-atar-al-afraah.html",
+    "type": "img",
+    "src": "assets/prod-cl-atar-al-afraah-1.png",
+    "exists": false,
+    "isPlaceholder": false,
+    "decodedSrc": "assets/prod-cl-atar-al-afraah-1.png"
+  },
+  {
+    "file": "c:\\Users\\idkth\\Documents\\scion\\product-cl-atar-al-afraah.html",
+    "type": "img",
+    "src": "assets/prod-cl-atar-al-afraah-2.png",
+    "exists": false,
+    "isPlaceholder": false,
+    "decodedSrc": "assets/prod-cl-atar-al-afraah-2.png"
+  },
+  {
+    "file": "c:\\Users\\idkth\\Documents\\scion\\product-cl-atar-al-afraah.html",
+    "type": "img",
+    "src": "assets/prod-cl-atar-al-afraah-3.png",
+    "exists": false,
+    "isPlaceholder": false,
+    "decodedSrc": "assets/prod-cl-atar-al-afraah-3.png"
+  },
+  {
+    "file": "c:\\Users\\idkth\\Documents\\scion\\product-cl-atar-al-afraah.html",
+    "type": "img",
+    "src": "assets/prod-cl-atar-al-afraah-4.png",
+    "exists": false,
+    "isPlaceholder": false,
+    "decodedSrc": "assets/prod-cl-atar-al-afraah-4.png"
+  },
+  {
+    "file": "c:\\Users\\idkth\\Documents\\scion\\product-cl-atar-al-afraah.html",
+    "type": "img",
+    "src": "assets/prod-cl-atar-al-afraah-5.png",
+    "exists": false,
+    "isPlaceholder": false,
+    "decodedSrc": "assets/prod-cl-atar-al-afraah-5.png"
+  },
+  {
+    "file": "c:\\Users\\idkth\\Documents\\scion\\product-cl-atar-al-afraah.html",
+    "type": "img",
+    "src": "assets/prod-cl-atar-al-afraah-6.png",
+    "exists": false,
+    "isPlaceholder": false,
+    "decodedSrc": "assets/prod-cl-atar-al-afraah-6.png"
+  },
+  {
+    "file": "c:\\Users\\idkth\\Documents\\scion\\product-cl-atar-al-afraah.html",
+    "type": "img",
+    "src": "assets/prod-cl-atar-al-afraah-7.png",
+    "exists": false,
+    "isPlaceholder": false,
+    "decodedSrc": "assets/prod-cl-atar-al-afraah-7.png"
+  },
+  {
+    "file": "c:\\Users\\idkth\\Documents\\scion\\product-cl-atar-al-afraah.html",
+    "type": "img",
+    "src": "assets/prod-cl-atar-al-afraah-1.png",
+    "exists": false,
+    "isPlaceholder": false,
+    "decodedSrc": "assets/prod-cl-atar-al-afraah-1.png"
+  },
+  {
+    "file": "c:\\Users\\idkth\\Documents\\scion\\product-cl-cuir-ultime.html",
+    "type": "img",
+    "src": "assets/prod-cl-cuir-ultime-1.png",
+    "exists": false,
+    "isPlaceholder": false,
+    "decodedSrc": "assets/prod-cl-cuir-ultime-1.png"
+  },
+  {
+    "file": "c:\\Users\\idkth\\Documents\\scion\\product-cl-cuir-ultime.html",
+    "type": "img",
+    "src": "assets/prod-cl-cuir-ultime-2.png",
+    "exists": false,
+    "isPlaceholder": false,
+    "decodedSrc": "assets/prod-cl-cuir-ultime-2.png"
+  },
+  {
+    "file": "c:\\Users\\idkth\\Documents\\scion\\product-cl-cuir-ultime.html",
+    "type": "img",
+    "src": "assets/prod-cl-cuir-ultime-3.png",
+    "exists": false,
+    "isPlaceholder": false,
+    "decodedSrc": "assets/prod-cl-cuir-ultime-3.png"
+  },
+  {
+    "file": "c:\\Users\\idkth\\Documents\\scion\\product-cl-cuir-ultime.html",
+    "type": "img",
+    "src": "assets/prod-cl-cuir-ultime-4.png",
+    "exists": false,
+    "isPlaceholder": false,
+    "decodedSrc": "assets/prod-cl-cuir-ultime-4.png"
+  },
+  {
+    "file": "c:\\Users\\idkth\\Documents\\scion\\product-cl-cuir-ultime.html",
+    "type": "img",
+    "src": "assets/prod-cl-cuir-ultime-5.png",
+    "exists": false,
+    "isPlaceholder": false,
+    "decodedSrc": "assets/prod-cl-cuir-ultime-5.png"
+  },
+  {
+    "file": "c:\\Users\\idkth\\Documents\\scion\\product-cl-cuir-ultime.html",
+    "type": "img",
+    "src": "assets/prod-cl-cuir-ultime-6.png",
+    "exists": false,
+    "isPlaceholder": false,
+    "decodedSrc": "assets/prod-cl-cuir-ultime-6.png"
+  },
+  {
+    "file": "c:\\Users\\idkth\\Documents\\scion\\product-cl-cuir-ultime.html",
+    "type": "img",
+    "src": "assets/prod-cl-cuir-ultime-7.png",
+    "exists": false,
+    "isPlaceholder": false,
+    "decodedSrc": "assets/prod-cl-cuir-ultime-7.png"
+  },
+  {
+    "file": "c:\\Users\\idkth\\Documents\\scion\\product-cl-cuir-ultime.html",
+    "type": "img",
+    "src": "assets/prod-cl-cuir-ultime-1.png",
+    "exists": false,
+    "isPlaceholder": false,
+    "decodedSrc": "assets/prod-cl-cuir-ultime-1.png"
+  },
+  {
+    "file": "c:\\Users\\idkth\\Documents\\scion\\product-cl-jasmine-joy.html",
+    "type": "img",
+    "src": "assets/prod-cl-jasmine-joy-1.png",
+    "exists": false,
+    "isPlaceholder": false,
+    "decodedSrc": "assets/prod-cl-jasmine-joy-1.png"
+  },
+  {
+    "file": "c:\\Users\\idkth\\Documents\\scion\\product-cl-jasmine-joy.html",
+    "type": "img",
+    "src": "assets/prod-cl-jasmine-joy-2.png",
+    "exists": false,
+    "isPlaceholder": false,
+    "decodedSrc": "assets/prod-cl-jasmine-joy-2.png"
+  },
+  {
+    "file": "c:\\Users\\idkth\\Documents\\scion\\product-cl-jasmine-joy.html",
+    "type": "img",
+    "src": "assets/prod-cl-jasmine-joy-3.png",
+    "exists": false,
+    "isPlaceholder": false,
+    "decodedSrc": "assets/prod-cl-jasmine-joy-3.png"
+  },
+  {
+    "file": "c:\\Users\\idkth\\Documents\\scion\\product-cl-jasmine-joy.html",
+    "type": "img",
+    "src": "assets/prod-cl-jasmine-joy-4.png",
+    "exists": false,
+    "isPlaceholder": false,
+    "decodedSrc": "assets/prod-cl-jasmine-joy-4.png"
+  },
+  {
+    "file": "c:\\Users\\idkth\\Documents\\scion\\product-cl-jasmine-joy.html",
+    "type": "img",
+    "src": "assets/prod-cl-jasmine-joy-5.png",
+    "exists": false,
+    "isPlaceholder": false,
+    "decodedSrc": "assets/prod-cl-jasmine-joy-5.png"
+  },
+  {
+    "file": "c:\\Users\\idkth\\Documents\\scion\\product-cl-jasmine-joy.html",
+    "type": "img",
+    "src": "assets/prod-cl-jasmine-joy-6.png",
+    "exists": false,
+    "isPlaceholder": false,
+    "decodedSrc": "assets/prod-cl-jasmine-joy-6.png"
+  },
+  {
+    "file": "c:\\Users\\idkth\\Documents\\scion\\product-cl-jasmine-joy.html",
+    "type": "img",
+    "src": "assets/prod-cl-jasmine-joy-7.png",
+    "exists": false,
+    "isPlaceholder": false,
+    "decodedSrc": "assets/prod-cl-jasmine-joy-7.png"
+  },
+  {
+    "file": "c:\\Users\\idkth\\Documents\\scion\\product-cl-jasmine-joy.html",
+    "type": "img",
+    "src": "assets/prod-cl-jasmine-joy-1.png",
+    "exists": false,
+    "isPlaceholder": false,
+    "decodedSrc": "assets/prod-cl-jasmine-joy-1.png"
+  },
+  {
+    "file": "c:\\Users\\idkth\\Documents\\scion\\product-cl-jawharat-al-afrah.html",
+    "type": "img",
+    "src": "assets/prod-cl-jawharat-al-afrah-1.png",
+    "exists": false,
+    "isPlaceholder": false,
+    "decodedSrc": "assets/prod-cl-jawharat-al-afrah-1.png"
+  },
+  {
+    "file": "c:\\Users\\idkth\\Documents\\scion\\product-cl-jawharat-al-afrah.html",
+    "type": "img",
+    "src": "assets/prod-cl-jawharat-al-afrah-2.png",
+    "exists": false,
+    "isPlaceholder": false,
+    "decodedSrc": "assets/prod-cl-jawharat-al-afrah-2.png"
+  },
+  {
+    "file": "c:\\Users\\idkth\\Documents\\scion\\product-cl-jawharat-al-afrah.html",
+    "type": "img",
+    "src": "assets/prod-cl-jawharat-al-afrah-3.png",
+    "exists": false,
+    "isPlaceholder": false,
+    "decodedSrc": "assets/prod-cl-jawharat-al-afrah-3.png"
+  },
+  {
+    "file": "c:\\Users\\idkth\\Documents\\scion\\product-cl-jawharat-al-afrah.html",
+    "type": "img",
+    "src": "assets/prod-cl-jawharat-al-afrah-4.png",
+    "exists": false,
+    "isPlaceholder": false,
+    "decodedSrc": "assets/prod-cl-jawharat-al-afrah-4.png"
+  },
+  {
+    "file": "c:\\Users\\idkth\\Documents\\scion\\product-cl-jawharat-al-afrah.html",
+    "type": "img",
+    "src": "assets/prod-cl-jawharat-al-afrah-5.png",
+    "exists": false,
+    "isPlaceholder": false,
+    "decodedSrc": "assets/prod-cl-jawharat-al-afrah-5.png"
+  },
+  {
+    "file": "c:\\Users\\idkth\\Documents\\scion\\product-cl-jawharat-al-afrah.html",
+    "type": "img",
+    "src": "assets/prod-cl-jawharat-al-afrah-6.png",
+    "exists": false,
+    "isPlaceholder": false,
+    "decodedSrc": "assets/prod-cl-jawharat-al-afrah-6.png"
+  },
+  {
+    "file": "c:\\Users\\idkth\\Documents\\scion\\product-cl-jawharat-al-afrah.html",
+    "type": "img",
+    "src": "assets/prod-cl-jawharat-al-afrah-7.png",
+    "exists": false,
+    "isPlaceholder": false,
+    "decodedSrc": "assets/prod-cl-jawharat-al-afrah-7.png"
+  },
+  {
+    "file": "c:\\Users\\idkth\\Documents\\scion\\product-cl-jawharat-al-afrah.html",
+    "type": "img",
+    "src": "assets/prod-cl-jawharat-al-afrah-1.png",
+    "exists": false,
+    "isPlaceholder": false,
+    "decodedSrc": "assets/prod-cl-jawharat-al-afrah-1.png"
+  },
+  {
+    "file": "c:\\Users\\idkth\\Documents\\scion\\product-cl-oud-al-mlouk.html",
+    "type": "img",
+    "src": "assets/prod-cl-oud-al-mlouk-1.png",
+    "exists": false,
+    "isPlaceholder": false,
+    "decodedSrc": "assets/prod-cl-oud-al-mlouk-1.png"
+  },
+  {
+    "file": "c:\\Users\\idkth\\Documents\\scion\\product-cl-oud-al-mlouk.html",
+    "type": "img",
+    "src": "assets/prod-cl-oud-al-mlouk-2.png",
+    "exists": false,
+    "isPlaceholder": false,
+    "decodedSrc": "assets/prod-cl-oud-al-mlouk-2.png"
+  },
+  {
+    "file": "c:\\Users\\idkth\\Documents\\scion\\product-cl-oud-al-mlouk.html",
+    "type": "img",
+    "src": "assets/prod-cl-oud-al-mlouk-3.png",
+    "exists": false,
+    "isPlaceholder": false,
+    "decodedSrc": "assets/prod-cl-oud-al-mlouk-3.png"
+  },
+  {
+    "file": "c:\\Users\\idkth\\Documents\\scion\\product-cl-oud-al-mlouk.html",
+    "type": "img",
+    "src": "assets/prod-cl-oud-al-mlouk-4.png",
+    "exists": false,
+    "isPlaceholder": false,
+    "decodedSrc": "assets/prod-cl-oud-al-mlouk-4.png"
+  },
+  {
+    "file": "c:\\Users\\idkth\\Documents\\scion\\product-cl-oud-al-mlouk.html",
+    "type": "img",
+    "src": "assets/prod-cl-oud-al-mlouk-5.png",
+    "exists": false,
+    "isPlaceholder": false,
+    "decodedSrc": "assets/prod-cl-oud-al-mlouk-5.png"
+  },
+  {
+    "file": "c:\\Users\\idkth\\Documents\\scion\\product-cl-oud-al-mlouk.html",
+    "type": "img",
+    "src": "assets/prod-cl-oud-al-mlouk-6.png",
+    "exists": false,
+    "isPlaceholder": false,
+    "decodedSrc": "assets/prod-cl-oud-al-mlouk-6.png"
+  },
+  {
+    "file": "c:\\Users\\idkth\\Documents\\scion\\product-cl-oud-al-mlouk.html",
+    "type": "img",
+    "src": "assets/prod-cl-oud-al-mlouk-7.png",
+    "exists": false,
+    "isPlaceholder": false,
+    "decodedSrc": "assets/prod-cl-oud-al-mlouk-7.png"
+  },
+  {
+    "file": "c:\\Users\\idkth\\Documents\\scion\\product-cl-oud-al-mlouk.html",
+    "type": "img",
+    "src": "assets/prod-cl-oud-al-mlouk-1.png",
+    "exists": false,
+    "isPlaceholder": false,
+    "decodedSrc": "assets/prod-cl-oud-al-mlouk-1.png"
+  },
+  {
+    "file": "c:\\Users\\idkth\\Documents\\scion\\product-cl-oud-magique.html",
+    "type": "img",
+    "src": "assets/prod-cl-oud-magique-1.png",
+    "exists": false,
+    "isPlaceholder": false,
+    "decodedSrc": "assets/prod-cl-oud-magique-1.png"
+  },
+  {
+    "file": "c:\\Users\\idkth\\Documents\\scion\\product-cl-oud-magique.html",
+    "type": "img",
+    "src": "assets/prod-cl-oud-magique-2.png",
+    "exists": false,
+    "isPlaceholder": false,
+    "decodedSrc": "assets/prod-cl-oud-magique-2.png"
+  },
+  {
+    "file": "c:\\Users\\idkth\\Documents\\scion\\product-cl-oud-magique.html",
+    "type": "img",
+    "src": "assets/prod-cl-oud-magique-3.png",
+    "exists": false,
+    "isPlaceholder": false,
+    "decodedSrc": "assets/prod-cl-oud-magique-3.png"
+  },
+  {
+    "file": "c:\\Users\\idkth\\Documents\\scion\\product-cl-oud-magique.html",
+    "type": "img",
+    "src": "assets/prod-cl-oud-magique-4.png",
+    "exists": false,
+    "isPlaceholder": false,
+    "decodedSrc": "assets/prod-cl-oud-magique-4.png"
+  },
+  {
+    "file": "c:\\Users\\idkth\\Documents\\scion\\product-cl-oud-magique.html",
+    "type": "img",
+    "src": "assets/prod-cl-oud-magique-5.png",
+    "exists": false,
+    "isPlaceholder": false,
+    "decodedSrc": "assets/prod-cl-oud-magique-5.png"
+  },
+  {
+    "file": "c:\\Users\\idkth\\Documents\\scion\\product-cl-oud-magique.html",
+    "type": "img",
+    "src": "assets/prod-cl-oud-magique-6.png",
+    "exists": false,
+    "isPlaceholder": false,
+    "decodedSrc": "assets/prod-cl-oud-magique-6.png"
+  },
+  {
+    "file": "c:\\Users\\idkth\\Documents\\scion\\product-cl-oud-magique.html",
+    "type": "img",
+    "src": "assets/prod-cl-oud-magique-7.png",
+    "exists": false,
+    "isPlaceholder": false,
+    "decodedSrc": "assets/prod-cl-oud-magique-7.png"
+  },
+  {
+    "file": "c:\\Users\\idkth\\Documents\\scion\\product-cl-oud-magique.html",
+    "type": "img",
+    "src": "assets/prod-cl-oud-magique-1.png",
+    "exists": false,
+    "isPlaceholder": false,
+    "decodedSrc": "assets/prod-cl-oud-magique-1.png"
+  },
+  {
+    "file": "c:\\Users\\idkth\\Documents\\scion\\product-cl-rose-augusta.html",
+    "type": "img",
+    "src": "assets/prod-cl-rose-augusta-1.png",
+    "exists": false,
+    "isPlaceholder": false,
+    "decodedSrc": "assets/prod-cl-rose-augusta-1.png"
+  },
+  {
+    "file": "c:\\Users\\idkth\\Documents\\scion\\product-cl-rose-augusta.html",
+    "type": "img",
+    "src": "assets/prod-cl-rose-augusta-2.png",
+    "exists": false,
+    "isPlaceholder": false,
+    "decodedSrc": "assets/prod-cl-rose-augusta-2.png"
+  },
+  {
+    "file": "c:\\Users\\idkth\\Documents\\scion\\product-cl-rose-augusta.html",
+    "type": "img",
+    "src": "assets/prod-cl-rose-augusta-3.png",
+    "exists": false,
+    "isPlaceholder": false,
+    "decodedSrc": "assets/prod-cl-rose-augusta-3.png"
+  },
+  {
+    "file": "c:\\Users\\idkth\\Documents\\scion\\product-cl-rose-augusta.html",
+    "type": "img",
+    "src": "assets/prod-cl-rose-augusta-4.png",
+    "exists": false,
+    "isPlaceholder": false,
+    "decodedSrc": "assets/prod-cl-rose-augusta-4.png"
+  },
+  {
+    "file": "c:\\Users\\idkth\\Documents\\scion\\product-cl-rose-augusta.html",
+    "type": "img",
+    "src": "assets/prod-cl-rose-augusta-5.png",
+    "exists": false,
+    "isPlaceholder": false,
+    "decodedSrc": "assets/prod-cl-rose-augusta-5.png"
+  },
+  {
+    "file": "c:\\Users\\idkth\\Documents\\scion\\product-cl-rose-augusta.html",
+    "type": "img",
+    "src": "assets/prod-cl-rose-augusta-6.png",
+    "exists": false,
+    "isPlaceholder": false,
+    "decodedSrc": "assets/prod-cl-rose-augusta-6.png"
+  },
+  {
+    "file": "c:\\Users\\idkth\\Documents\\scion\\product-cl-rose-augusta.html",
+    "type": "img",
+    "src": "assets/prod-cl-rose-augusta-7.png",
+    "exists": false,
+    "isPlaceholder": false,
+    "decodedSrc": "assets/prod-cl-rose-augusta-7.png"
+  },
+  {
+    "file": "c:\\Users\\idkth\\Documents\\scion\\product-cl-rose-augusta.html",
+    "type": "img",
+    "src": "assets/prod-cl-rose-augusta-1.png",
+    "exists": false,
+    "isPlaceholder": false,
+    "decodedSrc": "assets/prod-cl-rose-augusta-1.png"
+  },
+  {
+    "file": "c:\\Users\\idkth\\Documents\\scion\\product-cl-sandal-intense.html",
+    "type": "img",
+    "src": "assets/prod-cl-sandal-intense-1.png",
+    "exists": false,
+    "isPlaceholder": false,
+    "decodedSrc": "assets/prod-cl-sandal-intense-1.png"
+  },
+  {
+    "file": "c:\\Users\\idkth\\Documents\\scion\\product-cl-sandal-intense.html",
+    "type": "img",
+    "src": "assets/prod-cl-sandal-intense-2.png",
+    "exists": false,
+    "isPlaceholder": false,
+    "decodedSrc": "assets/prod-cl-sandal-intense-2.png"
+  },
+  {
+    "file": "c:\\Users\\idkth\\Documents\\scion\\product-cl-sandal-intense.html",
+    "type": "img",
+    "src": "assets/prod-cl-sandal-intense-3.png",
+    "exists": false,
+    "isPlaceholder": false,
+    "decodedSrc": "assets/prod-cl-sandal-intense-3.png"
+  },
+  {
+    "file": "c:\\Users\\idkth\\Documents\\scion\\product-cl-sandal-intense.html",
+    "type": "img",
+    "src": "assets/prod-cl-sandal-intense-4.png",
+    "exists": false,
+    "isPlaceholder": false,
+    "decodedSrc": "assets/prod-cl-sandal-intense-4.png"
+  },
+  {
+    "file": "c:\\Users\\idkth\\Documents\\scion\\product-cl-sandal-intense.html",
+    "type": "img",
+    "src": "assets/prod-cl-sandal-intense-5.png",
+    "exists": false,
+    "isPlaceholder": false,
+    "decodedSrc": "assets/prod-cl-sandal-intense-5.png"
+  },
+  {
+    "file": "c:\\Users\\idkth\\Documents\\scion\\product-cl-sandal-intense.html",
+    "type": "img",
+    "src": "assets/prod-cl-sandal-intense-6.png",
+    "exists": false,
+    "isPlaceholder": false,
+    "decodedSrc": "assets/prod-cl-sandal-intense-6.png"
+  },
+  {
+    "file": "c:\\Users\\idkth\\Documents\\scion\\product-cl-sandal-intense.html",
+    "type": "img",
+    "src": "assets/prod-cl-sandal-intense-7.png",
+    "exists": false,
+    "isPlaceholder": false,
+    "decodedSrc": "assets/prod-cl-sandal-intense-7.png"
+  },
+  {
+    "file": "c:\\Users\\idkth\\Documents\\scion\\product-cl-sandal-intense.html",
+    "type": "img",
+    "src": "assets/prod-cl-sandal-intense-1.png",
+    "exists": false,
+    "isPlaceholder": false,
+    "decodedSrc": "assets/prod-cl-sandal-intense-1.png"
+  },
+  {
+    "file": "c:\\Users\\idkth\\Documents\\scion\\product-cl-tabac-aromatique.html",
+    "type": "img",
+    "src": "assets/prod-cl-tabac-aromatique-1.png",
+    "exists": false,
+    "isPlaceholder": false,
+    "decodedSrc": "assets/prod-cl-tabac-aromatique-1.png"
+  },
+  {
+    "file": "c:\\Users\\idkth\\Documents\\scion\\product-cl-tabac-aromatique.html",
+    "type": "img",
+    "src": "assets/prod-cl-tabac-aromatique-2.png",
+    "exists": false,
+    "isPlaceholder": false,
+    "decodedSrc": "assets/prod-cl-tabac-aromatique-2.png"
+  },
+  {
+    "file": "c:\\Users\\idkth\\Documents\\scion\\product-cl-tabac-aromatique.html",
+    "type": "img",
+    "src": "assets/prod-cl-tabac-aromatique-3.png",
+    "exists": false,
+    "isPlaceholder": false,
+    "decodedSrc": "assets/prod-cl-tabac-aromatique-3.png"
+  },
+  {
+    "file": "c:\\Users\\idkth\\Documents\\scion\\product-cl-tabac-aromatique.html",
+    "type": "img",
+    "src": "assets/prod-cl-tabac-aromatique-4.png",
+    "exists": false,
+    "isPlaceholder": false,
+    "decodedSrc": "assets/prod-cl-tabac-aromatique-4.png"
+  },
+  {
+    "file": "c:\\Users\\idkth\\Documents\\scion\\product-cl-tabac-aromatique.html",
+    "type": "img",
+    "src": "assets/prod-cl-tabac-aromatique-5.png",
+    "exists": false,
+    "isPlaceholder": false,
+    "decodedSrc": "assets/prod-cl-tabac-aromatique-5.png"
+  },
+  {
+    "file": "c:\\Users\\idkth\\Documents\\scion\\product-cl-tabac-aromatique.html",
+    "type": "img",
+    "src": "assets/prod-cl-tabac-aromatique-6.png",
+    "exists": false,
+    "isPlaceholder": false,
+    "decodedSrc": "assets/prod-cl-tabac-aromatique-6.png"
+  },
+  {
+    "file": "c:\\Users\\idkth\\Documents\\scion\\product-cl-tabac-aromatique.html",
+    "type": "img",
+    "src": "assets/prod-cl-tabac-aromatique-7.png",
+    "exists": false,
+    "isPlaceholder": false,
+    "decodedSrc": "assets/prod-cl-tabac-aromatique-7.png"
+  },
+  {
+    "file": "c:\\Users\\idkth\\Documents\\scion\\product-cl-tabac-aromatique.html",
+    "type": "img",
+    "src": "assets/prod-cl-tabac-aromatique-1.png",
+    "exists": false,
+    "isPlaceholder": false,
+    "decodedSrc": "assets/prod-cl-tabac-aromatique-1.png"
+  },
+  {
+    "file": "c:\\Users\\idkth\\Documents\\scion\\product-cl-vanille-divine.html",
+    "type": "img",
+    "src": "assets/prod-cl-vanille-divine-1.png",
+    "exists": false,
+    "isPlaceholder": false,
+    "decodedSrc": "assets/prod-cl-vanille-divine-1.png"
+  },
+  {
+    "file": "c:\\Users\\idkth\\Documents\\scion\\product-cl-vanille-divine.html",
+    "type": "img",
+    "src": "assets/prod-cl-vanille-divine-2.png",
+    "exists": false,
+    "isPlaceholder": false,
+    "decodedSrc": "assets/prod-cl-vanille-divine-2.png"
+  },
+  {
+    "file": "c:\\Users\\idkth\\Documents\\scion\\product-cl-vanille-divine.html",
+    "type": "img",
+    "src": "assets/prod-cl-vanille-divine-3.png",
+    "exists": false,
+    "isPlaceholder": false,
+    "decodedSrc": "assets/prod-cl-vanille-divine-3.png"
+  },
+  {
+    "file": "c:\\Users\\idkth\\Documents\\scion\\product-cl-vanille-divine.html",
+    "type": "img",
+    "src": "assets/prod-cl-vanille-divine-4.png",
+    "exists": false,
+    "isPlaceholder": false,
+    "decodedSrc": "assets/prod-cl-vanille-divine-4.png"
+  },
+  {
+    "file": "c:\\Users\\idkth\\Documents\\scion\\product-cl-vanille-divine.html",
+    "type": "img",
+    "src": "assets/prod-cl-vanille-divine-5.png",
+    "exists": false,
+    "isPlaceholder": false,
+    "decodedSrc": "assets/prod-cl-vanille-divine-5.png"
+  },
+  {
+    "file": "c:\\Users\\idkth\\Documents\\scion\\product-cl-vanille-divine.html",
+    "type": "img",
+    "src": "assets/prod-cl-vanille-divine-6.png",
+    "exists": false,
+    "isPlaceholder": false,
+    "decodedSrc": "assets/prod-cl-vanille-divine-6.png"
+  },
+  {
+    "file": "c:\\Users\\idkth\\Documents\\scion\\product-cl-vanille-divine.html",
+    "type": "img",
+    "src": "assets/prod-cl-vanille-divine-7.png",
+    "exists": false,
+    "isPlaceholder": false,
+    "decodedSrc": "assets/prod-cl-vanille-divine-7.png"
+  },
+  {
+    "file": "c:\\Users\\idkth\\Documents\\scion\\product-cl-vanille-divine.html",
+    "type": "img",
+    "src": "assets/prod-cl-vanille-divine-1.png",
+    "exists": false,
+    "isPlaceholder": false,
+    "decodedSrc": "assets/prod-cl-vanille-divine-1.png"
+  },
+  {
+    "file": "c:\\Users\\idkth\\Documents\\scion\\products-jpd.html",
+    "type": "img",
+    "src": "assets/images/brands/jpd/JPD%20Nova/JPD%20-%20Nova%20Collection%20_C",
+    "exists": false,
+    "isPlaceholder": false,
+    "decodedSrc": "assets/images/brands/jpd/JPD Nova/JPD - Nova Collection _C"
+  },
+  {
+    "file": "c:\\Users\\idkth\\Documents\\scion\\products-jpd.html",
+    "type": "img",
+    "src": "assets/images/brands/jpd/JPD%20Prive",
+    "exists": false,
+    "isPlaceholder": false,
+    "decodedSrc": "assets/images/brands/jpd/JPD Prive"
+  },
+  {
+    "file": "c:\\Users\\idkth\\Documents\\scion\\style.css",
+    "type": "css-bg",
+    "src": "assets/what-we-do-pattern.png",
+    "exists": false,
+    "isPlaceholder": false,
+    "decodedSrc": "assets/what-we-do-pattern.png"
+  }
+]

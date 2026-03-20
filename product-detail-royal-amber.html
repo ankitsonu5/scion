@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -7,6 +7,7 @@
     <title>Royal Amber | Scion International</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="style-luxury.css">
+    <link rel="stylesheet" href="pdp-amazon.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
@@ -23,10 +24,9 @@
             <div class="top-bar-right">
                 <a href="#" class="login-link"><i class="fas fa-sign-in-alt"></i> Login</a>
                 <div class="social-icons-top">
-                    <a href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                    <a href="#"><i class="fab fa-youtube"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/scioninternational" </a>
+                        <a href="https://in.linkedin.com/company/scion-international" </a>
+                            <a href="https://www.instagram.com/scioninternational/" </a>
                 </div>
             </div>
         </div>
@@ -45,8 +45,8 @@
                         <a href="about.html">Our Story</a>
                         <a href="global-network-luxury.html">Our Global Network</a>
                         <a href="business-overview-luxury.html">Business Overview</a>
-                        <a href="brands-overview-premium.html">Overview of Brands</a>
-                        <a href="brand-presence-luxury.html">Brand Presence</a>
+                        <a href="brands-overview-premium.html" style="display: none;">Overview of Brands</a>
+                        <a href="brand-presence-luxury.html" style="display: none;">Brand Presence</a>
                         <a href="private-label-premium.html">Private Label Projects & Clients</a>
                         <a href="business-strengths-premium.html">Business Strengths</a>
                         <a href="values-ethos-luxury.html">Our Values & Ethos</a>
@@ -74,18 +74,21 @@
                     <div class="dropdown-content mega-menu">
                         <div class="mega-column">
                             <h3>Perfumes and Deodorants</h3>
-                            <a href="products-luxury.html">Maison de l’Avenir</a>
-                            <a href="products-luxury.html">Jean Paul Dupont </a>
-                            <a href="products-luxury.html">Creation Lamis</a>
+                            <a href="products-luxury.html">Maison de l?Avenir</a>
+                            <a href="products-jpd.html">Jean Paul Dupont </a>
+                            <a href="products-cl.html">Creation Lamis</a>
+                            <a href="products-luxury.html">Dorall Collection</a>
                         </div>
 
                         <div class="mega-column">
                             <h3>Personal Care and Color Cosmetics</h3>
-                            <a href="products-luxury.html">Paris Collection</a>
-                            <a href="products-luxury.html">CP Trendies</a>
+                            <a href="products-pc.html">Paris Collection</a>
+                            <a href="products-cpt.html">CP Trendies</a>
+                            <a href="products-luxury.html">Bio Glow</a>
                         </div>
                     </div>
                 </div>
+
 
                 <a href="careers.html">CAREERS</a>
                 <a href="contact-us.html">CONTACT US</a>
@@ -102,59 +105,98 @@
         </div>
     </div>
 
+
+
     <!-- Product Detail Section -->
-    <section class="product-detail-section">
+    <section class="pdp-container">
         <div class="container">
-            <div class="pdp-grid">
-                <!-- Product Gallery -->
-                <div class="pdp-gallery" data-aos="fade-right">
-                    <div class="pdp-main-image">
-                        <img src="assets/product_royal_amber.png" id="mainImage" alt="Royal Amber"
-                            onerror="this.src='https://images.unsplash.com/photo-1616999696985-2c262ad97c32?q=80&w=1000&auto=format&fit=crop'">
-                    </div>
-                    <div class="pdp-thumbnails">
-                        <div class="pdp-thumb active" onclick="changeImage(this)">
-                            <img src="assets/product_royal_amber.png" alt="View 1">
+            <div class="pdp-main-grid">
+                <!-- Left Column: Gallery -->
+                <div class="pdp-gallery-sticky" data-aos="fade-right">
+                    <div class="pdp-gallery-flex">
+                        <div class="pdp-thumbnails-vertical">
+                            <div class="pdp-thumb-v active" onclick="changeImage(this)">
+                                <img src="assets/product_royal_amber.png" alt="Product View">
+                            </div>
                         </div>
-                        <div class="pdp-thumb" onclick="changeImage(this)">
-                            <img src="assets/product_royal_amber.png" alt="View 2">
+                        <div class="pdp-main-image-wrap">
+                            <img src="assets/product_royal_amber.png" id="mainImage" alt="Royal Amber">
                         </div>
                     </div>
                 </div>
 
-                <!-- Product Info -->
-                <div class="pdp-info" data-aos="fade-left">
-                    <span class="pdp-category">Fine Fragrance</span>
-                    <h1 class="pdp-title">Royal Amber</h1>
-                    <div class="pdp-price">$95.00</div>
+                <!-- Right Column: Product Information -->
+                <div class="pdp-product-info" data-aos="fade-left">
+                    <a href="index.html" class="pdp-brand-link">Visit the Scion International Store</a>
+                    <h1 class="pdp-title-amazon">Royal Amber</h1>
 
-                    <div class="pdp-description">
-                        <p>A fragrance fit for royalty. Royal Amber blends the rich, resinous warmth of amber with spicy
-                            oud and soft vanilla. It is a bold statement of sophistication and power, designed to leave
-                            a lasting impression.</p>
-                    </div>
-
-                    <div class="pdp-actions">
-                        <button class="btn-luxury pdp-btn">Add to Enquiry</button>
-                        <button class="btn-luxury pdp-btn-outline"><i class="far fa-heart"></i></button>
-                    </div>
-
-                    <div class="pdp-meta">
-                        <div class="meta-item">
-                            <span class="meta-label">SKU:</span>
-                            <span class="meta-value">RA-100ML-05</span>
+                    <div class="pdp-rating-amazon">
+                        <div class="pdp-stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
                         </div>
-                        <div class="meta-item">
-                            <span class="meta-label">Availability:</span>
-                            <span class="meta-value in-stock">In Stock</span>
+                        <span class="pdp-rating-count">842 ratings</span>
+                    </div>
+
+                    <div class="pdp-divider"></div>
+
+                    
+
+                    <div class="pdp-meta-amazon">
+                        <table>
+                            <tr>
+                                <td class="label">Brand</td>
+                                <td>Scion International</td>
+                            </tr>
+                            <tr>
+                                <td class="label">Category</td>
+                                <td>Fine Fragrance</td>
+                            </tr>
+                            <tr>
+                                <td class="label">Feelings</td>
+                                <td>Romantic, Warm, Enigmatic</td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <div class="pdp-divider"></div>
+
+                    <!-- Integrated Buy Box -->
+                    <div class="hybrid-buy-box">
+                        <div class="buy-box-price">
+                            <span class="currency">Enquire for Price</span>
+                        </div>
+
+                        <div class="buy-box-actions">
+                            <button class="pdp-btn-primary">Add to Enquiry</button>
+                            <button class="pdp-btn-secondary">Add to Wishlist</button>
                         </div>
                     </div>
 
-                    <div class="pdp-share">
+                    
+                    <div class="pdp-about-bullets">
+                        <h3>About this item</h3>
+                        <div class="about-content-text">
+                            <p>A fragrance fit for royalty. Royal Amber blends the rich, resinous warmth of amber with
+                            spicy
+                            oud and soft vanilla. It is a bold statement of sophistication and power, designed to
+                            leave
+                            a lasting impression. <a href="index.html" style="color: rgba(255,255,255,0.6);">Home</a>
+                        </p>
+                        </div>
+                    </div>
+
+                    <div class="pdp-divider"></div>
+
+                    <div class="pdp-share-amazon" style="display: flex; gap: 15px; font-size: 1.2rem; color: #666;">
                         <span>Share:</span>
                         <a href="#"><i class="fab fa-facebook-f"></i></a>
                         <a href="#"><i class="fab fa-twitter"></i></a>
                         <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                        <a href="#"><i class="far fa-envelope"></i></a>
                     </div>
                 </div>
             </div>
@@ -165,12 +207,12 @@
     <section class="pdp-details-tabs">
         <div class="container">
             <div class="tabs-header">
-                <button class="tab-btn active" onclick="openTab(event, 'notes')">Fragrance Notes</button>
-                <button class="tab-btn" onclick="openTab(event, 'ingredients')">Ingredients</button>
+                <button class="tab-btn active" onclick="openTab(event, 'ingredients')">Information</button>
+                <button class="tab-btn" onclick="openTab(event, 'notes')">Scent Notes</button>
                 <button class="tab-btn" onclick="openTab(event, 'shipping')">Shipping & Returns</button>
             </div>
 
-            <div class="tab-content" id="notes" style="display: block;">
+            <div class="tab-content" id="notes" style="display: none;">
                 <div class="notes-grid">
                     <div class="note-item">
                         <h4>Top Notes</h4>
@@ -187,7 +229,7 @@
                 </div>
             </div>
 
-            <div class="tab-content" id="ingredients" style="display: none;">
+            <div class="tab-content" id="ingredients" style="display: block;">
                 <p>Alcohol Denat., Parfum (Fragrance), Aqua (Water), Coumarin, Limonene, Linalool, Eugenol. Vol 80%</p>
             </div>
 
@@ -199,8 +241,7 @@
     </section>
 
     <!-- Visual Banner -->
-    <section class="pdp-visual-banner"
-        style="background-image: url('https://images.unsplash.com/photo-1557804506-669a67965ba0?q=80&w=2000&auto=format&fit=crop');">
+    <section class="pdp-visual-banner" style="background-image: url('assets/Picture1.jpg');">
         <div class="banner-overlay">
             <div class="banner-content" data-aos="zoom-in">
                 <h2>Regal Essence</h2>
@@ -226,7 +267,7 @@
                     <div class="product-info-luxury">
                         <span class="product-cat-luxury">Fine Fragrance</span>
                         <h3 class="product-title-luxury">Eclat d'Or</h3>
-                        <p class="product-price-luxury">$110.00</p>
+
                         <a href="product-detail-eclat-dor.html" class="add-btn-luxury">View Details</a>
                     </div>
                 </div>
@@ -239,7 +280,7 @@
                     <div class="product-info-luxury">
                         <span class="product-cat-luxury">Personal Care</span>
                         <h3 class="product-title-luxury">Silk Touch Cream</h3>
-                        <p class="product-price-luxury">$40.00</p>
+
                         <a href="product-detail-silk-touch.html" class="add-btn-luxury">View Details</a>
                     </div>
                 </div>
@@ -252,7 +293,7 @@
                     <div class="product-info-luxury">
                         <span class="product-cat-luxury">Body Mist</span>
                         <h3 class="product-title-luxury">Ocean Mist</h3>
-                        <p class="product-price-luxury">$25.00</p>
+
                         <a href="product-detail-ocean-mist.html" class="add-btn-luxury">View Details</a>
                     </div>
                 </div>
@@ -307,7 +348,7 @@
             mainImg.src = newSrc;
 
             // Update active state
-            document.querySelectorAll('.pdp-thumb').forEach(thumb => thumb.classList.remove('active'));
+            document.querySelectorAll('.pdp-thumb-v').forEach(thumb => thumb.classList.remove('active'));
             el.classList.add('active');
         }
 

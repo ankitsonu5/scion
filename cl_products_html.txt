@@ -1,0 +1,169 @@
+
+                <!-- Cuir Ultime -->
+                <div class="product-card-luxury" data-brand="creation-lamis">
+                    <div class="product-img-wrap-luxury">
+                        <img src="assets/prod-cl-cuir-ultime-1.jpg" alt="Cuir Ultime" class="product-img-luxury" onerror="this.src='assets/prod-cl-cuir-ultime-1.png'">
+                        <div class="product-badge-luxury">New</div>
+                    </div>
+                    <div class="product-info-luxury">
+                        <span class="product-cat-luxury">Creation Lamis</span>
+                        <h3 class="product-title-luxury">Cuir Ultime</h3>
+                        <div class="product-actions-luxury">
+                            <a href="product-cl-cuir-ultime.html" class="add-btn-luxury">View Details</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Amber Imperial -->
+                <div class="product-card-luxury" data-brand="creation-lamis">
+                    <div class="product-img-wrap-luxury">
+                        <img src="assets/prod-cl-amber-imperial-1.jpg" alt="Amber Imperial" class="product-img-luxury" onerror="this.src='assets/prod-cl-amber-imperial-1.png'">
+                        <div class="product-badge-luxury">New</div>
+                    </div>
+                    <div class="product-info-luxury">
+                        <span class="product-cat-luxury">Creation Lamis</span>
+                        <h3 class="product-title-luxury">Amber Imperial</h3>
+                        <div class="product-actions-luxury">
+                            <a href="product-cl-amber-imperial.html" class="add-btn-luxury">View Details</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Oud Magique -->
+                <div class="product-card-luxury" data-brand="creation-lamis">
+                    <div class="product-img-wrap-luxury">
+                        <img src="assets/prod-cl-oud-magique-1.jpg" alt="Oud Magique" class="product-img-luxury" onerror="this.src='assets/prod-cl-oud-magique-1.png'">
+                        <div class="product-badge-luxury">New</div>
+                    </div>
+                    <div class="product-info-luxury">
+                        <span class="product-cat-luxury">Creation Lamis</span>
+                        <h3 class="product-title-luxury">Oud Magique</h3>
+                        <div class="product-actions-luxury">
+                            <a href="product-cl-oud-magique.html" class="add-btn-luxury">View Details</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Tabac Aromatique -->
+                <div class="product-card-luxury" data-brand="creation-lamis">
+                    <div class="product-img-wrap-luxury">
+                        <img src="assets/prod-cl-tabac-aromatique-1.jpg" alt="Tabac Aromatique" class="product-img-luxury" onerror="this.src='assets/prod-cl-tabac-aromatique-1.png'">
+                        <div class="product-badge-luxury">New</div>
+                    </div>
+                    <div class="product-info-luxury">
+                        <span class="product-cat-luxury">Creation Lamis</span>
+                        <h3 class="product-title-luxury">Tabac Aromatique</h3>
+                        <div class="product-actions-luxury">
+                            <a href="product-cl-tabac-aromatique.html" class="add-btn-luxury">View Details</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Rose Augusta -->
+                <div class="product-card-luxury" data-brand="creation-lamis">
+                    <div class="product-img-wrap-luxury">
+                        <img src="assets/prod-cl-rose-augusta-1.jpg" alt="Rose Augusta" class="product-img-luxury" onerror="this.src='assets/prod-cl-rose-augusta-1.png'">
+                        <div class="product-badge-luxury">New</div>
+                    </div>
+                    <div class="product-info-luxury">
+                        <span class="product-cat-luxury">Creation Lamis</span>
+                        <h3 class="product-title-luxury">Rose Augusta</h3>
+                        <div class="product-actions-luxury">
+                            <a href="product-cl-rose-augusta.html" class="add-btn-luxury">View Details</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Sandal Intense -->
+                <div class="product-card-luxury" data-brand="creation-lamis">
+                    <div class="product-img-wrap-luxury">
+                        <img src="assets/prod-cl-sandal-intense-1.jpg" alt="Sandal Intense" class="product-img-luxury" onerror="this.src='assets/prod-cl-sandal-intense-1.png'">
+                        <div class="product-badge-luxury">New</div>
+                    </div>
+                    <div class="product-info-luxury">
+                        <span class="product-cat-luxury">Creation Lamis</span>
+                        <h3 class="product-title-luxury">Sandal Intense</h3>
+                        <div class="product-actions-luxury">
+                            <a href="product-cl-sandal-intense.html" class="add-btn-luxury">View Details</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Jasmine Joy -->
+                <div class="product-card-luxury" data-brand="creation-lamis">
+                    <div class="product-img-wrap-luxury">
+                        <img src="assets/prod-cl-jasmine-joy-1.jpg" alt="Jasmine Joy" class="product-img-luxury" onerror="this.src='assets/prod-cl-jasmine-joy-1.png'">
+                        <div class="product-badge-luxury">New</div>
+                    </div>
+                    <div class="product-info-luxury">
+                        <span class="product-cat-luxury">Creation Lamis</span>
+                        <h3 class="product-title-luxury">Jasmine Joy</h3>
+                        <div class="product-actions-luxury">
+                            <a href="product-cl-jasmine-joy.html" class="add-btn-luxury">View Details</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Vanille Divine -->
+                <div class="product-card-luxury" data-brand="creation-lamis">
+                    <div class="product-img-wrap-luxury">
+                        <img src="assets/prod-cl-vanille-divine-1.jpg" alt="Vanille Divine" class="product-img-luxury" onerror="this.src='assets/prod-cl-vanille-divine-1.png'">
+                        <div class="product-badge-luxury">New</div>
+                    </div>
+                    <div class="product-info-luxury">
+                        <span class="product-cat-luxury">Creation Lamis</span>
+                        <h3 class="product-title-luxury">Vanille Divine</h3>
+                        <div class="product-actions-luxury">
+                            <a href="product-cl-vanille-divine.html" class="add-btn-luxury">View Details</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Atar Al Afraah -->
+                <div class="product-card-luxury" data-brand="creation-lamis">
+                    <div class="product-img-wrap-luxury">
+                        <img src="assets/prod-cl-atar-al-afraah-1.jpg" alt="Atar Al Afraah" class="product-img-luxury" onerror="this.src='assets/prod-cl-atar-al-afraah-1.png'">
+                        <div class="product-badge-luxury">New</div>
+                    </div>
+                    <div class="product-info-luxury">
+                        <span class="product-cat-luxury">Creation Lamis</span>
+                        <h3 class="product-title-luxury">Atar Al Afraah</h3>
+                        <div class="product-actions-luxury">
+                            <a href="product-cl-atar-al-afraah.html" class="add-btn-luxury">View Details</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Jawharat Al Afrah -->
+                <div class="product-card-luxury" data-brand="creation-lamis">
+                    <div class="product-img-wrap-luxury">
+                        <img src="assets/prod-cl-jawharat-al-afrah-1.jpg" alt="Jawharat Al Afrah" class="product-img-luxury" onerror="this.src='assets/prod-cl-jawharat-al-afrah-1.png'">
+                        <div class="product-badge-luxury">New</div>
+                    </div>
+                    <div class="product-info-luxury">
+                        <span class="product-cat-luxury">Creation Lamis</span>
+                        <h3 class="product-title-luxury">Jawharat Al Afrah</h3>
+                        <div class="product-actions-luxury">
+                            <a href="product-cl-jawharat-al-afrah.html" class="add-btn-luxury">View Details</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Alhob Quloh -->
+                <div class="product-card-luxury" data-brand="creation-lamis">
+                    <div class="product-img-wrap-luxury">
+                        <img src="assets/prod-cl-alhob-quloh-1.jpg" alt="Alhob Quloh" class="product-img-luxury" onerror="this.src='assets/prod-cl-alhob-quloh-1.png'">
+                        <div class="product-badge-luxury">New</div>
+                    </div>
+                    <div class="product-info-luxury">
+                        <span class="product-cat-luxury">Creation Lamis</span>
+                        <h3 class="product-title-luxury">Alhob Quloh</h3>
+                        <div class="product-actions-luxury">
+                            <a href="product-cl-alhob-quloh.html" class="add-btn-luxury">View Details</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Oud Al Mlouk -->
+                <div class="product-card-luxury" data-brand="creation-lamis">
+                    <div class="product-img-wrap-luxury">
+                        <img src="assets/prod-cl-oud-al-mlouk-1.jpg" alt="Oud Al Mlouk" class="product-img-luxury" onerror="this.src='assets/prod-cl-oud-al-mlouk-1.png'">
+                        <div class="product-badge-luxury">New</div>
+                    </div>
+                    <div class="product-info-luxury">
+                        <span class="product-cat-luxury">Creation Lamis</span>
+                        <h3 class="product-title-luxury">Oud Al Mlouk</h3>
+                        <div class="product-actions-luxury">
+                            <a href="product-cl-oud-al-mlouk.html" class="add-btn-luxury">View Details</a>
+                        </div>
+                    </div>
+                </div>

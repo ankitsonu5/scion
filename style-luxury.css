@@ -645,7 +645,7 @@ footer {
     height: 70vh;
     min-height: 500px;
     background-color: var(--color-primary);
-    background-image: linear-gradient(rgba(15, 23, 42, 0.7), rgba(15, 23, 42, 0.5)), url('https://images.unsplash.com/photo-1615634260167-c8cdede054de?q=80&w=2000&auto=format&fit=crop');
+    background-image: linear-gradient(rgba(15, 23, 42, 0.7), rgba(15, 23, 42, 0.5)), url('assets/Our Brands - BG 2.jpg');
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
@@ -688,7 +688,7 @@ footer {
     height: 70vh;
     min-height: 500px;
     background-color: var(--color-primary);
-    background-image: linear-gradient(rgba(15, 23, 42, 0.7), rgba(15, 23, 42, 0.5)), url('https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=2000&auto=format&fit=crop');
+    background-image: linear-gradient(rgba(15, 23, 42, 0.7), rgba(15, 23, 42, 0.5)), url('assets/hero_luxury_perfume_1765793270094.png');
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
@@ -817,7 +817,7 @@ footer {
 }
 
 .network-hero-luxury {
-    background-image: linear-gradient(rgba(15, 23, 42, 0.7), rgba(15, 23, 42, 0.5)), url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=2000&auto=format&fit=crop');
+    background-image: linear-gradient(rgba(15, 23, 42, 0.7), rgba(15, 23, 42, 0.5)), url('assets/brand-bg.jpg');
 }
 
 .network-hero-luxury::before {
@@ -1314,7 +1314,7 @@ footer {
     height: 60vh;
     min-height: 450px;
     background-color: var(--color-primary);
-    background-image: linear-gradient(rgba(15, 23, 42, 0.7), rgba(15, 23, 42, 0.5)), url('https://images.unsplash.com/photo-1596462502278-27bfdd403cc2?q=80&w=2000&auto=format&fit=crop');
+    background-image: linear-gradient(rgba(15, 23, 42, 0.7), rgba(15, 23, 42, 0.5)), url('assets/hero_luxury_perfume_1765793270094.png');
     /* Perfume bottles/smoke background */
     background-size: cover;
     background-position: center;
@@ -1401,7 +1401,7 @@ footer {
 .business-premium-hero {
     height: 60vh;
     min-height: 500px;
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2000&auto=format&fit=crop');
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('assets/hero_luxury_perfume_1765793270094.png');
     /* Corporate building glass abstract */
     background-size: cover;
     background-position: center;
