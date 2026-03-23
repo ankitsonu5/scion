@@ -13,7 +13,6 @@
 </head>
 
 <body>
-
     <!-- Top Bar -->
     <div class="top-bar">
         <div class="container top-bar-container">
@@ -22,11 +21,10 @@
                 <a href="tel:+97165352066"><i class="fas fa-phone"></i> +971 65352066</a>
             </div>
             <div class="top-bar-right">
-                <a href="#" class="login-link"><i class="fas fa-sign-in-alt"></i> Login</a>
                 <div class="social-icons-top">
-                    <a href="https://www.facebook.com/scioninternational" </a>
-                        <a href="https://in.linkedin.com/company/scion-international" </a>
-                            <a href="https://www.instagram.com/scioninternational/" </a>
+                    <a href="https://www.facebook.com/scioninternational"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://in.linkedin.com/company/scion-international"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://www.instagram.com/scioninternational/"><i class="fab fa-instagram"></i></a>
                 </div>
             </div>
         </div>
@@ -36,8 +34,9 @@
     <nav class="navbar">
         <div class="container nav-container">
             <a href="index.html" class="logo"><img src="assets/scion-logo.png" alt="Scion International"></a>
+            <span class="nav-beta-badge">Beta Version</span>
             <div class="nav-links">
-                <a href="index.html">HOME</a>
+<a href="index.html">HOME</a>
 
                 <div class="dropdown">
                     <a href="about-luxury.html">WHO WE ARE <i class="fas fa-chevron-down"></i></a>
@@ -180,8 +179,12 @@
                         </div>
 
                         <div class="buy-box-actions">
-                            <button class="pdp-btn-primary">Add to Enquiry</button>
-                            <button class="pdp-btn-secondary">Add to Wishlist</button>
+                            <a href="contact-us.html" class="pdp-amazon-btn">
+                                <span class="market-copy">
+                                    <strong>Request Details</strong>
+                                    <span>Connect with our team</span>
+                                </span>
+                            </a>
                         </div>
                     </div>
 
@@ -189,12 +192,7 @@
                     <div class="pdp-about-bullets">
                         <h3>About this item</h3>
                         <ul>
-                            <li>Eternal Oud, akin to a treasured heirloom passed through time, emanates an enigmatic allure
-                            that transcends the ages. At its core, the captivating essence of oud imbues the fragrance
-                            with a rich and intricate aroma.</li>
-                            <li>Beginning with a harmonious fusion of saffron, rose, and bergamot, it entrances with a burst
-                            of romantic fervor, evoking images of intimate evenings suffused in candlelight and
-                            whispered promises.</li>
+                            <li>Product information available on request.</li>
                         </ul>
                     </div>
 
@@ -216,9 +214,8 @@
     <section class="pdp-details-tabs">
         <div class="container">
             <div class="tabs-header">
-                <button class="tab-btn active" onclick="openTab(event, 'ingredients')">Information</button>
+                <button class="tab-btn active" onclick="openTab(event, 'info')">Information</button>
                 <button class="tab-btn" onclick="openTab(event, 'notes')">Scent Notes</button>
-                <button class="tab-btn" onclick="openTab(event, 'shipping')">Shipping & Returns</button>
             </div>
 
             <div class="tab-content" id="notes" style="display: none;">
@@ -238,19 +235,30 @@
                 </div>
             </div>
 
-            <div class="tab-content" id="ingredients" style="display: block;">
-                <p>Eternal Oud is an enigmatic and truly timeless luxury perfume. This sophisticated eau de parfum
-                    offers exceptional longevity, ensuring a captivating experience that makes it the perfect long
-                    lasting perfume. The deep, complex base of oud and guaiac wood ensures an irresistible spell of
-                    fascination that lingers for hours. It is also the ideal gift for your husband or wife for a
-                    birthday, anniversary, or any other special occasion.</p>
+            <div class="tab-content" id="info" style="display: block;">
+                <div class="pdp-info-rich">
+                    <p class="pdp-info-description">Eternal Oud is an enigmatic and truly timeless luxury perfume. This sophisticated eau de parfum offers exceptional longevity, ensuring a captivating experience that makes it the perfect long lasting perfume. The deep, complex base of oud and guaiac wood ensures an irresistible spell of fascination that lingers for hours. It is also the ideal gift for your husband or wife for a birthday, anniversary, or any other special occasion. Product Details Brand Scion International Category Floral Oriental Feelings Romantic, Warm, Enigmatic</p>
+                    <div>
+                        <h4 class="pdp-info-section-title">Product Details</h4>
+                        <div class="pdp-info-grid">
+                    <div class="pdp-info-card">
+                        <span class="info-label">Brand</span>
+                        <span class="info-value">Scion International</span>
+                    </div>
+                    <div class="pdp-info-card">
+                        <span class="info-label">Category</span>
+                        <span class="info-value">Floral Oriental</span>
+                    </div>
+                    <div class="pdp-info-card">
+                        <span class="info-label">Feelings</span>
+                        <span class="info-value">Romantic, Warm, Enigmatic</span>
+                    </div>
+                        </div>
+                    </div>
+                </div>
             </div>
 
-            <div class="tab-content" id="shipping" style="display: none;">
-                <p>We offer worldwide shipping. Orders are processed within 1-2 business days. Returns are accepted
-                    within 30 days of purchase for unopened items.</p>
             </div>
-        </div>
     </section>
 
     <!-- Visual Banner -->
@@ -276,7 +284,7 @@
                 <div class="product-card-luxury">
                     <div class="product-img-wrap-luxury">
                         <img src="assets/product_lotion_pump_luxury_1765794621819.png" alt="Velvet Rose Lotion"
-                            class="product-img-luxury" onerror="this.src='assets/Picture1.jpg'">
+                            class="product-img-luxury" onerror="this.src='assets/product_perfume_bottle_luxury_1765794580134.png'">
                     </div>
                     <div class="product-info-luxury">
                         <span class="product-cat-luxury">Personal Care</span>
@@ -290,7 +298,7 @@
                 <div class="product-card-luxury">
                     <div class="product-img-wrap-luxury">
                         <img src="assets/product_gift_set_box_1765794643863.png" alt="Midnight Aura Set"
-                            class="product-img-luxury" onerror="this.src='assets/Picture1.jpg'">
+                            class="product-img-luxury" onerror="this.src='assets/product_perfume_bottle_luxury_1765794580134.png'">
                     </div>
                     <div class="product-info-luxury">
                         <span class="product-cat-luxury">Gift Set</span>
@@ -322,7 +330,8 @@
             <div class="footer-grid">
                 <div>
                     <a href="#" class="logo"><img src="assets/scion-logo-footer.png" alt="Scion International"></a>
-                    <p style="color: rgba(255,255,255,0.6); max-width: 300px;">Creating evocative pleasures of Fragrance
+                    <p style="color: rgba(255,255,255,0.6); max-width: 300px;">Creating evocative pleasures of
+                        Fragrance
                         & Beauty worldwide since 1974.</p>
                 </div>
                 <div>
@@ -336,8 +345,7 @@
                 <div>
                     <h4 style="color: var(--color-accent); margin-bottom: 1.5rem;">Contact</h4>
                     <p style="color: rgba(255,255,255,0.6);">Dubai, UAE</p>
-                    <p style="color: rgba(255,255,255,0.6);"><a href="mailto:info@scionintl.com"
-                            style="color:inherit;">info@scionintl.com</a></p>
+                    <p style="color: rgba(255,255,255,0.6);">info@scionintl.com</p>
                 </div>
             </div>
             <div class="footer-bottom">

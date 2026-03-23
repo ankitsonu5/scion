@@ -34,6 +34,7 @@
 
 .pdp-gallery-flex {
     display: flex;
+    flex-direction: column-reverse;
     gap: 18px;
     padding: 24px;
     background: rgba(255, 255, 255, 0.82);
@@ -45,10 +46,12 @@
 
 .pdp-thumbnails-vertical {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: center;
     gap: 12px;
-    width: 78px;
+    width: 100%;
     flex-shrink: 0;
+    flex-wrap: wrap;
 }
 
 .pdp-thumb-v {
@@ -79,10 +82,10 @@
 .pdp-main-image-wrap {
     position: relative;
     flex-grow: 1;
-    min-height: 560px;
+    min-height: 640px;
     border: 1px solid rgba(15, 23, 42, 0.08);
     border-radius: 24px;
-    padding: 32px;
+    padding: 28px;
     background:
         radial-gradient(circle at top, rgba(243, 229, 171, 0.45), transparent 42%),
         linear-gradient(180deg, #fffdf9 0%, #f7f2e8 100%);
@@ -105,7 +108,7 @@
     position: relative;
     z-index: 1;
     max-width: 100%;
-    max-height: 500px;
+    max-height: 590px;
     object-fit: contain;
     filter: drop-shadow(0 18px 28px rgba(15, 23, 42, 0.12));
 }
@@ -149,6 +152,7 @@
     position: relative;
     max-width: none;
     padding-bottom: 12px;
+    font-family: "Geomatrix", Sans-serif;
     font-size: clamp(1.45rem, 1.5vw, 2.05rem);
     font-weight: 700;
     line-height: 1.24;
@@ -630,19 +634,16 @@
         padding: 22px;
     }
 
-    .pdp-gallery-flex {
-        flex-direction: column-reverse;
-    }
-
     .pdp-thumbnails-vertical {
-        flex-direction: row;
         width: 100%;
         overflow-x: auto;
         padding-bottom: 6px;
+        justify-content: flex-start;
+        flex-wrap: nowrap;
     }
 
     .pdp-main-image-wrap {
-        min-height: 420px;
+        min-height: 500px;
     }
 
     .pdp-market-grid,
@@ -670,7 +671,7 @@
     }
 
     .pdp-main-image-wrap {
-        min-height: 320px;
+        min-height: 380px;
         padding: 20px;
     }
 

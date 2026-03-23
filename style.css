@@ -202,6 +202,28 @@ img {
     align-items: center;
 }
 
+.nav-beta-badge {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      align-self: flex-start;
+      margin-left: 0.8rem;
+      margin-right: auto;
+      margin-top: 0.18rem;
+      padding: 0.38rem 0.72rem;
+      border: 1px solid rgba(212, 175, 55, 0.38);
+    border-radius: 999px;
+    background: rgba(212, 175, 55, 0.12);
+    color: rgba(15, 23, 42, 0.82);
+    font-size: 0.64rem;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    line-height: 1;
+    white-space: nowrap;
+    box-shadow: 0 6px 14px rgba(15, 23, 42, 0.06);
+}
+
 .nav-links a {
     text-decoration: none;
     color: var(--color-primary);
@@ -809,7 +831,7 @@ footer {
 .newsletter-section {
     padding: 6rem 0;
     position: relative;
-    background-image: url('assets/join-family-new.jpg');
+    background-image: url('assets/banner-join-scion.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -968,7 +990,7 @@ footer {
 
 /* What We Do Section Background */
 .what-we-do-section {
-    background-image: url('assets/what-we-do-pattern.png');
+    background-image: url('assets/header_cloud.png');
     background-repeat: repeat;
     background-size: auto;
     background-color: #f9f9f7;
@@ -1256,7 +1278,7 @@ footer {
 .newsletter-section {
     position: relative;
     padding: 8rem 0;
-    background-image: url('assets/join-family-new.jpg');
+    background-image: url('assets/banner-join-scion.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -2170,7 +2192,7 @@ footer {
     min-height: 500px;
     background-color: var(--color-primary);
     /* Dark base */
-    background-image: linear-gradient(rgba(15, 23, 42, 0.7), rgba(15, 23, 42, 0.5)), url('assets/careers-hero.jpg');
+    background-image: linear-gradient(rgba(15, 23, 42, 0.7), rgba(15, 23, 42, 0.5)), url('assets/banner-join-scion.jpg');
     background-size: cover;
     background-attachment: fixed;
     /* Parallax feel */
@@ -2811,21 +2833,19 @@ footer {
     display: block !important;
     position: relative;
     height: 550px !important;
-    /* Preserving the requested large size */
     min-height: 550px;
-    border-radius: 12px;
+    border-radius: 10px;
     overflow: hidden;
     cursor: pointer;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 10px 24px rgba(15, 23, 42, 0.08);
+    transition: transform 0.28s ease, box-shadow 0.28s ease;
     background-color: #eee;
     margin-bottom: 2rem;
-    /* Spacing for shadow */
 }
 
 .custom-brand-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+    transform: translateY(-3px);
+    box-shadow: 0 14px 32px rgba(15, 23, 42, 0.12);
 }
 
 .custom-brand-img-wrap {
@@ -2839,17 +2859,17 @@ footer {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    transition: transform 0.6s ease;
+    transition: transform 0.45s ease;
 }
 
 .custom-brand-card:hover .custom-brand-img {
-    transform: scale(1.1);
+    transform: scale(1.04);
 }
 
 .custom-brand-overlay {
     position: absolute;
     inset: 0;
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.3) 50%, transparent 100%);
+    background: linear-gradient(to top, rgba(17, 24, 39, 0.72) 0%, rgba(17, 24, 39, 0.18) 42%, rgba(17, 24, 39, 0.04) 100%);
     z-index: 1;
 }
 
@@ -2858,13 +2878,12 @@ footer {
     bottom: 0;
     left: 0;
     width: 100%;
-    padding: 2.5rem;
+    padding: 1.5rem 1.5rem 1.35rem;
     z-index: 2;
     color: #fff;
-    transform: translateY(20px);
-    transition: transform 0.3s ease;
+    transform: translateY(10px);
+    transition: transform 0.28s ease;
     text-align: left;
-    /* Align text left like original design */
 }
 
 .custom-brand-card:hover .custom-brand-content {
@@ -2872,20 +2891,41 @@ footer {
 }
 
 .custom-brand-content h3 {
-    font-size: 2rem;
-    /* Larger font for larger card */
-    margin-bottom: 0.5rem;
+    font-size: clamp(1.02rem, 0.5vw + 0.9rem, 1.18rem);
+    margin-bottom: 0.6rem;
     color: #fff;
     font-family: var(--font-serif);
-    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    font-weight: 600;
+    letter-spacing: -0.015em;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
 }
 
 .custom-brand-content p {
-    font-size: 1.1rem;
-    color: rgba(255, 255, 255, 0.9);
-    margin-bottom: 2rem;
-    line-height: 1.5;
-    opacity: 0.9;
+    display: none;
+}
+
+.custom-brand-content .btn-modern {
+    padding: 0;
+    background: transparent;
+    border: 0;
+    color: rgba(255, 255, 255, 0.92);
+    font-size: 0.68rem;
+    font-weight: 600;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    box-shadow: none;
+    border-radius: 0;
+}
+
+.custom-brand-content .btn-modern::after {
+    content: " /";
+}
+
+.custom-brand-content .btn-modern:hover {
+    background: transparent;
+    color: #fff;
+    transform: none;
+    box-shadow: none;
 }
 /* Product Detail Page (Luxury) */
 .breadcrumb-luxury {

@@ -2,7 +2,15 @@ const fs = require('fs');
 const path = require('path');
 
 const root = __dirname;
-const oneDriveRoot = path.join(root, 'assets', 'OneDrive_2026-03-19 (2)', '2. Shared with agency folder', 'Brands');
+const rootCandidates = [
+    path.join(root, 'assets', '2. Shared with agency folder', 'Brands'),
+    path.join(root, 'assets', 'OneDrive_2026-03-19 (2)', '2. Shared with agency folder', 'Brands')
+];
+const oneDriveRoot = rootCandidates.find((candidate) => fs.existsSync(candidate));
+
+if (!oneDriveRoot) {
+    throw new Error('Shared agency brand assets directory not found.');
+}
 
 const IMAGE_EXTENSIONS = new Set(['.jpg', '.jpeg', '.png', '.webp']);
 
@@ -162,7 +170,51 @@ function collectImages(dirPath) {
     return fs.readdirSync(dirPath, { withFileTypes: true })
         .filter((entry) => entry.isFile() && IMAGE_EXTENSIONS.has(path.extname(entry.name).toLowerCase()))
         .map((entry) => entry.name)
-        .sort((a, b) => a.localeCompare(b, undefined, { numeric: true, sensitivity: 'base' }));
+        .sort(compareImages);
+}
+
+function imageRank(name) {
+    const normalized = path.basename(name, path.extname(name)).toLowerCase();
+    let rank = 100;
+
+    if (/\b(plp[_ -]?1|01|hero|main)\b/.test(normalized)) {
+        rank -= 40;
+    }
+
+    if (normalized.includes('benefit') || normalized.includes('benefits')) {
+        rank += 20;
+    }
+
+    if (normalized.includes('claim')) {
+        rank += 20;
+    }
+
+    if (normalized.includes('ingredient')) {
+        rank += 20;
+    }
+
+    if (normalized.includes('how to use')) {
+        rank += 25;
+    }
+
+    if (normalized.includes('range')) {
+        rank += 25;
+    }
+
+    if (/pack of \d/.test(normalized)) {
+        rank += 15;
+    }
+
+    return rank;
+}
+
+function compareImages(a, b) {
+    const rankDiff = imageRank(a) - imageRank(b);
+    if (rankDiff !== 0) {
+        return rankDiff;
+    }
+
+    return a.localeCompare(b, undefined, { numeric: true, sensitivity: 'base' });
 }
 
 function discoverProducts(config) {
@@ -256,20 +308,20 @@ function renderDetailPage(product, config) {
                 <a href="mailto:info@scionintl.com"><i class="fas fa-envelope"></i> info@scionintl.com</a>
                 <a href="tel:+97165352066"><i class="fas fa-phone"></i> +971 65352066</a>
             </div>
-            <div class="top-bar-right">
-                <a href="#" class="login-link"><i class="fas fa-sign-in-alt"></i> Login</a>
-                <div class="social-icons-top">
-                    <a href="https://www.facebook.com/scioninternational"></a>
-                    <a href="https://in.linkedin.com/company/scion-international"></a>
-                    <a href="https://www.instagram.com/scioninternational/"></a>
+                <div class="top-bar-right">
+                    <div class="social-icons-top">
+                    <a href="https://www.facebook.com/scioninternational"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://in.linkedin.com/company/scion-international"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://www.instagram.com/scioninternational/"><i class="fab fa-instagram"></i></a>
+                    </div>
                 </div>
             </div>
-        </div>
     </div>
 
     <nav class="navbar">
         <div class="container nav-container">
             <a href="index.html" class="logo"><img src="assets/scion-logo.png" alt="Scion International"></a>
+            <span class="nav-beta-badge">Beta Version</span>
             <div class="nav-links">
                 <a href="index.html">HOME</a>
                 <div class="dropdown">
@@ -544,9 +596,18 @@ function replaceContainerInner(html, containerId, innerHtml) {
     return `${html.slice(0, openTagEnd + 1)}\n${innerHtml}\n            ${html.slice(closeTagStart)}`;
 }
 
+const selectedBrandKeys = new Set(process.argv.slice(2).map((value) => value.toLowerCase()));
+const activeBrandConfigs = selectedBrandKeys.size
+    ? brandConfigs.filter((config) => selectedBrandKeys.has(config.key))
+    : brandConfigs;
+
+if (!activeBrandConfigs.length) {
+    throw new Error(`No matching brand config for arguments: ${process.argv.slice(2).join(', ')}`);
+}
+
 const generatedPages = [];
 
-for (const config of brandConfigs) {
+for (const config of activeBrandConfigs) {
     const products = discoverProducts(config);
 
     for (const product of products) {

@@ -38,6 +38,25 @@ function escapeHtml(value) {
         .replace(/'/g, '&#39;');
 }
 
+function cleanRichText(value) {
+    return String(value || '')
+        .replace(/<\s*br\s*\/?>/gi, ' ')
+        .replace(/<\s*\/p\s*>/gi, ' ')
+        .replace(/<\s*p[^>]*>/gi, ' ')
+        .replace(/<\s*li[^>]*>/gi, ' ')
+        .replace(/<\s*\/li\s*>/gi, '. ')
+        .replace(/<[^>]+>/g, ' ')
+        .replace(/&nbsp;/gi, ' ')
+        .replace(/&amp;/gi, '&')
+        .replace(/&quot;/gi, '"')
+        .replace(/&#39;/gi, "'")
+        .replace(/&lt;|&gt;/gi, ' ')
+        .replace(/\u2022|✅|•/g, ' ')
+        .replace(/\s*\.\s*\./g, '.')
+        .replace(/\s+/g, ' ')
+        .trim();
+}
+
 function buildMap() {
     const header = rows[0];
     const map = new Map();
@@ -58,7 +77,7 @@ function buildMap() {
         }
 
         map.set(normalizeSlug(perfumeName), {
-            description: clean(record['Updated Description']) || clean(record['Description']),
+            description: cleanRichText(clean(record['Updated Description']) || clean(record['Description'])),
             collection: clean(record['Collection']),
             productCategory: clean(record['Product Category']),
             size: clean(record['Size']),
@@ -66,13 +85,10 @@ function buildMap() {
             targetGroup: clean(record['Targeted Group']),
             fragranceFamily: clean(record['Fragrance Family']),
             fragranceType: clean(record['Fragrance Type (AR)']),
-            notes: clean(record['Fragrance Notes ']),
             features: clean(record['Updated Special Feature']) || clean(record['special Feature']),
             feelings: clean(record['Feelings']),
             origin: clean(record['Country of Origin']),
-            manufacturer: clean(record['Manufacturer Detail']),
             safety: clean(record['Safety Information']),
-            asin: clean(record['ASIN']),
             productName: perfumeName
         });
     }
@@ -89,13 +105,10 @@ function buildInfoMarkup(record) {
         ['Target Group', record.targetGroup],
         ['Fragrance Family', record.fragranceFamily],
         ['Fragrance Type', record.fragranceType],
-        ['Signature Notes', record.notes],
         ['Special Features', record.features],
         ['Feelings', record.feelings],
         ['Country of Origin', record.origin],
-        ['Manufacturer', record.manufacturer],
-        ['Safety Information', record.safety],
-        ['ASIN', record.asin]
+        ['Safety Information', record.safety]
     ].filter(([, value]) => value);
 
     const cards = specs.map(([label, value]) => [
