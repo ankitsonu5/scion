@@ -369,6 +369,14 @@ img {
   background-position: center center;
 }
 
+.hero-slide-pc .banner-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+  display: block;
+}
+
 .video-slide {
   background-color: black;
 }
@@ -398,6 +406,68 @@ img {
   z-index: 1;
 }
 
+/* Custom Slick Arrows */
+.hero-slider .slick-prev,
+.hero-slider .slick-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  color: #fff;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(5px);
+}
+
+.hero-slider .slick-prev {
+  left: 30px;
+}
+
+.hero-slider .slick-next {
+  right: 30px;
+}
+
+.hero-slider .slick-prev:hover,
+.hero-slider .slick-next:hover {
+  background: rgba(255, 255, 255, 0.2);
+  border-color: #fff;
+  color: #fff;
+}
+
+.hero-slider .slick-prev i,
+.hero-slider .slick-next i {
+  font-size: 1.2rem;
+  color: #fff;
+}
+
+.hero-slider .slick-prev::before,
+.hero-slider .slick-next::before {
+  display: none; /* Hide default slick arrows */
+}
+
+/* Responsive Arrows */
+@media (max-width: 768px) {
+  .hero-slider .slick-prev,
+  .hero-slider .slick-next {
+    width: 40px;
+    height: 40px;
+  }
+  .hero-slider .slick-prev {
+    left: 15px;
+  }
+  .hero-slider .slick-next {
+    right: 15px;
+  }
+}
+
 .hero-container {
   position: relative;
   height: 100%;
@@ -410,16 +480,17 @@ img {
   color: var(--color-white);
   max-width: 700px;
   padding-top: 4rem;
-  opacity: 0;
-  transform: translateY(30px);
-  transition: all 1s ease;
+  opacity: 1;
 }
 
-/* Animate content when active slide */
+.hero-brand-title {
+  transition: opacity 1s ease;
+}
+
+/* Animate content when active slide - keep this for other possible uses */
 .slick-active .hero-content {
   opacity: 1;
   transform: translateY(0);
-  transition-delay: 0.5s;
 }
 
 .hero-subtitle {
@@ -999,20 +1070,20 @@ footer {
 }
 
 /* What We Do Section Background */
-.what-we-do-section {
+/* .what-we-do-section {
   background-image: url("assets/header_cloud.png");
   background-repeat: repeat;
   background-size: auto;
   background-color: #f9f9f7;
-}
+} */
 
 /* What We Do Grid */
 .what-we-do-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 4rem;
-  align-items: center;
-  margin-top: 3rem;
+  align-items: stretch;
+  margin-top: 0rem;
 }
 
 .what-we-do-text {
@@ -1032,7 +1103,7 @@ footer {
 }
 
 .what-we-do-list li {
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
   position: relative;
   padding-left: 1.5rem;
 }
@@ -1045,8 +1116,14 @@ footer {
   font-weight: bold;
 }
 
+.what-we-do-image {
+  height: 100%;
+}
+
 .what-we-do-image img {
   width: 100%;
+  height: 100%;
+  object-fit: cover;
   border-radius: 12px;
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
@@ -1421,7 +1498,7 @@ footer {
 
 /* Content Sections */
 .content-section {
-  padding: 6rem 0;
+  padding: 4rem 0;
   overflow: hidden;
 }
 
@@ -1961,7 +2038,7 @@ footer {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 4rem;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .corporate-info {
@@ -1977,7 +2054,7 @@ footer {
 }
 
 .info-group {
-  margin-bottom: 1.5rem;
+  margin-bottom: 2rem;
 }
 
 .info-label {
@@ -2093,7 +2170,7 @@ footer {
 
 /* Message Section */
 .message-section {
-  padding: 6rem 0;
+  padding: 0;
   background: #fff;
 }
 
@@ -2104,7 +2181,7 @@ footer {
 
 .contact-form {
   display: grid;
-  gap: 1.5rem;
+  gap: 0rem;
 }
 
 .form-group {
@@ -2146,6 +2223,7 @@ footer {
   display: inline-block;
   border-radius: 4px;
   width: fit-content;
+  margin-bottom: 1rem;
 }
 
 .recaptcha-placeholder {
@@ -2559,12 +2637,12 @@ footer {
 }
 
 .form-group {
-  margin-bottom: 1.5rem;
+  margin-bottom: 0.5rem;
 }
 
 .form-group label {
   display: block;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0rem;
   font-size: 0.9rem;
   font-weight: 500;
   color: var(--color-primary);
@@ -2575,7 +2653,7 @@ footer {
 .form-group input[type="tel"],
 .form-group textarea {
   width: 100%;
-  padding: 12px 0;
+  padding: 0px 0;
   border: none;
   border-bottom: 2px solid #eee;
   background: transparent;
@@ -2964,10 +3042,6 @@ footer {
   text-transform: uppercase;
   box-shadow: none;
   border-radius: 0;
-}
-
-.custom-brand-content .btn-modern::after {
-  content: " /";
 }
 
 .custom-brand-content .btn-modern:hover {

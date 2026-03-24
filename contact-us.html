@@ -35,7 +35,7 @@
             <a href="index.html" class="logo"><img src="assets/scion-logo.png" alt="Scion International"></a>
             <span class="nav-beta-badge">Beta Version</span>
             <div class="nav-links">
-<a href="index.html">HOME</a>
+                <a href="index.html">HOME</a>
 
                 <div class="dropdown">
                     <a href="about-luxury.html">WHO WE ARE <i class="fas fa-chevron-down"></i></a>
@@ -97,7 +97,7 @@
     <!-- Hero Section -->
     <!-- Hero Section -->
     <header class="universal-luxury-hero"
-        style="background-image: linear-gradient(rgba(15, 23, 42, 0.7), rgba(15, 23, 42, 0.5)), url('assets/our-story-new.jpg');">
+        style="background-image: linear-gradient(rgba(15, 23, 42, 0.7), rgba(15, 23, 42, 0.5)), url('assets/images/homepage/banners/aboutus/contactbanner.jpg')">
         <div class="hero-overlay"></div>
         <div class="hero-content">
             <span class="hero-subtitle" style="color: var(--color-gold-light);">Get In Touch</span>
@@ -117,9 +117,9 @@
     <!-- Corporate Office Section -->
     <section class="corporate-office-section">
         <div class="container">
-            <h3 class="section-title">Corporate Office</h3>
             <div class="corporate-grid">
                 <div class="corporate-info" data-aos="fade-right">
+                    <h3 class="section-title">Corporate Office</h3>
                     <p class="subtitle">Get in touch to learn more about our products & services.</p>
 
                     <div class="info-group">
@@ -142,9 +142,52 @@
                         <p>+971 65352067</p>
                     </div>
                 </div>
-                <div class="corporate-img" data-aos="fade-left">
-                    <img src="assets/product_perfume_bottle_luxury_1765794580134.png" alt="Scion International Corporate Office">
-                </div>
+
+                <!-- Send Us Message Section -->
+                <section class="message-section">
+                    <h3 class="section-title">Send Us Message</h3>
+                    <p class="subtitle">To enquire / contact us for distribution / purchase, please fill contact form
+                        below.</p>
+                    <div class="contact-form-container" data-aos="fade-up">
+                        <form action="#" method="POST" class="contact-form">
+                            <div class="form-group">
+                                <label for="name">Your Name</label>
+                                <input type="text" id="name" name="name" placeholder="" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="company">Your Company Name</label>
+                                <input type="text" id="company" name="company" placeholder="">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="phone">Your Contact Number</label>
+                                <input type="tel" id="phone" name="phone" placeholder="">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email">Your Contact Email Address</label>
+                                <input type="email" id="email" name="email" placeholder="" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="enquiry">Your Enquiry</label>
+                                <textarea id="enquiry" name="enquiry" rows="4" placeholder=""></textarea>
+                            </div>
+
+                            <div class="form-group">
+                                <div class="form-captcha">
+                                    <div class="recaptcha-placeholder">
+                                        <label><input type="checkbox"> I'm not a robot</label>
+                                        <img src="https://www.gstatic.com/recaptcha/api2/logo_48.png" alt="reCAPTCHA">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <button type="submit" class="btn btn-modern">Send</button>
+                        </form>
+                    </div>
+                </section>
             </div>
         </div>
     </section>
@@ -152,7 +195,7 @@
     <!-- Country Offices Section -->
     <section class="country-offices-section">
         <div class="container">
-            <h3 class="section-title text-center">Country Offices</h3>
+            <h2 class="country-title text-center">Country Offices</h2>
             <div class="offices-grid">
                 <!-- Card 1 -->
                 <div class="office-card" data-aos="fade-up" data-aos-delay="0">
@@ -211,54 +254,6 @@
                     <p>(Corporate Office)<br>304, Iscon Elegance, Prahladnagar<br>S.G Highway<br>Ahmedabad - 380015,
                         India</p>
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Send Us Message Section -->
-    <section class="message-section">
-        <div class="container">
-            <h3 class="section-title text-center">Send Us Message</h3>
-            <p class="text-center" style="max-width: 600px; margin: 0 auto 3rem; color: var(--color-text-light);">To
-                enquire / contact us for distribution / purchase, please fill contact form below.</p>
-
-            <div class="contact-form-container" data-aos="fade-up">
-                <form action="#" method="POST" class="contact-form">
-                    <div class="form-group">
-                        <label for="name">Your Name</label>
-                        <input type="text" id="name" name="name" placeholder="" required>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="company">Your Company Name</label>
-                        <input type="text" id="company" name="company" placeholder="">
-                    </div>
-
-                    <div class="form-group">
-                        <label for="phone">Your Contact Number</label>
-                        <input type="tel" id="phone" name="phone" placeholder="">
-                    </div>
-
-                    <div class="form-group">
-                        <label for="email">Your Contact Email Address</label>
-                        <input type="email" id="email" name="email" placeholder="" required>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="enquiry">Your Enquiry</label>
-                        <textarea id="enquiry" name="enquiry" rows="4" placeholder=""></textarea>
-                    </div>
-
-                    <div class="form-captcha">
-                        <div class="recaptcha-placeholder">
-                            <label><input type="checkbox"> I'm not a robot</label>
-                            <img src="https://www.gstatic.com/recaptcha/api2/logo_48.png" alt="reCAPTCHA">
-                        </div>
-                    </div>
-
-                    <button type="submit" class="btn btn-modern">Send</button>
-
-                </form>
             </div>
         </div>
     </section>

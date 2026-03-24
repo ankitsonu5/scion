@@ -136,7 +136,7 @@
       style="
         background-image:
           linear-gradient(rgba(15, 23, 42, 0.7), rgba(15, 23, 42, 0.5)),
-          url(&quot;assets/banner-join-scion.jpg&quot;);
+          url(&quot;assets/images/homepage/banners/aboutus/careersbanner.jpg&quot;);
       "
     >
       <div class="hero-overlay"></div>
@@ -156,7 +156,7 @@
       <div class="container">
         <h2 class="section-title-gold">Join the Scion Family</h2>
         <br />
-        <p style="max-width: 800px; margin: 0 auto; color: #555">
+        <p style="max-width: 100%; margin: 0 auto; color: #555">
           This is a call to all our prospective employees who can look forward
           to successful careers and rewarding potential here with us. Scion
           offers a challenging and creative career path for those who want to
@@ -164,6 +164,73 @@
           path to personal and professional growth, integrity and human
           connection.
         </p>
+      </div>
+    </section>
+
+    <!-- Join Our Team Form -->
+    <section class="content-section">
+      <div class="container">
+        <!-- <h2 class="section-title-center">Join Our Team</h2> -->
+        <p class="text-center" style="margin-bottom: 2rem; text-align: center;">
+          Please fill out the form below and attach your CV or send it to
+          <a
+            href="mailto:careers@scionintl.com"
+            style="color: var(--color-accent)"
+            >careers@scionintl.com</a
+          >
+        </p>
+
+        <form class="application-form">
+          <div class="form-group">
+            <label>Full Name *</label>
+            <input type="text" required />
+          </div>
+          <div class="form-group">
+            <label>Email Address *</label>
+            <input type="email" required />
+          </div>
+          <div class="form-group">
+            <label>Phone Number *</label>
+            <input type="tel" required />
+          </div>
+          <div class="form-group">
+            <label>Qualification *</label>
+            <input type="text" required />
+          </div>
+          <div class="form-group">
+            <label>City / Country *</label>
+            <input type="text" required />
+          </div>
+          <div class="form-group">
+            <label>Current Location *</label>
+            <input type="text" required />
+          </div>
+          <div class="form-group">
+            <label>Your Message</label>
+            <textarea rows="5"></textarea>
+          </div>
+          <div class="form-group file-upload">
+            <label>Attach CV (Max 10MB)</label>
+            <input type="file" id="cv-upload" />
+            <button
+              type="button"
+              class="btn-file-select"
+              onclick="document.getElementById('cv-upload').click()"
+            >
+              Choose File
+            </button>
+            <span class="file-name">No file chosen</span>
+          </div>
+          <div class="form-group checkbox-group">
+            <input type="checkbox" id="robot-check" />
+            <label for="robot-check">I'm not a robot</label>
+            <div class="recaptcha-mock">
+              <i class="fas fa-shield-alt"></i> reCAPTCHA
+            </div>
+          </div>
+
+          <button type="submit" class="btn">Send Application</button>
+        </form>
       </div>
     </section>
 
@@ -351,73 +418,6 @@
             <a href="#" class="btn btn-sm">View Openings</a>
           </div>
         </div>
-      </div>
-    </section>
-
-    <!-- Join Our Team Form -->
-    <section class="content-section">
-      <div class="container">
-        <h2 class="section-title-center">Join Our Team</h2>
-        <p class="text-center" style="margin-bottom: 2rem">
-          Please fill out the form below and attach your CV or send it to
-          <a
-            href="mailto:careers@scionintl.com"
-            style="color: var(--color-accent)"
-            >careers@scionintl.com</a
-          >
-        </p>
-
-        <form class="application-form">
-          <div class="form-group">
-            <label>Full Name *</label>
-            <input type="text" required />
-          </div>
-          <div class="form-group">
-            <label>Email Address *</label>
-            <input type="email" required />
-          </div>
-          <div class="form-group">
-            <label>Phone Number *</label>
-            <input type="tel" required />
-          </div>
-          <div class="form-group">
-            <label>Qualification *</label>
-            <input type="text" required />
-          </div>
-          <div class="form-group">
-            <label>City / Country *</label>
-            <input type="text" required />
-          </div>
-          <div class="form-group">
-            <label>Current Location *</label>
-            <input type="text" required />
-          </div>
-          <div class="form-group">
-            <label>Your Message</label>
-            <textarea rows="5"></textarea>
-          </div>
-          <div class="form-group file-upload">
-            <label>Attach CV (Max 10MB)</label>
-            <input type="file" id="cv-upload" />
-            <button
-              type="button"
-              class="btn-file-select"
-              onclick="document.getElementById('cv-upload').click()"
-            >
-              Choose File
-            </button>
-            <span class="file-name">No file chosen</span>
-          </div>
-          <div class="form-group checkbox-group">
-            <input type="checkbox" id="robot-check" />
-            <label for="robot-check">I'm not a robot</label>
-            <div class="recaptcha-mock">
-              <i class="fas fa-shield-alt"></i> reCAPTCHA
-            </div>
-          </div>
-
-          <button type="submit" class="btn">Send Application</button>
-        </form>
       </div>
     </section>
 
