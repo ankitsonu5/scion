@@ -1,10 +1,10 @@
-const fs = require('fs');
-const products = JSON.parse(fs.readFileSync('cl_products_temp.json', 'utf8'));
-let html = '';
-products.forEach(p => {
-    const name = p['20 ML'];
-    const slug = name.toLowerCase().replace(/\s+/g, '-');
-    html += `
+const fs = require("fs");
+const products = JSON.parse(fs.readFileSync("cl_products_temp.json", "utf8"));
+let html = "";
+products.forEach((p) => {
+  const name = p["20 ML"];
+  const slug = name.toLowerCase().replace(/\s+/g, "-");
+  html += `
                 <!-- ${name} -->
                 <div class="product-card-luxury" data-brand="creation-lamis">
                     <div class="product-img-wrap-luxury">
@@ -20,4 +20,4 @@ products.forEach(p => {
                     </div>
                 </div>`;
 });
-fs.writeFileSync('cl_products_html.txt', html);
+fs.writeFileSync("cl_products_html.txt", html);
