@@ -204,8 +204,23 @@
   border: 1px solid rgba(212, 175, 55, 0.18);
 }
 
-.pdp-stars {
-  color: #cf9e22;
+.pdp-availability-copy {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  color: #5f4408;
+  font-size: 0.95rem;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+}
+
+.pdp-availability-copy i {
+  font-size: 1.35rem;
+  color: #111827;
+}
+
+.pdp-availability-copy strong {
+  color: #111827;
 }
 
 .pdp-rating-count {
